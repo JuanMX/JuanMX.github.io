@@ -2,7 +2,7 @@
 layout: post
 title:  "Instalar OpenCV"
 date:   2018-04-29 17:53:38 -0500
-categories: c/c++ opencv
+categories: c/c++ opencv truncado shared
 --- 
 
 Los pasos mostrados a continuación fueron probados con éxito en los siguientes sistemas operativos:
@@ -123,3 +123,7 @@ Para solucionarlo se debe abrir el `cmake-gui` y seguir los pasos para instalar,
 -DENABLE_PRECOMPILED_HEADERS=OFF
 ```
 y seguir los pasos de instación normalmente.
+
+**Contexto**
+
+En la escuela me pideron OpenCV para hacer un par de projectos grandes, además necesité instalarlo en un pc de la escuela y mi laptop después de formatearla varias veces.
