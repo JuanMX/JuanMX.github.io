@@ -2,12 +2,12 @@
 layout: post
 title:  "Ventanas que parpadean en KDE"
 date:   2018-05-01 14:20:00 -0500
-categories: KDE kde ventanas parpadean compositor vsync
+categories: KDE kde parpadean compositor vsync
 --- 
  
 ## Problema
 
-Cuando se esta en linux con KDE (en mi caso linux mint 18.3) después de unos minutos se ven las ventanas parpadenado si se pasan de ventana completa a una ventana más pequeña con el boton maximizar (a veces conocido como restaurar), también se ve el efecto de parpadeo si se realiza un *scroll* con el *scroll* del *mause*.
+Cuando se esta en linux con KDE (en mi caso linux mint 18.3), después de unos minutos se ven las ventanas parpadeantes si se pasan de ventana completa a una ventana más pequeña con el boton maximizar (a veces conocido como restaurar), también se ve el efecto de parpadeo si se realiza un *scroll* con el *mause*.
 
 ## Solución
 
@@ -25,6 +25,6 @@ Lo encontré en un tema en español del [foro de KDE](https://forum.kde.org/view
 
 **Contexto**
 
-Mi laptop necestiaba actualizarse de Ubuntu 12.04, encontré Linux Mint 18.3 con KDE el cual es completamente compatible, en el sentido de *drivers* de la tarjeta gráfica, tarjeta de red, usb 3.0 entre otros.
+Mi laptop necestiaba actualizarse de Ubuntu 12.04, encontré Linux Mint 18.3 con KDE el cual es compatible, en el sentido de *drivers* de la tarjeta gráfica, tarjeta de red, usb 3.0 entre otros.
 
-El único problema eran las ventanas parpadeante, después de tres dias buscando encontré esta solución.
+El único problema eran las ventanas parpadeantes, después de tres dias buscando encontré esta solución.

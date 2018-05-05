@@ -16,7 +16,7 @@
 title: Mi cuaderno de apuntes
 author: Juan
 description: >- # this means to ignore newlines until "baseurl:"
-  Mi cuaderno de apuntes sobre programción y software para sistemas GNU/Linux principalmente.
+  Apuntes sobre programción y software para sistemas GNU/Linux principalmente.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
