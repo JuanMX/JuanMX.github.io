@@ -7,7 +7,7 @@ categories: Mat C++ OpenCV
 
 ## El tipo de dato *Mat* en *OpenCV* no permite guardar valores mayores a 255
 
-Cuando se guardan valores mayores a 255 *Mat* de OpenCV que guardan valores en *escala de grises* el resultado es parecido al siguiente:
+Cuando se guardan valores mayores a 255 en la variable *Mat* de OpenCV (que normalmente guardan valores en *escala de grises*) el resultado es parecido al siguiente:
 
 Valor a guardar en *Mat* | Resultado esperado | Resultado obtenido
 -------------------------| -------------------| ---------------------
@@ -18,9 +18,9 @@ Valor a guardar en *Mat* | Resultado esperado | Resultado obtenido
 
 ## Problema
 
-OpenCV intenta *recuperarse del error* reiniciando la cuenta a 0, después del número 255, pero esto puede provocar problemas en el código que se quiera ejecutar, obteniendo como resultados falsos negativos.
+OpenCV intenta *recuperarse del error* reiniciando la cuenta a 0, después del número 255, pero esto puede provocar problemas en el código que se quiera ejecutar, obteniendo resultados no deseados.
 
-Además no se avisa que se reinicia la cuenta después del número 255 y encontrar la falla en el problema puede ser tardado.
+Además no se avisa que se reinicia la cuenta después del número 255 y encontrar la falla en el código puede ser tardado.
 
 ## Solución con un código de ejemplo
 
@@ -40,6 +40,8 @@ for( i = 0; i< imagen.rows; i++){
 }
 
 {% endhighlight %}
+
+Esto provoca que el `Mat` que guarde valores mayores a 255 sea del mismo tamaño que una imagen que se abre con `imread`, en el caso que se quiera un `Mat` de tamaño distinto puede consultar [la siguiente documentación](https://docs.opencv.org/2.4/modules/core/doc/basic_structures.html#mat)
 
 **Fuente**
 

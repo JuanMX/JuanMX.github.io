@@ -5,9 +5,9 @@ date:   2018-04-28 22:14:38 -0500
 categories: java jar
 ---
 
-En un solo directorio poner al menos todos los `.class` del programa.
+En un solo directorio poner al menos todos los archivos `.class` del programa.
 
-Crear un archivo `myManifest` con el siguiente contenido.
+Crear un archivo `myManifest` (no lleva extención de archivo) con el siguiente contenido.
 
 ```
 Manifest-Version: 1.0 

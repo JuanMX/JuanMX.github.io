@@ -48,8 +48,8 @@ cd build
 
 `cmake-gui`
 
-* Poner la ruta completa al código fuente (ejemplo: /home/user/opencv)
-* Poner la ruta completa a la carpeta *build* (ejemplo: /home/user/opencv/build)
+* Poner la ruta completa a la carpeta del código fuente (ejemplo: /home/user/opencv/)
+* Poner la ruta completa a la carpeta *build* (ejemplo: /home/user/opencv/build/)
 * Cambiar algún parámetro si se desea
 * *Click*: *Configure*
 * *Click*: *Generate*
@@ -83,15 +83,18 @@ Para solucionarlo se debe crear en la ubicación:
 ```
 /etc/ld.so.conf.d
 ```
-el archivo `opencv.conf`
-y escribir en él la ruta en dónde se encuentra el archivo
-`libopencv_core.so.3.0`
-por ejemplo, se puede encontrar en alguna de las siguientes rutas
+El archivo `opencv.conf`
+
+Y escribir en él **la ruta a la carpeta** en dónde se encuentra el archivo `libopencv_core.so.3.3`
+
+Dependiendo de la versión de OpenCV que se instale, solicte, por ejemplo el archivo `libopencv_core.so.2.4`
+
+El archivo se puede encontrar en alguna de las siguientes **carpetas**:
 ```
 /usr/local/lib/
 ```
 ```
-/usr/local/localx86_x64/lib/
+/usr/local/localx86_64_linux_lib/lib/
 ```
 
 También se puede buscar el archivo `libopencv_core.so.3.0` con la orden de la terminal
@@ -118,7 +121,7 @@ CMakeFiles/Makefile2:1699: fallo en las instrucciones para el objetivo 'modules/
 make[1]: *** [modules/core/CMakeFiles/opencv_test_core.dir/all] Error 2
 Makefile:160: fallo en las instrucciones para el objetivo 'all'
 ```
-Para solucionarlo se debe abrir el `cmake-gui` y seguir los pasos para instalar, pero en las opciones se debe de desactivar esta opcion de cmake:
+Para solucionarlo se debe abrir el `cmake-gui` y seguir los pasos para instalar, pero en las opciones se debe desactivar esta opcion de *cmake*:
 ```
 -DENABLE_PRECOMPILED_HEADERS=OFF
 ```

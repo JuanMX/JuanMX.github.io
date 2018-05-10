@@ -13,11 +13,11 @@ Cuando se esta en linux con KDE (en mi caso linux mint 18.3), después de unos m
 
 Ir a las **preferencias del sistema** y en la sección de **Hardware** ir a **Pantalla y monitor** después seleccionar **compositor**.
 
-Cambiar la opción que dice *Prevención de efecto bandera (<<vsync>>)* a *Nunca* y aplicar los cambios, se debería solucionar inmediatamente, encaso contrario se puede intentar *logearse* de nuevo o reiniciar. 
+Cambiar la opción que dice *Prevención de efecto bandera (<<vsync>>)* a *Nunca* y aplicar los cambios, se debería solucionar inmediatamente, de lo contrario se puede intentar *logearse* de nuevo o reiniciar. 
 
-También se pueden cambiar las opciones del *Motor de renderizado*
+También se pueden cambiar las opciones del *Motor de renderizado* y poner una opción que arregle el problema.
 
-![Configurar_las_preferencias_del_compositor_para_los_efectos_del_escritorio]({{ "../assets/Compositor_Preferencias_del_sistema_001.png" | absolute_url }})
+![Configurar_las_preferencias_del_compositor_para_los_efectos_del_escritorio]({{ "../assets/ventanas-parpadean-kde/Compositor_Preferencias_del_sistema_001.png" | absolute_url }})
 
 **Fuente**
 
