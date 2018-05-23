@@ -15,7 +15,7 @@ categories: gparted
 
 *Hay veces que no pide la opción, ya que el sistema operativo puede no montar de inmediato la memoria*
 
-*Es normal que al desmontar la memoria realice una búsqueda de todos los dicos (extríbles y no extraíbles) y que tarde mucho*
+*Es normal que al desmontar la memoria realice una búsqueda de todos los dicos (extraíbles y no extraíbles) y que tarde mucho*
 
 * Seleccionar nuevamente la usb de la lista de particiones -> Click derecho -> Formatear como -> fat32
 
@@ -26,7 +26,7 @@ categories: gparted
 ![paso4]({{ "../assets/formateat-usb-gparted/paso4_aplicar_cambios.png" | absolute_url }})
 
 
-*Es normal que al aplicar los cambios se realice una búsqueda de todos los dicos (extríbles y no extraíbles) y que tarde mucho*
+*Es normal que al aplicar los cambios se realice una búsqueda de todos los dicos (extraíbles y no extraíbles) y que tarde mucho*
 
 **Además se le puede poner un nombre a la memoria USB**
 
@@ -48,9 +48,9 @@ Va a pedir que se introduzca un nombre
 
 **Fuente**
 
-GParted se puede descargar [aqui](https://gparted.org/download.php)
-
 Lo enconré accidentalmente en un video en [YouTube](https://www.youtube.com/watch?v=hZbfzkb__0Y).
+
+GParted se puede descargar [aqui](https://gparted.org/download.php)
 
 **Contexto**
 
