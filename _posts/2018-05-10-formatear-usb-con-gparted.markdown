@@ -50,7 +50,9 @@ Va a pedir que se introduzca un nombre
 
 Lo enconré accidentalmente en un video en [YouTube](https://www.youtube.com/watch?v=hZbfzkb__0Y).
 
-GParted se puede descargar [aqui](https://gparted.org/download.php)
+GParted se puede descargar [aqui](https://gparted.org/download.php).
+
+También se puede encontrar en su gestor de *software* de su preferencia.
 
 **Contexto**
 
