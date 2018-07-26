@@ -9,7 +9,7 @@ date:   2018-06-14 22:33:00 -0500
 
 Cuando se esta en *Linux Mint con KDE* se puede tener el problema de que el sistema va lento y los ventiladores trabajan mucho.
 
-Tal vez esto se deba al proceso *baloo_file*.
+Tal vez esto se deba al proceso *baloo_file* que consume gran parte de la CPU.
 
 ![CPU_27pct]({{ "../assets/baloo-file/baloo_file_CPU_27pct.png" | absolute_url }})
 
@@ -30,7 +30,7 @@ Paso 2: **Desactivar** la opción *Activar la búsqueda de archivos*.
 
 ![CPU_27pct_grafica]({{ "../assets/baloo-file/baloo_file_CPU_27pct_solucion.png" | absolute_url }})
 
-Paso 3: Reiniciar o matar el proceso.
+Paso 3: Reiniciar la computadora o matar el proceso.
 
 **Fuente**
 
