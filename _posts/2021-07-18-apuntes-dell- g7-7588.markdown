@@ -1,0 +1,61 @@
+---
+layout: post
+title:  "Apuntes: Dell G7 7588"
+date:   2021-07-18 16:26:00 -0500
+---  
+
+## Contenido
+
+* [El driver de sonido Waves Maxx Audio Pro](#el-driver-de-sonido-waves-maxx-audio-pro)
+* [Usar un headset en Kubuntu 18](#usar-un-headset-en-kubuntu-18)
+
+## El driver de sonido Waves Maxx Audio Pro
+
+En una ocasión tenía unos *headsets*. Pero mi laptop no reconocía el micrófono.
+En otra ocasión tuve que formatear e instalar Windows10 a mi laptop, cuando se instaló el driver de sonido no reconocía el *headset* y no aparecía la ventana emergente de que tipo de dispositivo se conectó. A continuación se muestra lo que hice para solucionar este par de problemas.
+
+### Instalar Waves Maxx Audio Pro y hacer que reconozca el *headset*
+
+* Descargar el driver en el siguiente enlace de [downloads.dell.com](https://downloads.dell.com/FOLDER04456475M/1/Realtek-High-Definition-Audio-Driver_HH8W2_WIN_6.0.1.8216_A09.EXE)
+
+* Instalar el driver (el `.exe` anterior), que es un asistente de instalación normal. Si la laptop ya tiene un driver de sonido instalado el asistente preguntará si desea desinstalarlo, tiene que poner que si.
+
+* Reiniciar y ejecutar *Waves Max Audio Pro*. Activar las opciones avanzadas haciendo: 1- Dar click en la opción superior izquierda para desplegar las opciones, 2- Dar click en la parte inferior que dice *Avanzado*. Como se muestra en la imagen.
+
+![maxxaudio1]({{ "../assets/apuntes-dellg77588/maxaudio2_v2.png" | absolute_url }})
+
+![maxxaudio2]({{ "../assets/apuntes-dellg77588/maxaudio3.PNG" | absolute_url }})
+
+* Conectar el *headset*, una ventana emergente aparecerá preguntando el tipo de dispositivo que conectó.
+
+* Si nada sucede, desconectar el *headset*, ir a `C:\Program Files\Realtek\Audio\HDA\RtkNGUI64.exe` o buscar el archivo `RtkNGUI64.exe` y ejecutarlo, no pasará nada pero ha iniciado el programa, en mi caso tuve que esperar 15 segundos a que iniciara.
+
+* Conectar el *headset* otra vez, ya debería aparcer la ventana emergente. La cofiguración que uso es: 1- *Headset*, 2- *Auriculares medianos* y 3- Dar click en *OK* para aplicar cambios
+
+![maxxaudio2]({{ "../assets/apuntes-dellg77588/maxaudio4.PNG" | absolute_url }})
+
+Cada vez que se quiera que aparezca la ventana emergente anterior es necesario ejecutar `RtkNGUI64.exe`. Para que la ventana emergente aparezca cada vez que se conecte un *headset*, se puede agregar `RtkNGUI64.exe` como un programa de inicio automático de windows, hay muchos tutoriales de eso por internet.
+
+**Fuente:** [reddit.com/r/Dell: *Waves Maxx Audio Pro not recognizing the headset (again)*](https://www.reddit.com/r/Dell/comments/c1bw7m/waves_maxx_audio_pro_not_recognizing_the_headset/)
+
+[**Subir a la sección Contenido**]
+
+
+
+## Usar un headset en Kubuntu 18
+
+Para usar el micrófono de un *headset* Kubuntu 18.04 (Ubutnu con KDE) se siguen los siguientes pasos.
+
+1. Click en la opción de *Volumen del sonido* de la bandeja del sistema.
+2. En la sección de *Dispositivos de captura* dar click en el ícono de lista de opciones.
+3. En la lista de opciones dar click en *Micrófono acoplado a auriculares*.
+
+Personalmente, en el porcentaje del micrófono se deja entre 20% y 35%. Valores mayores provocará que se escuche mucha estática cuando se hable. Valores menores provocará que no capture nada el micrófono. Los pasos anteriores se pueden usar con unos manos libres y, probablemente, con otros *sabores* de Ubuntu.
+
+![kubuntumicrofono1]({{ "../assets/apuntes-dellg77588/kubuntu_headset_microfono_1.png" | absolute_url }})
+
+![kubuntumicrofono2]({{ "../assets/apuntes-dellg77588/kubuntu_headset_microfono_2.png" | absolute_url }})
+
+[**Subir a la sección Contenido**]
+
+[**Subir a la sección Contenido**]: #contenido
