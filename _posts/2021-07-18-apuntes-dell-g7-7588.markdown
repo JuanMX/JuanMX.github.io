@@ -44,7 +44,7 @@ Cada vez que se quiera que aparezca la ventana emergente anterior es necesario e
 
 ## Usar un headset en Kubuntu 18
 
-Para usar el micrófono de un *headset* Kubuntu 18.04 (Ubutnu con KDE) se siguen los siguientes pasos.
+Para usar el micrófono de un *headset* Kubuntu 18.04 (Ubuntu con KDE) se siguen los siguientes pasos.
 
 1. Click en la opción de *Volumen del sonido* de la bandeja del sistema.
 2. En la sección de *Dispositivos de captura* dar click en el ícono de lista de opciones.
