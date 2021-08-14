@@ -1,16 +1,17 @@
 ---
 layout: post
-title:  "Agregar un botón Back to top en html"
+title:  "Agregar un botón Back to top en HTML"
 date:   2021-08-07 16:26:00 -0500
 --- 
 
+Quería saber si era posible agregar un botón Back to top a este sitio. Al poder realizarlo pero con complicaciones decidí escribir al respecto.
 
 ## Contenido
 
-* [Back to top en html](#back-to-top-en-html)
+* [Back to top en HTML](#back-to-top-en-html)
 * [Back to top en Jekyll](#back-to-top-en-jekyll)
 
-## Back to top en html
+## Back to top en HTML
 
 Agregar las siguientes lineas de código en html
 
@@ -23,7 +24,7 @@ Agregar las siguientes lineas de código en html
 
 ## Back to top en Jekyll
 
-Los siguientes pasos son para agregar el botón back to top en los *posts* y en el *index* del proyecto.
+Los siguientes pasos son para agregar el botón back to top en los *posts* y en el *index* del proyecto. Supone que se esta usando el tema *minima*.
 
 Si no existe, crear una carpeta llamada `_layouts` en la raíz del directorio del proyecto.
 
