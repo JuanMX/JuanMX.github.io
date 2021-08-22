@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "Apuntes: Jekyll"
-date:   2021-08-15 12:26:00
+date:   2021-08-15 12:26:00 -0500
 ---  
 
-Gracias a conocimientos de desarrollo web adquiridos de un trabajo que tuve, quería saber que podía cambiar en mi blog. A continuación se muestra los cambios *técnicos* que he hecho junto con *tips y trucos*. Supone que se esta usando el tema de Jekyll **minima** y el sistema operativo Ubuntu.
+Gracias a conocimientos de desarrollo fullstack adquiridos de un trabajo que tuve, quería saber que podía cambiar en mi blog. A continuación se muestra los cambios *técnicos* que he hecho junto con *tips y trucos*. Supone que se esta usando el tema de Jekyll **minima** y el sistema operativo Ubuntu.
 
 **Contenido**
 * [Recomendaciones al instalar y ejecutar Jekyll](#recomendaciones-al-instalar-y-ejecutar-jekyll)
@@ -22,6 +22,8 @@ bundle exec jekyll serve --livereload
 ```
 
 **Fuente:** [Documentación oficial de Jekyll](https://jekyllrb.com/docs/)
+
+<hr>
 
 ## Obtener y sobreescribir las plantillas del tema por defecto
 
@@ -58,7 +60,7 @@ La instrucción anterior retornará la ruta en donde están los archivos del tem
 
 Así se obtienen los archivos del tema minima, a continuación se muestra un ejemplo de como sobreesrcribir (*Override*) el layout `post` para agregar un botón de Ir arriba (*Back to top*).
 
-### Sobreesrcribir el layout posts para agregar un botón de Ir arriba
+### Sobreescribir el layout posts para agregar un botón de Ir arriba
 
 Si no existe, crear una carpeta llamada `_layouts` en la raíz del directorio del proyecto de Jekyll.
 
@@ -73,6 +75,8 @@ En el archivo `post.html` agregar el siguiente contenido:
 [Hay otra entrada en este blog sobre el tema]({% post_url 2021-08-07-agregar-un-boton-back-to-top-en-html %})
 
 **Fuente:** [Documentación oficial de Jekyll](https://jekyllrb.com/docs/themes/#overriding-theme-defaults)
+
+<hr>
 
 ## Feed en Jekyll
 
@@ -90,15 +94,45 @@ Abrir el archivo `home.html` y encontrar la siguiente linea de código
 <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
 ```
 
-Aquí hay **dos opciones**, se puede **eliminar** esa linea para que en el home del sitio cuando se encuentre en producción no aparezca el texto *subscribe via RSS*. También se puede dejar como esta y **crear un archivo** llamado `feed.xml` en la carpeta raíz del proyecto, el contenido del archivo se muestra a continuación.
+Aquí hay **dos opciones**, se puede **eliminar** esa linea para que en el home del sitio, cuando se encuentre en producción no aparecerá el texto *subscribe via RSS*. También se puede dejar como esta y **crear un archivo** llamado `feed.xml` en la carpeta raíz del proyecto, el contenido del archivo se muestra a continuación.
 
 ### Contenido del archivo feed.xml
 
-En el archivo llamado `feed.xml` de la raíz del proyecto agregar el siguiente contenido.
+Antes de escribir en el archivo `xml` verifique que en el archivo `_config.yml` tenga valores asignados en `url`, `title`, `description` y `author`. Además de que en los archivos markdown de los posts tenga un valor en `date`.
+
+```
+======= Mi archivo _config.yml =======
+.
+.
+.
+
+title: Mi cuaderno de apuntes
+author: Juan
+description: >- # this means to ignore newlines until "baseurl:"
+  Apuntes sobre programación y software
+url: "https://juanmx.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+
+.
+.
+.
+```
+
+```
+======= Ejemplo de date (fecha) en un post (entrada de blog) =======
+
+---
+layout: post
+title:  "Apuntes: Jekyll"
+date:   2021-08-15 12:26:00 -0500
+---
+
+```
+
+En el archivo llamado `feed.xml` ubicado en la raíz del proyecto agregar el siguiente contenido.
 
 <script src="https://gist.github.com/JuanMX/fafecf0f26ec0cee8e1055092cdf342c.js"></script>
 
-Y ya se podrá suscribirse via RSS al blog. Para hacerlo se necesita la url al archivo `feed.xml`, en mi caso es `https://juanmx.github.io/feed.xml` y un software que perimita suscripciones a sitios web por medio de RSS. Hay muchas opciones en PC, personalmente uso [Mozilla Thunderbird](https://www.thunderbird.net).
+Y ya se podrá suscribirse via RSS al blog. Para hacerlo se necesita la url al archivo `feed.xml`, en mi caso es `https://juanmx.github.io/feed.xml` y un software que permita suscripciones a sitios web por medio de RSS. Hay muchas opciones en PC, personalmente uso [Mozilla Thunderbird](https://www.thunderbird.net).
 
 
 **Fuente:** [youtube.com: *Up and Running with GitHub Pages, Part 6, Multiple Jekyll Blogs and Feeds*](https://www.youtube.com/watch?v=iIBkOWY5aAA)
