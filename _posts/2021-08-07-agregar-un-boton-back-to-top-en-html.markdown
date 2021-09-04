@@ -44,6 +44,14 @@ layout: home
 <script>addBackToTop()</script>
 ```
 
+Los pasos anteriores provocará que aparezca un botón circular para ir arriba en la parte inferior derecha de la pantalla cuando se realice un *scroll* hacia abajo en el sitio. El botón es ajustable al tamaño de pantalla incluyendo celulares y otros. El siguiente gif animado muestra un ejemplo del funcionamiento.
+
+<hr><br>
+
+![demobacktotop]({{ "../assets/back-to-top-html/back_to_top_3.gif" | absolute_url }})
+
+<br>
+<hr>
 **Fuente:** La idea de sobreescribir el layout del post la encontré [En una pagina de github pages](https://mchirico.github.io/javascript/2016/12/22/JavascriptNetwork.html), [con su repositorio en github](https://github.com/mchirico/mchirico.github.io/blob/master/_layouts/post.html) y [en la documentación de Jekyll.](https://jekyllrb.com/docs/layouts/)
 
 El contenido que se pone en la sobreescritura lo encontré en el [repositorio de un curso de Standford.](https://github.com/cs231n/cs231n.github.io/blob/master/_layouts/post.html)
