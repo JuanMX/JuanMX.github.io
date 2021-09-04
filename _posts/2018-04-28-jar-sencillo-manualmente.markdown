@@ -6,7 +6,7 @@ categories: java jar
 ---
 
 
-En mis clases de Java de la universidad, para hacer puntos extra en un proyecto final, se tenía que entregar un ejecutable `.jar`. Mi compañero de equipo encontró la manera de como crearlo.
+En mis clases de Java de la universidad, para hacer puntos extra en un proyecto final por equipos se tenía que entregar un ejecutable `.jar`. Mi compañero de equipo encontró la manera de como crearlo.
 
 ## Crear un .jar
 

@@ -101,7 +101,7 @@ Aquí hay **dos opciones**, se puede **eliminar** esa linea para que en el home 
 Antes de escribir en el archivo `xml` verifique que en el archivo `_config.yml` tenga valores asignados en `url`, `title`, `description` y `author`. Además de que en los archivos markdown de los posts tenga un valor en `date`.
 
 ```
-======= Mi archivo _config.yml =======
+======= Fragmento de mi archivo _config.yml =======
 .
 .
 .
@@ -110,6 +110,7 @@ title: Mi cuaderno de apuntes
 author: Juan
 description: >- # this means to ignore newlines until "baseurl:"
   Apuntes sobre programación y software
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://juanmx.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 
 .
