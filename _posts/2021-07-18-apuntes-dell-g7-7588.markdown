@@ -8,6 +8,7 @@ date:   2021-07-18 16:26:00 -0500
 
 * [El driver de sonido Waves Maxx Audio Pro](#el-driver-de-sonido-waves-maxx-audio-pro)
 * [Usar un headset en Kubuntu 18](#usar-un-headset-en-kubuntu-18)
+* [Algunos ajustes de mi BIOS](#algunos-ajustes-de-mi-bios)
 
 ## El driver de sonido Waves Maxx Audio Pro
 
@@ -38,9 +39,9 @@ Cada vez que se quiera que aparezca la ventana emergente anterior es necesario e
 
 **Fuente:** [reddit.com/r/Dell: *Waves Maxx Audio Pro not recognizing the headset (again)*](https://www.reddit.com/r/Dell/comments/c1bw7m/waves_maxx_audio_pro_not_recognizing_the_headset/)
 
-[**Subir a la sección Contenido**]
-
-
+<br>
+<hr>
+<br>
 
 ## Usar un headset en Kubuntu 18
 
@@ -56,6 +57,59 @@ Personalmente, en el porcentaje del micrófono se deja entre 20% y 35%. Valores 
 
 ![kubuntumicrofono2]({{ "../assets/apuntes-dellg77588/kubuntu_headset_microfono_2.png" | absolute_url }})
 
-[**Subir a la sección Contenido**]
+<br>
+<hr>
+<br>
 
-[**Subir a la sección Contenido**]: #contenido
+## Algunos ajustes de mi BIOS
+
+Se muestran algunas imágenes de como tengo mi configurado el *BIOS* de mi equipo. A veces es necesario modificar las opciones, por ejemplo, para poder instalar Ubuntu junto a Windows o que el equipo arranque desde una memoria USB. 
+
+Como anécdota, en una ocasión tuve que modificar el arranque seguro (*secure boot*) para instalar tensorflow con soporte para GPU.
+
+
+![img]({{ "../assets/apuntes-dellg77588/tensorflow-secureboot.png" | absolute_url }})
+
+**Nota:** Tengo instalado Ubuntu junto a Windows por lo que puden diferir algunas opciones que se muestran.
+
+**General -> Boot Sequence**
+- [x] ubuntu
+- [x] Windows Boot Manager
+
+    **Boot List Option**
+    - [ ] Legacy External Devices
+    - [X] UEFI
+
+![img]({{ "../assets/apuntes-dellg77588/boot-sequence.png" | absolute_url }})
+
+
+
+**General -> Advanced Boot Options**
+- [ ] Enable Legacy Option ROMs
+- [ ] Enable Attempt Legacy Boot
+
+![img]({{ "../assets/apuntes-dellg77588/advanced-boot-options.png" | absolute_url }})
+
+
+
+**System Configuration -> USB Configuration**
+
+- [x] Enable USB Boot Support
+- [x] Enable External USB Port
+
+
+![img]({{ "../assets/apuntes-dellg77588/usb-configuration.png" | absolute_url }})
+
+**Secure Boot -> Secure Boot Enable**
+
+- [ ] Secure Boot Enable
+
+![img]({{ "../assets/apuntes-dellg77588/secure-boot-enable.png" | absolute_url }})
+
+**Secure Boot -> Secure Boot Mode**
+
+- [ ] Deployed Mode
+- [x] Audit Mode
+
+
+![img]({{ "../assets/apuntes-dellg77588/secure-boot-mode.png" | absolute_url }})
