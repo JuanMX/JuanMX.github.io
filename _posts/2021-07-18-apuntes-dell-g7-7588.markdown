@@ -10,6 +10,10 @@ date:   2021-07-18 16:26:00 -0500
 * [Usar un headset en Kubuntu 18](#usar-un-headset-en-kubuntu-18)
 * [Algunos ajustes de mi BIOS](#algunos-ajustes-de-mi-bios)
 
+<br>
+<hr>
+<br>
+
 ## El driver de sonido Waves Maxx Audio Pro
 
 En una ocasión tenía unos *headsets*. Pero mi laptop no reconocía el micrófono.
@@ -70,7 +74,7 @@ Como anécdota, en una ocasión tuve que modificar el arranque seguro (*secure b
 
 ![img]({{ "../assets/apuntes-dellg77588/tensorflow-secureboot.png" | absolute_url }})
 
-**Nota:** Tengo instalado Ubuntu junto a Windows por lo que puden diferir algunas opciones que se muestran.
+**Tengo instalado Ubuntu junto a Windows por lo que pueden diferir algunas opciones mostradas.**
 
 **General -> Boot Sequence**
 - [x] ubuntu

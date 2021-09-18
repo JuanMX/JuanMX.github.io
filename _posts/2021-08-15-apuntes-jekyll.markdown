@@ -11,6 +11,10 @@ Gracias a conocimientos de desarrollo fullstack adquiridos de un trabajo que tuv
 * [Obtener y sobreescribir las plantillas del tema por defecto](#obtener-y-sobreescribir-las-plantillas-del-tema-por-defecto)
 * [Feed en Jekyll](#feed-en-jekyll)
 
+<br>
+<hr>
+<br>
+
 ## Recomendaciones al instalar y ejecutar Jekyll
 
 1. Revisar la sección docs -> [quickstart](https://jekyllrb.com/docs/) y seguir los pasos que se indican junto con sus [prerrequisitos](https://jekyllrb.com/docs/installation/).
@@ -23,7 +27,9 @@ bundle exec jekyll serve --livereload
 
 **Fuente:** [Documentación oficial de Jekyll](https://jekyllrb.com/docs/)
 
+<br>
 <hr>
+<br>
 
 ## Obtener y sobreescribir las plantillas del tema por defecto
 
@@ -76,7 +82,9 @@ En el archivo `post.html` agregar el siguiente contenido:
 
 **Fuente:** [Documentación oficial de Jekyll](https://jekyllrb.com/docs/themes/#overriding-theme-defaults)
 
+<br>
 <hr>
+<br>
 
 ## Feed en Jekyll
 

@@ -76,7 +76,7 @@ Fix<y>?
 (initramfs) _
 ```
 
-Si después de esto no inicial el sistema operativo, va a ser necesario reiniciar la computadora. El problema debría estar resuelto.
+Si después de esto no inicia el sistema operativo va a ser necesario reiniciar la computadora. El problema debería estar resuelto.
 
 **Fuente**
 
