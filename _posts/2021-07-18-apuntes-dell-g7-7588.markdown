@@ -10,9 +10,9 @@ Durante mis estudios de maestría realicé *deep learning* usando el equipo de l
 * Al menos 16GB de RAM. El *dataset* que usé consumia ~11GB
 * Que sea portátil. Quizá me mude por trabajo.
 
-Después investigar encontré las laptops Dell de serie G que incluyen una tarjeta gráfica Nvidia. La mayor ventaja era el precio, por debajo de la competencia. Una desventaja para mí es que su sistema de enfriamiento. Como la quería para *deep learning* y no para largas sesiones de videojuegos me pareció una buena compra.
+Después buscar encontré las laptops Dell de serie G que incluyen una tarjeta gráfica Nvidia. La mayor ventaja era el precio, por debajo de la competencia. Una desventaja para mí es su sistema de enfriamiento. Como la quería para *deep learning* y no para maratónicas sesiones de videojuegos me parecieron una buena opción.
 
-En esta entrada de blog se encuentran mis apuntes de la laptop.
+Al final compré la Dell G7 7588 que tiene un i7 de actava generación, 16GB de RAM y una Nvidia 1050Ti. Como en estos equipos suele haber complicaciones, dejo en esta entrada de blog mis apuntes sobre la laptop.
 
 ## Contenido
 
@@ -51,7 +51,7 @@ En otra ocasión tuve que formatear e instalar Windows10 a mi laptop, cuando se 
 
 Cada vez que se quiera que aparezca la ventana emergente anterior es necesario ejecutar `RtkNGUI64.exe`. Para que la ventana emergente aparezca cada vez que se conecte un *headset*, se puede agregar `RtkNGUI64.exe` como un programa de inicio automático de windows, hay muchos tutoriales de eso por internet.
 
-**Fuente:** [reddit.com/r/Dell: *Waves Maxx Audio Pro not recognizing the headset (again)*](https://www.reddit.com/r/Dell/comments/c1bw7m/waves_maxx_audio_pro_not_recognizing_the_headset/)
+**Fuente:** [reddit.com/r/Dell &mdash; *Waves Maxx Audio Pro not recognizing the headset (again)*](https://www.reddit.com/r/Dell/comments/c1bw7m/waves_maxx_audio_pro_not_recognizing_the_headset/)
 
 <br>
 <hr>
