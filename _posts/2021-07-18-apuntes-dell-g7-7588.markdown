@@ -4,6 +4,16 @@ title:  "Apuntes: Dell G7 7588"
 date:   2021-07-18 16:26:00 -0500
 ---  
 
+Durante mis estudios de maestría realicé *deep learning* usando el equipo de la universidad. Pensando que al graduarme lo aplicaría en algún trabajo quería una computadora con las siguientes características:
+
+* Un procesador i5 o superior.
+* Al menos 16GB de RAM. El *dataset* que usé consumia ~11GB
+* Que sea portátil. Quizá me mude por trabajo.
+
+Después investigar encontré las laptops Dell de serie G que incluyen una tarjeta gráfica Nvidia. La mayor ventaja era el precio, por debajo de la competencia. Una desventaja para mí es que su sistema de enfriamiento. Como la quería para *deep learning* y no para largas sesiones de videojuegos me pareció una buena compra.
+
+En esta entrada de blog se encuentran mis apuntes de la laptop.
+
 ## Contenido
 
 * [El driver de sonido Waves Maxx Audio Pro](#el-driver-de-sonido-waves-maxx-audio-pro)
