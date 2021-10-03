@@ -144,4 +144,4 @@ En el archivo llamado `feed.xml` ubicado en la raíz del proyecto agregar el sig
 Y ya se podrá suscribirse via RSS al blog. Para hacerlo se necesita la url al archivo `feed.xml`, en mi caso es `https://juanmx.github.io/feed.xml` y un software que permita suscripciones a sitios web por medio de RSS. Hay muchas opciones en PC, personalmente uso [Mozilla Thunderbird](https://www.thunderbird.net).
 
 
-**Fuente:** [youtube.com: *Up and Running with GitHub Pages, Part 6, Multiple Jekyll Blogs and Feeds*](https://www.youtube.com/watch?v=iIBkOWY5aAA)
+**Fuente:** [youtube.com &mdash; *Up and Running with GitHub Pages, Part 6, Multiple Jekyll Blogs and Feeds*](https://www.youtube.com/watch?v=iIBkOWY5aAA)

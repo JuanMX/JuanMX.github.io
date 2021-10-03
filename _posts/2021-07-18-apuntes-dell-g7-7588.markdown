@@ -4,15 +4,15 @@ title:  "Apuntes: Dell G7 7588"
 date:   2021-07-18 16:26:00 -0500
 ---  
 
-Durante mis estudios de maestría realicé *deep learning* usando el equipo de la universidad. Pensando que al graduarme lo aplicaría en algún trabajo quería una computadora con las siguientes características:
+Durante mis estudios de maestría realicé *deep learning* usando el equipo de la universidad. Pensando que al graduarme continuaría aplicándolo quería una computadora con las siguientes características:
 
 * Un procesador i5 o superior.
 * Al menos 16GB de RAM. El *dataset* que usé consumia ~11GB
 * Que sea portátil. Quizá me mude por trabajo.
 
-Después buscar encontré las laptops Dell de serie G que incluyen una tarjeta gráfica Nvidia. La mayor ventaja era el precio, por debajo de la competencia. Una desventaja para mí es su sistema de enfriamiento. Como la quería para *deep learning* y no para maratónicas sesiones de videojuegos me parecieron una buena opción.
+Después buscar encontré las laptops Dell de serie G que incluyen una tarjeta gráfica Nvidia. La mayor ventaja era el precio, por debajo de la competencia. Una desventaja para mí es su genérico sistema de enfriamiento, insuficiente si la laptop se usa al máximo por periodos prolongados. Como únicamente la quería para *deep learning* me parecieron una buena opción.
 
-Al final compré la Dell G7 7588 que tiene un i7 de actava generación, 16GB de RAM y una Nvidia 1050Ti. Como en estos equipos suele haber complicaciones, dejo en esta entrada de blog mis apuntes sobre la laptop.
+Al final compré la *Dell G7 7588* que tiene un i7 de octava generación, 16GB de RAM y una Nvidia 1050Ti. Como en estos equipos suele haber complicaciones, dejo en esta entrada de blog mis apuntes sobre la laptop.
 
 ## Contenido
 
@@ -27,7 +27,7 @@ Al final compré la Dell G7 7588 que tiene un i7 de actava generación, 16GB de 
 ## El driver de sonido Waves Maxx Audio Pro
 
 En una ocasión tenía unos *headsets*. Pero mi laptop no reconocía el micrófono.
-En otra ocasión tuve que formatear e instalar Windows10 a mi laptop, cuando se instaló el driver de sonido no reconocía el *headset* y no aparecía la ventana emergente de que tipo de dispositivo se conectó. A continuación se muestra lo que hice para solucionar este par de problemas.
+En otra ocasión a la laptop le cambié el SSD que tenía de fábrica por uno de 1TB y realicé una instalación limpia de Windows10, cuando se instaló el driver de sonido no reconocía el *headset* y no aparecía la ventana emergente de que tipo de dispositivo se conectó. A continuación se muestra lo que hice para solucionar este par de problemas.
 
 ### Instalar Waves Maxx Audio Pro y hacer que reconozca el *headset*
 
@@ -35,7 +35,7 @@ En otra ocasión tuve que formatear e instalar Windows10 a mi laptop, cuando se 
 
 * Instalar el driver (el `.exe` anterior), que es un asistente de instalación normal. Si la laptop ya tiene un driver de sonido instalado el asistente preguntará si desea desinstalarlo, tiene que poner que si.
 
-* Reiniciar y ejecutar *Waves Max Audio Pro*. Activar las opciones avanzadas haciendo: 1- Dar click en la opción superior izquierda para desplegar las opciones, 2- Dar click en la parte inferior que dice *Avanzado*. Como se muestra en la imagen.
+* Reiniciar y ejecutar *Waves Maxx Audio Pro*. Activar las opciones avanzadas haciendo: 1- Dar click en la opción superior izquierda para desplegar las opciones, 2- Dar click en la parte inferior que dice *Avanzado*. Como se muestra en la imagen.
 
 ![maxxaudio1]({{ "../assets/apuntes-dellg77588/maxaudio2_v2.png" | absolute_url }})
 
