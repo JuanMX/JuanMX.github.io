@@ -10,7 +10,7 @@ Durante mis estudios de maestría realicé *deep learning* usando el equipo de l
 * Al menos 16GB de RAM. El *dataset* que usé consumia ~11GB
 * Que sea portátil. Quizá me mude por trabajo.
 
-Después buscar encontré las laptops Dell de serie G que incluyen una tarjeta gráfica Nvidia. La mayor ventaja era el precio, por debajo de la competencia. Una desventaja para mí es su genérico sistema de enfriamiento, insuficiente si la laptop se usa al máximo por periodos prolongados. Como únicamente la quería para *deep learning* me parecieron una buena opción.
+Después buscar encontré las laptops Dell de serie G que incluyen una tarjeta gráfica Nvidia. La mayor ventaja era el precio, por debajo de la competencia. Una desventaja para mí es su ordinario sistema de enfriamiento, insuficiente si se usan al máximo los recursos de la laptop por periodos prolongados. Como únicamente la quería para entrenar modelos *deep learning*, los entrenamientos son relativamente rápidos y se puede dejar un tiempo entre entrenamientos me parecieron una buena opción.
 
 Al final compré la *Dell G7 7588* que tiene un i7 de octava generación, 16GB de RAM y una Nvidia 1050Ti. Como en estos equipos suele haber complicaciones, dejo en esta entrada de blog mis apuntes sobre la laptop.
 

@@ -10,7 +10,7 @@ Gracias a conocimientos de desarrollo fullstack adquiridos de un trabajo que tuv
 * [Recomendaciones al instalar y ejecutar Jekyll](#recomendaciones-al-instalar-y-ejecutar-jekyll)
 * [Obtener y sobreescribir las plantillas del tema por defecto](#obtener-y-sobreescribir-las-plantillas-del-tema-por-defecto)
 * [Feed en Jekyll](#feed-en-jekyll)
-* [Abrir links de markdown en un nuevo tab](#abrir-links-de-markdown-en-un-nuevo-tab)
+* [Crear links en markdown que abran en un nuevo tab](#crear-links-en-markdown-que-abran-en-un-nuevo-tab)
 
 <br>
 <hr>
@@ -151,26 +151,26 @@ Y ya se podrá suscribirse via RSS al blog. Para hacerlo se necesita la url al a
 <hr>
 <br>
 
-## Abrir links de markdown en un nuevo tab
+## Crear links en markdown que abran en un nuevo tab
 
-Para hacer que un link de markdown se abra en un nuevo tab (pestaña) se puede hacer lo siguiente.
+Para hacer que en un proyecto de Jekyll, un link de markdown se abra en un nuevo tab (pestaña) se puede hacer lo siguiente.
 
 **Opción 1**. Usar HTML.
 
 ```html
-<a href="https://github.com/JuanMX" target="_blank">Link a mi repositorio</a>
+<a href="https://github.com/JuanMX" target="_blank">Link a mi perfil de GitHub</a>
 ```
 
 
-Resultado: <a href="https://github.com/JuanMX" target="_blank">Link a mi repositorio</a>
+Resultado: <a href="https://github.com/JuanMX" target="_blank">Link a mi perfil de GitHub</a>
 
 **Opción 2**. Como Jekyll usa Kramdown se puede usar el siguiente *helper*.
 
 ```
-[Link a mi repositorio](https://github.com/JuanMX){:target="_blank"}
+[Link a mi perfil de GitHub](https://github.com/JuanMX){:target="_blank"}
 ```
 
-Resultado: [Link a mi repositorio](https://github.com/JuanMX){:target="_blank"}
+Resultado: [Link a mi perfil de GitHub](https://github.com/JuanMX){:target="_blank"}
 
 Personalmente, si en una computadora quiero abrir un link en una nueva pestaña uso el scroll del mouse. El scroll es la rueda del ratón, se muestra en la siguiente imagen en un circulo rojo.
 
