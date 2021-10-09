@@ -164,7 +164,7 @@ Para hacer que en un proyecto de Jekyll, un link de markdown se abra en un nuevo
 
 Resultado: <a href="https://github.com/JuanMX" target="_blank">Link a mi perfil de GitHub</a>
 
-**Opción 2**. Como Jekyll usa Kramdown se puede usar el siguiente *helper*.
+**Opción 2**. Como Jekyll usa Kramdown se puede usar el *helper*/instrucción `{:target="_blank"}`.
 
 ```
 [Link a mi perfil de GitHub](https://github.com/JuanMX){:target="_blank"}

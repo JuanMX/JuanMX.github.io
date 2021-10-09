@@ -6,7 +6,7 @@ permalink: /about/
 
 Este es mi blog personal, contiene apuntes sobre programación y software que tenía en un programa para hacer notas llamado [Zim-Wiki](http://zim-wiki.org/).
 
-Lo mudé a GitHub Pages porque se puede consultar desde internet y tal vez estos apuntes tan específicos le sirvan a otra persona.
+Lo mudé a GitHub Pages porque se puede consultar desde internet y tal vez estos apuntes le sirvan a otra persona.
 
 En este blog se hacen las siguientes suposiciones, excepto cuando se indique lo contrario:
 

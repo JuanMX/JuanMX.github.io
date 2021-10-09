@@ -45,7 +45,7 @@ En otra ocasión a la laptop le cambié el SSD que tenía de fábrica por uno de
 
 * Si nada sucede, desconectar el *headset*, ir a `C:\Program Files\Realtek\Audio\HDA\RtkNGUI64.exe` o buscar el archivo `RtkNGUI64.exe` y ejecutarlo, no pasará nada pero ha iniciado el programa, en mi caso tuve que esperar 15 segundos a que iniciara.
 
-* Conectar el *headset* otra vez, ya debería aparcer la ventana emergente. La cofiguración que uso es: 1- *Headset*, 2- *Auriculares medianos* y 3- Dar click en *OK* para aplicar cambios
+* Conectar el *headset* otra vez, ya debería aparecer la ventana emergente. La cofiguración que uso es: 1- *Headset*, 2- *Auriculares medianos* y 3- Dar click en *OK* para aplicar cambios
 
 ![maxxaudio2]({{ "../assets/apuntes-dellg77588/maxaudio4.PNG" | absolute_url }})
 
@@ -77,7 +77,7 @@ Personalmente, en el porcentaje del micrófono se deja entre 20% y 35%. Valores 
 
 ## Algunos ajustes de mi BIOS
 
-Se muestran algunas imágenes de como tengo mi configurado el *BIOS* de mi equipo. A veces es necesario modificar las opciones, por ejemplo, para poder instalar Ubuntu junto a Windows o que el equipo arranque desde una memoria USB. 
+Se muestran algunas imágenes de como tengo configurado el *BIOS* de mi equipo. A veces es necesario modificar las opciones, por ejemplo, para poder instalar Ubuntu junto a Windows o que el equipo arranque desde una memoria USB. 
 
 Como anécdota, en una ocasión tuve que modificar el arranque seguro (*secure boot*) para instalar tensorflow con soporte para GPU.
 
