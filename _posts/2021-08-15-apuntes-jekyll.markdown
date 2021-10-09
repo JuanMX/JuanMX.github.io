@@ -7,10 +7,17 @@ date:   2021-08-15 12:26:00 -0500
 Gracias a conocimientos de desarrollo fullstack adquiridos de un trabajo que tuve, quería saber que podía cambiar en mi blog. A continuación se muestra los cambios *técnicos* que he hecho junto con *tips y trucos*. Supone que se esta usando el tema de Jekyll **minima** y el sistema operativo Ubuntu.
 
 **Contenido**
+
 * [Recomendaciones al instalar y ejecutar Jekyll](#recomendaciones-al-instalar-y-ejecutar-jekyll)
+
 * [Obtener y sobreescribir las plantillas del tema por defecto](#obtener-y-sobreescribir-las-plantillas-del-tema-por-defecto)
+
 * [Feed en Jekyll](#feed-en-jekyll)
+
 * [Crear links en markdown que abran en un nuevo tab](#crear-links-en-markdown-que-abran-en-un-nuevo-tab)
+
+* [Actualizar la dependencia Nokogiri](#actualizar-la-dependencia-nokogiri)
+
 
 <br>
 <hr>
@@ -179,3 +186,28 @@ Personalmente, si en una computadora quiero abrir un link en una nueva pestaña 
 Dar click en un link con el scroll del mouse lo abrirá en una nueva pestaña.
 
 **Fuente:** [stackoverflow.com/questions &mdash; *Can I create links with 'target="_blank"' in Markdown?*](https://stackoverflow.com/questions/4425198/can-i-create-links-with-target-blank-in-markdown){:target="_blank"}
+
+
+<br>
+<hr>
+<br>
+
+## Actualizar la dependencia Nokogiri
+
+Cuado hay vulnerabilidades en las dependencias del proyecto de Jekyll en GitHub Pages se notifica en el repositorio de GitHub.
+
+![avisonokogiri]({{ "../assets/apuntes-jekyll/aviso_nokogiri.png" | absolute_url }})
+
+Pero no deja muy clara la manera de actualizar la dependencia. Después de buscar encontré la siguiente solución.
+
+Abrir la **terminal** y posicionarla en la **raíz** del **proyecto** de Jekyll (el proyecto en local) y **ejecutar** lo siguiente.
+
+```
+bundle update nokogiri
+```
+
+Lo anterior modificará el archivo `Gemfile.lock`, se le debe hacer un *commit* y *push* al repositorio en GitHub. El problema debería estar resuelto.
+
+Lo anterior probablemente sirva para actualizar otras dependencias, por ejemplo, `Kramdown` pero no lo he probado.
+
+**Fuente:** [ajahne.github.io &mdash; *Update Jekyll and Ruby on macOS*](https://ajahne.github.io/blog/tools/2020/10/22/update-jekyll-ruby-gems.html){:target="_blank"}
