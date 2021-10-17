@@ -194,7 +194,7 @@ Dar click en un link con el scroll del mouse lo abrirá en una nueva pestaña.
 
 ## Actualizar la dependencia Nokogiri
 
-Cuado hay vulnerabilidades en las dependencias del proyecto de Jekyll en GitHub Pages se notifica en el repositorio de GitHub.
+Cuado hay vulnerabilidades en las dependencias del proyecto de Jekyll en GitHub Pages se notifica en el repositorio de GitHub. En mi caso me notificó sobre la dependencia Nokogiri.
 
 ![avisonokogiri]({{ "../assets/apuntes-jekyll/aviso_nokogiri.png" | absolute_url }})
 
