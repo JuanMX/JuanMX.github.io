@@ -33,7 +33,7 @@ Gracias a conocimientos de desarrollo fullstack adquiridos de un trabajo que tuv
 bundle exec jekyll serve --livereload
 ```
 
-**Fuente:** [Documentación oficial de Jekyll](https://jekyllrb.com/docs/)
+**Fuente:** [Documentación oficial de Jekyll](https://jekyllrb.com/docs/){:target="_blank"}
 
 <br>
 <hr>
@@ -88,7 +88,7 @@ En el archivo `post.html` agregar el siguiente contenido:
 
 [Hay otra entrada en este blog sobre el tema]({% post_url 2021-08-07-agregar-un-boton-back-to-top-en-html %})
 
-**Fuente:** [Documentación oficial de Jekyll](https://jekyllrb.com/docs/themes/#overriding-theme-defaults)
+**Fuente:** [Documentación oficial de Jekyll](https://jekyllrb.com/docs/themes/#overriding-theme-defaults){:target="_blank"}
 
 <br>
 <hr>
@@ -152,7 +152,7 @@ En el archivo llamado `feed.xml` ubicado en la raíz del proyecto agregar el sig
 Y ya se podrá suscribirse via RSS al blog. Para hacerlo se necesita la url al archivo `feed.xml`, en mi caso es `https://juanmx.github.io/feed.xml` y un software que permita suscripciones a sitios web por medio de RSS. Hay muchas opciones en PC, personalmente uso [Mozilla Thunderbird](https://www.thunderbird.net).
 
 
-**Fuente:** [youtube.com &mdash; *Up and Running with GitHub Pages, Part 6, Multiple Jekyll Blogs and Feeds*](https://www.youtube.com/watch?v=iIBkOWY5aAA)
+**Fuente:** [youtube.com &mdash; *Up and Running with GitHub Pages, Part 6, Multiple Jekyll Blogs and Feeds*](https://www.youtube.com/watch?v=iIBkOWY5aAA){:target="_blank"}
 
 <br>
 <hr>
@@ -194,7 +194,7 @@ Dar click en un link con el scroll del mouse lo abrirá en una nueva pestaña.
 
 ## Actualizar la dependencia Nokogiri
 
-Cuado hay vulnerabilidades en las dependencias del proyecto de Jekyll en GitHub Pages se notifica en el repositorio de GitHub. En mi caso me notificó sobre la dependencia Nokogiri.
+Cuando hay vulnerabilidades en las dependencias del proyecto de Jekyll en GitHub Pages se notifica en el repositorio de GitHub. En mi caso me notificó sobre la dependencia Nokogiri.
 
 ![avisonokogiri]({{ "../assets/apuntes-jekyll/aviso_nokogiri.png" | absolute_url }})
 

@@ -20,7 +20,7 @@ Agregar las siguientes lineas de código en html
 <script>addBackToTop()</script>
 ```
 
-**Fuente:** [Github: vfeskov vanilla back to top](https://github.com/vfeskov/vanilla-back-to-top)
+**Fuente:** [github.com/vfeskov &mdash; Vanilla Back To Top](https://github.com/vfeskov/vanilla-back-to-top){:target="_blank"}
 
 ## Back to top en Jekyll
 

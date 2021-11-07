@@ -27,4 +27,4 @@ Abrir una terminal y posicionarla en la carpeta donde están los `.class` y `myM
 jar cvfm myResult.jar myManifest *.java *.class
 ```
 
-**Fuente:** [cis.upenn.edu CIT 597 Executable .jar Files](http://www.cis.upenn.edu/~matuszek/cit597-2002/Pages/executable-jar-files.html)
+**Fuente:** [cis.upenn.edu &mdash; CIT 597 Executable .jar Files](http://www.cis.upenn.edu/~matuszek/cit597-2002/Pages/executable-jar-files.html){:target="_blank"}

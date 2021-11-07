@@ -78,6 +78,4 @@ Fix<y>?
 
 Si después de esto no inicia el sistema operativo va a ser necesario reiniciar la computadora. El problema debería estar resuelto.
 
-**Fuente**
-
-Foro de [*ask ubuntu*](https://askubuntu.com/questions/741109/ubuntu-15-10-busybox-built-in-shell-initramfs-on-every-boot)
+**Fuente:** [askubuntu.com/questions/ &mdash; *Ubuntu 15.10 - "BusyBox built-in shell (initramfs)" on every boot*](https://askubuntu.com/questions/741109/ubuntu-15-10-busybox-built-in-shell-initramfs-on-every-boot){:target="_blank"}
