@@ -4,12 +4,8 @@ title:  "KDE: Desactivar el proceso baloo_file para aumentar el rendimiento"
 date:   2018-06-14 22:33:00 -0500
 ---  
 
+Después de instalar en mi laptop *Linux Mint 18.3 con KDE* noté que usaba muchos recursos, el sistema operativo se sentía lento y los ventiladores trabajaban mucho. Al usar el monitor de sistema [KSysGuard](https://www.kde.org/applications/system/ksysguard/){:target="_blank"} me percaté de un proceso que consumía gran parte de la CPU llamado *baloo_file*.
 
-## Problema
-
-Cuando se esta en *Linux Mint con KDE* se puede tener el problema de que el sistema va lento y los ventiladores trabajan mucho.
-
-Tal vez esto se deba al proceso *baloo_file* que consume gran parte de la CPU.
 
 ![CPU_27pct]({{ "../assets/baloo-file/baloo_file_CPU_27pct.png" | absolute_url }})
 
@@ -32,10 +28,5 @@ Paso 2: **Desactivar** la opción *Activar la búsqueda de archivos*.
 
 Paso 3: Reiniciar la computadora o matar el proceso.
 
-**Fuente**
+**Fuente:** [lignux.com &mdash; *Solución: Baloo_file_extractor consume toda la CPU (KDE)*](https://lignux.com/solucion-baloo_file_extractor-consume-toda-la-cpu-kde/){:target="_blank"}
 
-Lo encontré en una página de [entusiastas de linux](https://lignux.com/solucion-baloo_file_extractor-consume-toda-la-cpu-kde/), se puede ver que la publcación es de finales del año 2015 pero me funcionó.
-
-**Contexto**
-
-Después de instalar en mi laptop *Linux Mint 18.3 con KDE* e instalar *Linux Mint 18.2 con KDE* en una PC noté que usaba muchos recursos, al usar el monitor de sistema [KSysGuard](https://www.kde.org/applications/system/ksysguard/) vi que el proceso que consumía recursos se llamaba *baloo-file*.
