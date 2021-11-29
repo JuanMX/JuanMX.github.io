@@ -43,7 +43,7 @@ for( i = 0; i< imagen.rows; i++){
 
 {% endhighlight %}
 
-Esto provoca que `Mat` guarde valores mayores a 255 y sea del mismo tamaño que la imagen que se abre con `imread`. En el caso que se quiera un `Mat` de tamaño distinto puede consultar [la siguiente documentación](https://docs.opencv.org/2.4/modules/core/doc/basic_structures.html#mat){:target="_blank"}.
+Esto provoca que la variable `imagen` de tipo `Mat` guarde valores mayores a 255 y sea del mismo tamaño que la imagen que se abre con `imread`. En el caso que se quiera un `Mat` de tamaño distinto puede consultar [la siguiente documentación](https://docs.opencv.org/2.4/modules/core/doc/basic_structures.html#mat){:target="_blank"}.
 
 **Fuente:** [answers.opencv.org/question/64279 &mdash; *Large Integer in cv::Mat*](http://answers.opencv.org/question/64279/large-integer-in-cvmat/){:target="_blank"}
 
