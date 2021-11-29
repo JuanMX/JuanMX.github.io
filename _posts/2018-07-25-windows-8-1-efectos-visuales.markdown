@@ -4,13 +4,13 @@ title:  "Windows 8.1: Los efectos visuales que uso"
 date:   2018-07-25 19:00:00 -0500
 ---
 
-Cuando se usan programas como [Razer cortex: Game booster](https://www.razer.com/cortex/boost) o [AVG TuneUP](https://www.avg.com/es-mx/tuneup-utilities) (antes llamado *TuneUp Utilities*), puede ser activado un *modo de alto rendimiento*, también llamado *modo turbo* o *modo gaming*. 
+Cuando se usan programas como [Razer cortex: Game booster](https://www.razer.com/cortex/boost){:target="_blank"} o [AVG TuneUP](https://www.avg.com/es-mx/tuneup-utilities){:target="_blank"} (antes llamado *TuneUp Utilities*), puede ser activado un *modo de alto rendimiento*, también llamado *modo turbo* o *modo gaming*. 
 
-Si se activa este modo estos programas hacen principalmente dos cosas: **Ajustar los efectos visuales** de la computadora al mínimo y detener procesos en segundo plano que consumen recursos, por ejemplo, procesos de la impresora. Esto mejora el rendimiento.
+Si se activa este modo estos programas hacen **dos cosas** principalmente : **Ajustar los efectos visuales** de la computadora al mínimo y **detener procesos** en segundo plano que consumen recursos, por ejemplo, procesos de la impresora. Esto mejora el rendimiento.
 
-A continuación se describen los ajustes gráficos que uso.
+A continuación se muestran los efectos visuales que uso.
 
-**Nota:** Mi sistema operativo *Windows 8.1* esta en inglés.
+**Nota: Mi sistema operativo *Windows 8.1* esta en inglés.**
 
 ## Ir a la opción de ajustes de efectos visuales en Windows 8.1
 
@@ -47,7 +47,3 @@ Muestra miniaturas de archivos cuando se viaja por carpetas, por ejemplo si se a
 * *Smooth edges of screen fonts*
 
 Suaviza las letras, si desactiva esta opción las letras se verán muy pixeleadas y borrosas.
-
-**Fuente y contexto**
-
-En las versiones anteriores del software descrito al principio *Razer game booster* y *TuneUP Utilities* contaban con una sección en la que explicaban como incrementaban el rendimeinto, ahí ví como ajustaban los gráficos y así disminuyo un poco la carga en mi computadora sin usar programas.
