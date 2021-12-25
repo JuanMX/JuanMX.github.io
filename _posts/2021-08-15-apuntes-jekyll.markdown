@@ -224,15 +224,17 @@ Lo anterior probablemente sirva para actualizar otras dependencias, por ejemplo,
 
 ## Agregar Google Analytics
 
-Google Analytics permite medir el tráfico del sitio y esa información permite saber la populariad de las entradas de blog o saber si es conveniente colocar anuncios, entre otras cosas. Este servicio se puede agregar a un proyecto de Jekyll en GitHub Pages y en esta entrada de blog muestro los pasos de como lo hice.
+***Última actualización: 11 / Diciembre / 2021***
 
-Ir a [Google Analytics](https://analytics.google.com) y logearse con un email de google, después seguir los pasos para comenzar a medir los datos de un sitio. Pedirá registrar una *propiedad*.
+Google Analytics permite medir el tráfico del sitio y esa información permite saber la populariad de las entradas de blog, saber si es conveniente colocar anuncios, entre otras cosas. Este servicio se puede agregar a un proyecto de Jekyll en GitHub Pages y en esta entrada de blog muestro los pasos de como lo hice.
+
+Ir a [Google Analytics](https://analytics.google.com){:target="_blank"} y logearse con un email de google, después seguir los pasos para comenzar a medir los datos de un sitio. Pedirá registrar una *propiedad*.
 
 Al crear la propiedad, en la sección de *Configuración de la propiedad* mostrar las opciones avanzadas. Activar la opción ***Crear una propiedad Universal Analytics*** y en la información que pide seleccionar la opción ***Crear solo una propiedad Universal Analytics***.
 
 ![analyticscrearpropiedad]({{ "../assets/apuntes-jekyll/google-analytics/Seleccion_003.png" | absolute_url }})
 
-Al finalizar el registro de propiedad mostrará una vista de inicio que es Administrar -> Propiedad -> Información de seguimiento -> Código de seguimiento.
+Al finalizar el registro de propiedad mostrará una vista de inicio ubicada en Administrar -> Propiedad -> Información de seguimiento -> Código de seguimiento.
 
 De esta vista es imprtante el ***ID de Seguimiento*** y la ***Etiqueta de sitio web global (gtag.js)*** para agregarlos al proyecto de Jekyll.
 
@@ -240,11 +242,11 @@ De esta vista es imprtante el ***ID de Seguimiento*** y la ***Etiqueta de sitio 
 
 Para agregar la información de Analytics a Jekyll se debe [*obtener y sobreescribir las plantillas del tema por defecto*](#obtener-y-sobreescribir-las-plantillas-del-tema-por-defecto). Específicamente se debe agregar la carpeta `_includes` a la raíz del proyecto de Jekyll.
 
-Los archivos que más importan son `head.html` (**NO** confundir con `header.html`) y `google-analytics.html`.
+Los archivos más importantes son `head.html` (**NO** confundir con `header.html`) y `google-analytics.html`.
 
 ![sobreescribirincludes]({{ "../assets/apuntes-jekyll/google-analytics/Selección_007.png" | absolute_url }})
 
-El archivo `head.html` debe quedarse como está pero verificar que aparezcan las siguietes lineas.
+El archivo `head.html` debe quedarse como está pero verificar que aparezcan las siguientes lineas.
 
 ```
 ================= fragmento de head.html =================
