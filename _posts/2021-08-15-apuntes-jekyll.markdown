@@ -4,7 +4,7 @@ title:  "Apuntes: Jekyll"
 date:   2021-08-15 12:26:00 -0500
 ---  
 
-Gracias a conocimientos de desarrollo fullstack adquiridos de un trabajo que tuve, quería saber que podía cambiar en mi blog. A continuación se muestra los cambios *técnicos* que he hecho junto con *tips y trucos*. Supone que se esta usando el tema de Jekyll **minima** y el sistema operativo Ubuntu.
+Gracias a conocimientos de desarrollo fullstack adquiridos de un trabajo que tuve, quería saber que podía cambiar en mi blog. A continuación se muestra los cambios *técnicos* que he hecho junto con *tips y trucos*. Para todos estos contenidos supone que se esta usando el tema de Jekyll **minima** y el sistema operativo Ubuntu.
 
 **Contenido**
 
@@ -17,6 +17,8 @@ Gracias a conocimientos de desarrollo fullstack adquiridos de un trabajo que tuv
 * [Crear links en markdown que abran en un nuevo tab](#crear-links-en-markdown-que-abran-en-un-nuevo-tab)
 
 * [Actualizar la dependencia Nokogiri](#actualizar-la-dependencia-nokogiri)
+
+* [Agregar Google Analytics](#agregar-google-analytics)
 
 
 <br>
@@ -211,3 +213,84 @@ Lo anterior modificará el archivo `Gemfile.lock`, se le debe hacer un *commit* 
 Lo anterior probablemente sirva para actualizar otras dependencias, por ejemplo, `Kramdown` pero no lo he probado.
 
 **Fuente:** [ajahne.github.io &mdash; *Update Jekyll and Ruby on macOS*](https://ajahne.github.io/blog/tools/2020/10/22/update-jekyll-ruby-gems.html){:target="_blank"}
+
+
+
+<br>
+<hr>
+<br>
+
+
+
+## Agregar Google Analytics
+
+Google Analytics permite medir el tráfico del sitio y esa información permite saber la populariad de las entradas de blog o saber si es conveniente colocar anuncios, entre otras cosas. Este servicio se puede agregar a un proyecto de Jekyll en GitHub Pages y en esta entrada de blog muestro los pasos de como lo hice.
+
+Ir a [Google Analytics](https://analytics.google.com) y logearse con un email de google, después seguir los pasos para comenzar a medir los datos de un sitio. Pedirá registrar una *propiedad*.
+
+Al crear la propiedad, en la sección de *Configuración de la propiedad* mostrar las opciones avanzadas. Activar la opción ***Crear una propiedad Universal Analytics*** y en la información que pide seleccionar la opción ***Crear solo una propiedad Universal Analytics***.
+
+![analyticscrearpropiedad]({{ "../assets/apuntes-jekyll/google-analytics/Seleccion_003.png" | absolute_url }})
+
+Al finalizar el registro de propiedad mostrará una vista de inicio que es Administrar -> Propiedad -> Información de seguimiento -> Código de seguimiento.
+
+De esta vista es imprtante el ***ID de Seguimiento*** y la ***Etiqueta de sitio web global (gtag.js)*** para agregarlos al proyecto de Jekyll.
+
+![analyticscodigoseguimiento]({{ "../assets/apuntes-jekyll/google-analytics/Selección_005.png" | absolute_url }})
+
+Para agregar la información de Analytics a Jekyll se debe [*obtener y sobreescribir las plantillas del tema por defecto*](#obtener-y-sobreescribir-las-plantillas-del-tema-por-defecto). Específicamente se debe agregar la carpeta `_includes` a la raíz del proyecto de Jekyll.
+
+Los archivos que más importan son `head.html` (**NO** confundir con `header.html`) y `google-analytics.html`.
+
+![sobreescribirincludes]({{ "../assets/apuntes-jekyll/google-analytics/Selección_007.png" | absolute_url }})
+
+El archivo `head.html` debe quedarse como está pero verificar que aparezcan las siguietes lineas.
+
+```
+================= fragmento de head.html =================
+
+if jekyll.environment == 'production' and site.google_analytics 
+  include google-analytics.html 
+endif
+```
+
+**Borrar todo** el contenido del archivo `google-analytics.html` y **agregar** la ***Etiqueta de sitio web global (gtag.js)***. Un ejemplo se muestra a continuación.
+
+```
+================= google-analytics.html =================
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-215040900-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-215040900-1');
+</script>
+```
+
+En el archivo `_config.yml` agregar el ***ID de Seguimiento***. Un ejemplo se muestra a continuación.
+
+```
+================= fragmento de _config.yml =================
+
+title: Mi cuaderno de apuntes
+author: Juan
+# Google Analytics
+google_analytics: UA-215040900-1
+description: >- # this means to ignore newlines until "baseurl:"
+  Apuntes sobre programación y software
+```
+
+Se debe hacer commit y push de los cambios hechos e ir Google Analytics para visualizar las métricas y ver el número de usuarios activos. **Visitando el sitio en producción** (el sitio que termina con .github.io) debe empezar a mostrar que hay al menos un usuario activo. Pero se debe considerar que **si el navegador tiene adblock, ublock o algún otro bloqueador de anuncios se debe desactivar en el sitio**.
+
+![sobreescribirincludes]({{ "../assets/apuntes-jekyll/google-analytics/analytics_usuarios.gif" | absolute_url }})
+
+**Fuentes:**
+
+Agregar Analytics a Jekyll-GitHub Pages: [youtube.com &mdash; *Github Hosting and linking with Google Analytics*](https://www.youtube.com/watch?v=K9ExoBi7AXw){:target="_blank"}
+
+Obtener un código UA-XXXX-X en lugar de G-XXXX: [support.google.com/analytics &mdash; *Configurar Analytics en un sitio web (Universal Analytics)*](https://support.google.com/analytics/answer/10269537){:target="_blank"}
+
+Agregar el código UA-XXXX-X a `_config.yml`: [runrails.com/jekyll &mdash; *Google Analytics in Jekyll in 2020*](https://www.runrails.com/jekyll/2020/08/13/jekyll-analytics.html){:target="_blank"}
