@@ -17,7 +17,7 @@ Para saber que se está seleccionado la memoria usb se puede guiar por la capaci
 
 ![paso2]({{ "../assets/formateat-usb-gparted/paso2_desmontar.png" | absolute_url }})
 
-Hay veces que no pide la opción, porque el sistema operativo no monta la memoria de inmediato.
+Hay veces que no se puede seleccionar la opción porque el sistema operativo no monta la memoria de inmediato.
 
 Es normal que al desmontar la memoria realice una búsqueda de todos los discos (extraíbles y no extraíbles) y que tarde mucho.
 
