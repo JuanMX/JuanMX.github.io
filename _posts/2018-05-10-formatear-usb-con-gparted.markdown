@@ -5,7 +5,7 @@ date:   2018-05-10 16:46:00 -0500
 categories: gparted
 --- 
 
-Una de las cosas que necesitaba aprender al usar Ubuntu era formatear una memoria USB. Para mí, la manera más cómoda de hacerlo es con [GParted](https://gparted.org/download.php).
+Una de las cosas que necesitaba aprender al usar Ubuntu era formatear una memoria USB. Después de buscar opciones de como hacerlo encontré [GParted](https://gparted.org/download.php) que, para mí, resulta en la manera más cómoda.
 
 * GParted -> Dispositivos -> Seleccionar la usb
 
