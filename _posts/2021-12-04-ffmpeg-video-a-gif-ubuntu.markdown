@@ -10,7 +10,7 @@ En ubuntu, grabar la pantalla y que sea un archivo gif era complicado para mí. 
 
 Mi método para hacer un gif a partir de la grabación de la pantalla en video es:
 
-1. Grabar la pantalla, puede ser con obs, vokoscreen, ffmpeg u otros. El objetivo es tener un archivo de video (mp4 por ejemplo).
+1. Grabar la pantalla, puede ser con obs, vokoscreen, ffmpeg u otros. El objetivo es tener un archivo de video (por ejemplo, mp4).
 
 2. Convertir el video a gif con [ffmpeg](http://www.ffmpeg.org/){:target="_blank"}, que es un programa por terminal.
 
