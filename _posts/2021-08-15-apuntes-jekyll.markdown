@@ -4,6 +4,8 @@ title:  "Apuntes: Jekyll"
 date:   2021-08-15 12:26:00 -0500
 ---  
 
+
+
 Gracias a conocimientos de desarrollo fullstack adquiridos de un trabajo que tuve, quería saber que podía cambiar en mi blog. A continuación se muestra los cambios *técnicos* que he hecho junto con *tips y trucos*. Para todos estos contenidos supone que se esta usando el tema de Jekyll **minima** y el sistema operativo Ubuntu.
 
 **Contenido**
@@ -234,13 +236,13 @@ Ir a [Google Analytics](https://analytics.google.com){:target="_blank"} y logear
 
 Al crear la propiedad, en la sección de *Configuración de la propiedad* mostrar las opciones avanzadas. Activar la opción ***Crear una propiedad Universal Analytics*** y en la información que pide seleccionar la opción ***Crear solo una propiedad Universal Analytics***.
 
-![analyticscrearpropiedad]({{ "../assets/apuntes-jekyll/google-analytics/Seleccion_003.png" | absolute_url }})
+![analytics1]({{ "../assets/apuntes-jekyll/analytics_seleccion_003.png" | absolute_url }})
 
 Al finalizar el registro de propiedad mostrará una vista de inicio ubicada en Administrar -> Propiedad -> Información de seguimiento -> Código de seguimiento.
 
 De esta vista es imprtante el ***ID de Seguimiento*** y la ***Etiqueta de sitio web global (gtag.js)*** para agregarlos al proyecto de Jekyll.
 
-![analyticscodigoseguimiento]({{ "../assets/apuntes-jekyll/google-analytics/Selección_005.png" | absolute_url }})
+![analytics2]({{ "../assets/apuntes-jekyll/analytics_selección_005.png" | absolute_url }})
 
 ## Agregar el código UA-XXXX-X y el gtag.js a Jekyll
 
@@ -248,7 +250,7 @@ Para agregar la información de Analytics a Jekyll se debe [*obtener y sobreescr
 
 Los archivos más importantes son `head.html` (**NO** confundir con `header.html`) y `google-analytics.html`.
 
-![sobreescribirincludes]({{ "../assets/apuntes-jekyll/google-analytics/Selección_007.png" | absolute_url }})
+![sobreescribirincludes]({{ "../assets/apuntes-jekyll/analytics_selección_007.png" | absolute_url }})
 
 El archivo `head.html` debe quedarse como está pero verificar que aparezcan las siguientes lineas.
 
@@ -291,7 +293,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 
 Se debe hacer commit y push de los cambios hechos e ir Google Analytics para visualizar las métricas y ver el número de usuarios activos. **Visitando el sitio en producción** (el sitio que termina con .github.io) debe empezar a mostrar que hay al menos un usuario activo. Pero se debe considerar que **si el navegador tiene adblock, ublock o algún otro bloqueador de anuncios se debe desactivar en el sitio**.
 
-![sobreescribirincludes]({{ "../assets/apuntes-jekyll/google-analytics/analytics_usuarios.gif" | absolute_url }})
+![sobreescribirincludes]({{ "../assets/apuntes-jekyll/analytics_usuarios.gif" | absolute_url }})
 
 **Fuentes:**
 
