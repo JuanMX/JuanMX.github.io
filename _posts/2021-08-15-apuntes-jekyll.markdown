@@ -22,6 +22,8 @@ Gracias a conocimientos de desarrollo fullstack adquiridos de un trabajo que tuv
 
 * [Agregar Google Analytics](#agregar-google-analytics)
 
+* [Insertar una imagen usando helpers de Jekyll](#insertar-una-imagen-usando-helpers-de-jekyll)
+
 
 <br>
 <hr>
@@ -302,3 +304,28 @@ Agregar Analytics a Jekyll-GitHub Pages: [youtube.com &mdash; *Github Hosting an
 Obtener un código UA-XXXX-X en lugar de G-XXXX: [support.google.com/analytics &mdash; *Configurar Analytics en un sitio web (Universal Analytics)*](https://support.google.com/analytics/answer/10269537){:target="_blank"}
 
 Agregar el código UA-XXXX-X a `_config.yml`: [runrails.com/jekyll &mdash; *Google Analytics in Jekyll in 2020*](https://www.runrails.com/jekyll/2020/08/13/jekyll-analytics.html){:target="_blank"}
+
+
+
+<br>
+<hr>
+<br>
+
+
+
+## Insertar una imagen usando helpers de Jekyll
+
+Para insertar en una entrada del blog (post) una imagen ubicada en un directorio local del proyecto de Jekyll yo sigo los siguientes pasos:
+
+1. En la raíz del proyecto de Jekyll crear una carpeta para las imágenes (`carpeta_raiz_proyecto`)
+
+2. Dentro de `carpeta_raiz_proyecto` crear una carpeta ( `subcarpeta` ) por cada archivo `post.markdown` que necesite mostrar una imagen.
+
+3. Dentro `subcarpeta` agregar la imagen, por ejemplo `nombre_de_la_imagen.png`.
+
+4. En un archivo `post.markdown` de la carpeta `_post` del proyecto de Jekyll insertar la imagen con la siguiente instrucción:
+
+
+<script src="https://gist.github.com/JuanMX/59d2483c824dbf270c55f9504285bf73.js"></script>
+
+He insertado imágenes png, jpg, jpeg y gif sin problema.

@@ -6,6 +6,8 @@ date:   2022-02-26 12:26:00 -0500
 
 En este post supone que se usa Heroku CLI.
 
+
+
 ## Renombrar un remoto
 
 Renombrar el remoto de `heroku` a `heroku-staging`
@@ -16,9 +18,13 @@ git remote rename heroku heroku-staging
 
 **Fuente:** [devcenter.heroku.com/articles &mdash; *Rename a Remote*](https://devcenter.heroku.com/articles/git#rename-a-remote){:target="_blank"}
 
+
+
 <br>
 <hr>
 <br>
+
+
 
 ## Realizar el deploy de una subcarpeta
 
@@ -34,9 +40,13 @@ git subtree push --prefix NOMBRE_SUBDIRECTORIO heroku master
 
 **Fuente:** [janessagarrow.com &mdash; *How to Deploy a Subdirectory to Heroku*](https://janessagarrow.com/blog/how-to-deploy-a-subdirectory-to-heroku/){:target="_blank"}
 
+
+
 <br>
 <hr>
 <br>
+
+
 
 ## Archivo de configuración Procfile para FastApi en Heroku
 
@@ -56,9 +66,13 @@ donde:
 
 **Fuente:** [youtube.com &mdash; *Desplegando (Deploy) una aplicación FastAPI en Heroku.*](https://www.youtube.com/watch?v=4hS0YOZD-g4){:target="_blank"}
 
+
+
 <br>
 <hr>
 <br>
+
+
 
 ## Archivo de configuración requirements.txt para FastApi en Heroku
 
