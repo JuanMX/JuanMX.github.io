@@ -21,11 +21,9 @@ De acuerdo con este [hilo de GitHub] no es posible agregarlas *tal cual* pero en
 
 A continuación se muentra el resultado de un par de pruebas
 
-*Una recta se representa por la ecuación*: ![recta](https://latex.codecogs.com/gif.latex?%24y%3Dmx&plus;b%24)
+*una expresión matemática*: ![img](https://latex.codecogs.com/png.latex?\dpi{110}%20\frac{\sum_{1}^{n}%20x_i%20}{n})
 
-*Una convolución se define como*:
 
-![convolucion](https://latex.codecogs.com/gif.latex?%24%24w%28x%2Cy%29%20*%20f%28x%2Cy%29%20%3D%20%5Csum_%7Bs%3D-a%7D%5Ea%20%5Csum_%7Bt%3D-b%7D%5Eb%20w%28s%2Ct%29%20f%28x-s%2Cy-t%29%24%24)
 
 **Fuente**
 
