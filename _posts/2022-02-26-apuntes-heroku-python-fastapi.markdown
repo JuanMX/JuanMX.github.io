@@ -7,6 +7,24 @@ date:   2022-02-26 12:26:00 -0500
 En este post supone que se usa Heroku CLI.
 
 
+## Contenido
+
+* [Renombrar un remoto](#renombrar-un-remoto)
+
+* [Realizar el deploy de una subcarpeta](#realizar-el-deploy-de-una-subcarpeta)
+
+* [Archivo de configuración Procfile para FastApi en Heroku](#archivo-de-configuración-procfile-para-fastapi-en-heroku)
+
+* [Archivo de configuración requirements.txt para FastApi en Heroku](#archivo-de-configuración-requirementstxt-para-fastapi-en-heroku)
+
+
+
+<br>
+<hr>
+<br>
+
+
+
 
 ## Renombrar un remoto
 
@@ -35,7 +53,15 @@ Agregar el remoto si no esta agreagdo `heroku git:remote -a my-app`.
 Pushear la subcarpeta
 
 ```
-git subtree push --prefix NOMBRE_SUBDIRECTORIO heroku master
+git subtree push --prefix NOMBRE_SUBCARPETA heroku master
+```
+
+donde:
+
+`heroku` es el nombre del remoto. Para listar el nombre de todos los remotos el proyecto se puede usar la instrucción.
+
+```
+git remote -v
 ```
 
 **Fuente:** [janessagarrow.com &mdash; *How to Deploy a Subdirectory to Heroku*](https://janessagarrow.com/blog/how-to-deploy-a-subdirectory-to-heroku/){:target="_blank"}

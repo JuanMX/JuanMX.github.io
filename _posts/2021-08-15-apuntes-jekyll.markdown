@@ -321,7 +321,7 @@ Para insertar en una entrada del blog (post) una imagen ubicada en un directorio
 
 2. Dentro de `carpeta_raiz_proyecto` crear una carpeta ( `subcarpeta` ) por cada archivo `post.markdown` que necesite mostrar una imagen.
 
-3. Dentro `subcarpeta` agregar la imagen, por ejemplo `nombre_de_la_imagen.png`.
+3. Dentro de `subcarpeta` agregar la imagen, por ejemplo `nombre_de_la_imagen.png`.
 
 4. En un archivo `post.markdown` de la carpeta `_post` del proyecto de Jekyll insertar la imagen con la siguiente instrucción:
 
