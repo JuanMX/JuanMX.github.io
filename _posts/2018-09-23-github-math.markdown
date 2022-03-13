@@ -7,12 +7,14 @@ date:   2018-09-23 18:12:00 -0500
 ## Contenido
 
 * [Agregar expresiones matemáticas en un README](#agregar-expresiones-matemáticas-en-un-readme)
-* [Agregar expresiones matemáticas en GitHub Pages](#agregar-expresiones-matemáticas-en-github-pages)
+
+* [Agregar expresiones matemáticas en GitHub Pages usando MathJax](#agregar-expresiones-matemáticas-en-github-pages-usando-mathjax)
+
 * [Comandos que uso seguido en Git](#comandos-que-uso-seguido-en-git)
 
 ## Agregar expresiones matemáticas en un README
 
-De acuerdo con este [hilo de GitHub] no es posible agregarlas *tal cual* pero en el mismo hilo ofrecen esta alternativa:
+De acuerdo con este [hilo de GitHub] no es posible agregarlas *tal cual* pero en el mismo hilo ofrecen la siguiente alternativa:
 
 1. Ir a la página [codecogs.com](https://www.codecogs.com/latex/eqneditor.php).
 2. En el cuadro de texto escribir la expresión como en LaTeX o usando las herramientas que brinda el sitio.
@@ -21,25 +23,24 @@ De acuerdo con este [hilo de GitHub] no es posible agregarlas *tal cual* pero en
 
 A continuación se muentra el resultado de un par de pruebas
 
-*una expresión matemática*: ![img](https://latex.codecogs.com/png.latex?\dpi{110}%20\frac{\sum_{1}^{n}%20x_i%20}{n})
+*Una expresión matemática*: ![img](https://latex.codecogs.com/png.latex?\dpi{110}%20\frac{\sum_{i=1}^{n}%20x_i%20}{n})
 
 
 
-**Fuente**
+**Fuente:** [github.com/github/markup/issues/897 &mdash; *Rendering math equations?*](https://github.com/github/markup/issues/897){:target="_blank"}
 
-El [hilo de GitHub] mencionado arriba.
 
-**Contexto**
 
-Necesitaba agregar expresiones matemáticas a los README de GitHub y en GitHub Pages ya que mi repositorio tiene un poco de *Computer science portafolio*.
+<br>
+<hr>
+<br>
 
-[**Ir a la sección Contenido**]
 
-## Agregar expresiones matemáticas en GitHub Pages
 
-**Nota:** los siguientes pasos no son los mejores, yo no tengo formación ni conocimientos en desarrollo web, a pesar de eso el resultado de mostrar fórmulas matemáticas es bueno.
+## Agregar expresiones matemáticas en GitHub Pages usando MathJax
 
-Para mostrar expreiones matemáticas en GitHub Pages se puede usar el método descrito arriba pero en este caso si se puede usar LaTeX, enseguida se describen los pasos para hacerlo.
+Necesitaba agregar expresiones matemáticas en GitHub Pages. Noté que en los cursos de la Univerisdad de Standford en GitHub Pages si ponen expresiones matemáticas. Buscando en su repositorio me encontré con el [primer indicio de *MathJax*](https://github.com/cs231n/cs231n.github.io/blob/master/_layouts/default.html).
+
 
 1. Agregar la siguinte linea en el archivo *.markdown* de tipo *post* en el que se escribirá con lenguaje matemático.
 ```html
@@ -69,15 +70,17 @@ $$\cos\bar{\phi}_k Q_{j,k+1,t} + Q_{j,k+1,x}+ \frac{\sin^2\bar{\phi}_k}{T\cos\ba
 ```
 *La fórmula* \\(I(\nu, T) = \frac{2h\nu^3}{c^2} \frac{1}{e^{\frac{h \nu}{kT}} - 1}\\) *se usa para calcular la radiación espectral de cuerpos a diferentes temperaturas, a esta fórmula se le conoce como función de Planck*.
 
-**Fuente**
+**Fuente:**
 
-En [este video](https://www.youtube.com/watch?v=qWrcgHwSG8M) muestran como poner *MathJax* en todo el sitio en un archivo *.html*. A mi se me ocurrió ponerlo en el archivo *.markdown* con el *post* matemático ya que *markdown* se *compila* a html en GitHub Pages.
+Agregar *MathJax* en HTML (video no dispnible): https://www.youtube.com/watch?v=qWrcgHwSG8M
 
-**Contexto**
 
-Necesitaba agregar expresiones matemáticas en GitHub Pages. Noté que en los cursos de la Univerisdad de Standford alojados en GitHub Pages si ponen expresiones matemáticas, investigando en su repositorio me encontré con el [primer indicio de *MathJax*](https://github.com/cs231n/cs231n.github.io/blob/master/_layouts/default.html) y el video puesto en la sección  **Fuente** me confirmó para que sirve. Como yo uso GitHub Pages con las opciones por *default* no me produce archivos *.html* pero si *.markdown*, asi que se me ocurrió importar *MathJax* desde ahí.
 
-[**Ir a la sección Contenido**]
+<br>
+<hr>
+<br>
+
+
 
 ## Comandos que uso seguido en Git
 
@@ -129,11 +132,14 @@ Muestra la URL del remoto (donde publicamos código)
 
 Sube el código al remoto (github u otro, puede pedir usuario y contraseña cuando se hace)
 
-[**Ir a la sección Contenido**]
-
-
-[**Ir a la sección Contenido**]: #contenido
 
 [hilo de GitHub]: https://github.com/github/markup/issues/897
 
 <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+    // Make responsive
+    MathJax.Hub.Config({
+    "HTML-CSS": { linebreaks: { automatic: true } },
+    "SVG": { linebreaks: { automatic: true } },
+    });
+</script>

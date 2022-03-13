@@ -105,7 +105,7 @@ Si se siguieron **todos** los pasos y se quiere salir de postgreSQL se necesita 
 \q
 ```
 
-# MySql
+## MySql
 
 Logearse a mysql como usuario `USUARIO` y usar la base de datos `BASE_DE_DATOS`
 
