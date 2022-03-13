@@ -39,15 +39,24 @@ A continuación se muentra el resultado de un par de pruebas
 
 ## Agregar expresiones matemáticas en GitHub Pages usando MathJax
 
-Necesitaba agregar expresiones matemáticas en GitHub Pages. Noté que en los cursos de la Univerisdad de Standford en GitHub Pages si ponen expresiones matemáticas. Buscando en su repositorio me encontré con el [primer indicio de *MathJax*](https://github.com/cs231n/cs231n.github.io/blob/master/_layouts/default.html).
+Necesitaba agregar expresiones matemáticas en GitHub Pages. Noté que en los cursos de la Univerisdad de Standford en GitHub Pages si ponen expresiones matemáticas. Buscando en su repositorio me encontré con el [primer indicio de *MathJax*](https://github.com/cs231n/cs231n.github.io/blob/master/_layouts/default.html){:target="_blank"}.
 
 
-1. Agregar la siguinte linea en el archivo *.markdown* de tipo *post* en el que se escribirá con lenguaje matemático.
+1. Agregar lo siguinte en el archivo *.markdown* de tipo *post* en el que se escribirá con lenguaje matemático.
 ```html
 <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+    // Make responsive
+    MathJax.Hub.Config({
+    "HTML-CSS": { linebreaks: { automatic: true } },
+    "SVG": { linebreaks: { automatic: true } },
+    });
+</script>
 ```
 
 2. Para escribir expresiones (o fórmulas) matemáticas centradas se usa `$$ x $$` y para escribir en la misma linea que el texto se usa `\\( x \\)`.
+
+Lo anterior es para usar MathJax con la opción responsiva. Esto es, ajustar las expresiónes matemáticas al tamaño de la pantalla.
 
 A continuación se muestran ejemplos.
 
@@ -70,9 +79,11 @@ $$\cos\bar{\phi}_k Q_{j,k+1,t} + Q_{j,k+1,x}+ \frac{\sin^2\bar{\phi}_k}{T\cos\ba
 ```
 *La fórmula* \\(I(\nu, T) = \frac{2h\nu^3}{c^2} \frac{1}{e^{\frac{h \nu}{kT}} - 1}\\) *se usa para calcular la radiación espectral de cuerpos a diferentes temperaturas, a esta fórmula se le conoce como función de Planck*.
 
-**Fuente:**
+**Fuentes:**
 
-Agregar *MathJax* en HTML (video no dispnible): https://www.youtube.com/watch?v=qWrcgHwSG8M
+Agregar *MathJax* en HTML (video no dispnible): [https://www.youtube.com/watch?v=qWrcgHwSG8M](https://www.youtube.com/watch?v=qWrcgHwSG8M){:target="_blank"}
+
+Ejemplo de agregar *MathJax* en GitHub Pages: [cs231n.github.io/_layouts/default.html](https://github.com/cs231n/cs231n.github.io/blob/master/_layouts/default.html){:target="_blank"}
 
 
 
