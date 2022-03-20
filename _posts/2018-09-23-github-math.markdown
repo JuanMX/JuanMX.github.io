@@ -12,6 +12,14 @@ date:   2018-09-23 18:12:00 -0500
 
 * [Comandos que uso seguido en Git](#comandos-que-uso-seguido-en-git)
 
+
+
+<br>
+<hr>
+<br>
+
+
+
 ## Agregar expresiones matemáticas en un README
 
 De acuerdo con este [hilo de GitHub] no es posible agregarlas *tal cual* pero en el mismo hilo ofrecen la siguiente alternativa:
@@ -21,9 +29,7 @@ De acuerdo con este [hilo de GitHub] no es posible agregarlas *tal cual* pero en
 3. Dar click derecho en la imagen resultante y luego en la opción *copiar dirección de la imagen*.
 4. El *link* copiado insertarlo en el archivo markdown como imagen.
 
-A continuación se muentra el resultado de un par de pruebas
-
-*Una expresión matemática*: ![img](https://latex.codecogs.com/png.latex?\dpi{110}%20\frac{\sum_{i=1}^{n}%20x_i%20}{n})
+*Ejemplo de una expresión matemática*: ![img](https://latex.codecogs.com/png.latex?\dpi{110}%20\frac{\sum_{i=1}^{n}%20x_i%20}{n})
 
 
 
@@ -95,53 +101,23 @@ Ejemplo de agregar *MathJax* en GitHub Pages: [cs231n.github.io/_layouts/default
 
 ## Comandos que uso seguido en Git
 
-* `git status`
+`git status` Estado del repositorio.
 
-Estado del repositorio
+`git add NombreDeUnArchivo.extencion` Añade archivos para hacer el commit.
 
-* `git diff`
+`git rm  NombreDeUnArchivo.extencion`Borra un archivo del repositorio.
 
-Muestra los cambios en el archivo modificado
+`git rm -r NombreDeUnaCarpeta` Elimina una carpeta del repositorio.
 
-* `git add NombreDeUnArchivo.extencion`
+`git commit` Realiza un commit (se habrirá un editor de texto para escribir los cambios hechos).
 
-Añade archivos para hacer el commit
+`git reset --soft HEAD~1` Deshace el último commit (puede cambiar esta instrucción según la versión de Git).
 
-* `git reset HEAD NombreDeUnArchivo.extencion`
+`git commit -m "Cambios hechos"` Hace un commit con un mensaje corto ("Cambios hechos") para no abrir un editor de textos.
 
-Quita archivos para hacer el commit
+`git remote -v` Muestra la URL del remoto (donde publicamos código)
 
-* `git rm  NombreDeUnArchivo.extencion`
-
-Borra un archivo del repositorio
-
-* `git rm -r NombreDeUnaCarpeta`
-
-Elimina una carpeta
-
-* `git commit`
-
-Realiza un commit (se habrirá un editor de texto de terminal para escribir los cambios hechos)
-
-* `git reset --soft HEAD~1`
-
-Deshace el último commit (puede cambiar esta instrucción según la versión de Git)
-
-* `git commit -m "Cambios hechos"`
-
-Hace un commit con un mensaje corto ("Cambios hechos") para no abrir un editor de textos
-
-* `git remote`
-
-Muestra el nombre del remoto
-
-* `git remote -v`
-
-Muestra la URL del remoto (donde publicamos código)
-
-* `git push NOMBRE DEL REMOTO (origin) NOMBRE DE LA RAMA (master o alguna rama)`
-
-Sube el código al remoto (github u otro, puede pedir usuario y contraseña cuando se hace)
+`git push NOMBRE DEL REMOTO (origin) NOMBRE DE LA RAMA (master o alguna rama)` Sube el código al remoto (GitHub u otro, puede pedir usuario y contraseña de la cuenta de GitHub cuando se hace)
 
 
 [hilo de GitHub]: https://github.com/github/markup/issues/897
