@@ -16,7 +16,7 @@
 title: Mi cuaderno de apuntes
 author: Juan
 # Google Analytics
-google_analytics: UA-215040900-1
+google_analytics: G-SRP41QDWWS
 description: >- # this means to ignore newlines until "baseurl:"
   Apuntes de programación y software
 baseurl: "" # the subpath of your site, e.g. /blog
