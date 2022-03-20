@@ -313,6 +313,26 @@ Agregar el código UA-XXXX-X a `_config.yml`: [runrails.com/jekyll &mdash; *Goog
 
 
 
+## Obtener el código G-XXX y el gtag.js para google analytics G4
+
+***Última actualización: 20 / Marzo / 2022***
+
+[Universal Analytics dejará de procesar nuevos datos en propiedades estándar a partir del 1 de julio del 2023.](https://support.google.com/analytics/answer/11583528){:target="_blank"}
+
+Y será reemplazado por Google Analytics 4. La manera de crear una propiedad es igual a universal analytics, también se puede obtener un código G-XXX y gtag.js. Ambos códigos se agregan a Jekyll de la misma manera que en la sección anterior.
+
+Primero se debe ir a administrar->En la sección *Propiedad*->Flujo de datos->seleccionar el elemento de la lista.
+
+![img]({{ "../assets/apuntes-jekyll/analytics_codigos_seguimientoG41.png" | absolute_url }})
+
+El código G->XXX se encuentra en la parte superior derecha. Para mostrar la etiqueta de sitio web global (gtag.js) se debe ir a la sección *Instrucciones de etiquetado* y en la subsección *Añadir etiqueta en la página* dar click en *Etiqueta de sitio web global (gtag.js)*.
+
+![img]({{ "../assets/apuntes-jekyll/analytics_codigos_seguimientoG42.png" | absolute_url }})
+
+<br>
+<hr>
+<br>
+
 ## Insertar una imagen usando helpers de Jekyll
 
 Para insertar en una entrada del blog (post) una imagen ubicada en un directorio local del proyecto de Jekyll yo sigo los siguientes pasos:
