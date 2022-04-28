@@ -325,7 +325,7 @@ Primero se debe ir a administrar->En la sección *Propiedad*->Flujo de datos->se
 
 ![img]({{ "../assets/apuntes-jekyll/analytics_codigos_seguimientoG41.png" | absolute_url }})
 
-El código G->XXX se encuentra en la parte superior derecha. Para mostrar la etiqueta de sitio web global (gtag.js) se debe ir a la sección *Instrucciones de etiquetado* y en la subsección *Añadir etiqueta en la página* dar click en *Etiqueta de sitio web global (gtag.js)*.
+El código G-XXX se encuentra en la parte superior derecha. Para mostrar la etiqueta de sitio web global (gtag.js) se debe ir a la sección *Instrucciones de etiquetado* y en la subsección *Añadir etiqueta en la página* dar click en *Etiqueta de sitio web global (gtag.js)*.
 
 ![img]({{ "../assets/apuntes-jekyll/analytics_codigos_seguimientoG42.png" | absolute_url }})
 

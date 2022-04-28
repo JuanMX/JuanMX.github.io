@@ -62,7 +62,7 @@ Necesitaba agregar expresiones matemáticas en GitHub Pages. Noté que en los cu
 
 2. Para escribir expresiones (o fórmulas) matemáticas centradas se usa `$$ x $$` y para escribir en la misma linea que el texto se usa `\\( x \\)`.
 
-Lo anterior es para usar MathJax con la opción responsiva. Esto es, ajustar las expresiónes matemáticas al tamaño de la pantalla.
+Los pasos anteriores son para usar MathJax con la opción responsiva. Esto es, ajustar las expresiónes matemáticas al tamaño de la pantalla.
 
 A continuación se muestran ejemplos.
 
