@@ -12,6 +12,8 @@ date:   2018-09-23 18:12:00 -0500
 
 * [Comandos que uso seguido en Git](#comandos-que-uso-seguido-en-git)
 
+* [Server certificate verification failed](#server-certificate-verification-failed)
+
 
 
 <br>
@@ -118,6 +120,37 @@ Ejemplo de agregar *MathJax* en GitHub Pages: [cs231n.github.io/_layouts/default
 `git remote -v` Muestra la URL del remoto (donde publicamos código)
 
 `git push NOMBRE DEL REMOTO (origin) NOMBRE DE LA RAMA (master o alguna rama)` Sube el código al remoto (GitHub u otro, puede pedir usuario y contraseña de la cuenta de GitHub cuando se hace)
+
+
+
+<br>
+<hr>
+<br>
+
+
+
+## Server certificate verification failed
+
+Este error me apareció al intentar pushear código.
+
+```
+juan@juanMX:~/proyecto$ git push origin master
+
+fatal: unable to access 'https://git/juanmx/proyecto.git/': server certificate verification failed. CAfile: /etc/ssl/certs/ca-certificates.crt CRLfile: none
+```
+
+Una solución rápida es abrir una terminal y poner lo siguiente.
+
+```
+export GIT_SSL_NO_VERIFY=1
+```
+
+Lo anterior hace que no pida el certificado. 
+Este cambio se revierte al apagar o reiniciar la computadora.
+
+**Fuente:**
+
+[shakaran.net/blog/2017/06 &mdash; *Solucionar error: server certificate verification failed. CAfile: /etc/ssl/certs/ca-certificates.crt CRLfile: none*](https://shakaran.net/blog/2017/06/solucionar-error-server-certificate-verification-failed-cafile/){:target="_blank"}
 
 
 [hilo de GitHub]: https://github.com/github/markup/issues/897
