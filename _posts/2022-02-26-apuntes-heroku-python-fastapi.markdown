@@ -17,7 +17,7 @@ En este post supone que se usa Heroku CLI.
 
 * [Archivo de configuración requirements.txt para FastApi en Heroku](#archivo-de-configuración-requirementstxt-para-fastapi-en-heroku)
 
-
+* [Correr 2 apis en diferentes puertos en local](#correr-2-apis-en-diferentes-puertos-en-local)
 
 <br>
 <hr>
@@ -131,3 +131,21 @@ tensorflow-cpu==2.5.0
 `requirements.txt` en Heroku: [devcenter.heroku.com/articles &mdash; *Recognizing a Python app*](https://devcenter.heroku.com/articles/python-support#recognizing-a-python-app){:target="_blank"}
 
 Información  sobre `requirements.txt`: [pip.pypa.io &mdash; *Requirements Files*](https://pip.pypa.io/en/stable/user_guide/#requirements-files){:target="_blank"}
+
+
+
+<br>
+<hr>
+<br>
+
+
+
+## Correr 2 apis en diferentes puertos en local
+
+Si hay dos archivos de python llamados `api.py` y `api2.py` para correrlos en  diferentes puertos en local se hace con
+
+```
+uvicorn api:app --host 127.0.0.1 --port 4000 --reload
+
+uvicorn api2:app --host 127.0.0.1 --port 2000 --reload
+```
