@@ -189,7 +189,7 @@ Personalmente, si en una computadora quiero abrir un link en una nueva pestaña 
 
 <img src="https://freesvg.org/img/1543784161.png" width="250" height="250" />
 
-Dar click en un link con el scroll del mouse lo abrirá en una nueva pestaña.
+<mark>Dar click en un link con el scroll del mouse lo abrirá en una nueva pestaña.</mark>
 
 **Fuente:** [stackoverflow.com/questions &mdash; *Can I create links with 'target="_blank"' in Markdown?*](https://stackoverflow.com/questions/4425198/can-i-create-links-with-target-blank-in-markdown){:target="_blank"}
 
