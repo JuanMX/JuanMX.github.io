@@ -19,6 +19,8 @@ En este post supone que se usa Heroku CLI.
 
 * [Correr 2 apis en diferentes puertos en local](#correr-2-apis-en-diferentes-puertos-en-local)
 
+* [Eliminar las rutas docs y redoc](#eliminar-las-rutas-docs-y-redoc)
+
 <br>
 <hr>
 <br>
@@ -149,3 +151,30 @@ uvicorn api:app --host 127.0.0.1 --port 4000 --reload
 
 uvicorn api2:app --host 127.0.0.1 --port 2000 --reload
 ```
+
+
+
+<br>
+<hr>
+<br>
+
+
+
+## Eliminar las rutas docs y redoc en FastAPI
+
+Es buena idea eliminar las rutas `/docs` y `/redoc` cuando el proyecto pasa a producción.
+
+Estas rutas se eliminan con `app = FastAPI(docs_url=None, redoc_url=None)`, un mejor ejemplo se muestra a continuación.
+
+```python
+from fastapi import FastAPI
+
+app = FastAPI(docs_url=None, redoc_url=None)
+
+
+@app.get("/items/")
+async def read_items():
+    return [{"name": "Foo"}]
+```
+
+**fuente:** [fastapi.tiangolo.com/tutorial &mdash; *Docs URLs*](https://fastapi.tiangolo.com/tutorial/metadata/#docs-urls){:target="_blank"} 
