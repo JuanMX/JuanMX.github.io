@@ -131,7 +131,7 @@ Ir a la carpeta laragon->etc->apache2->sites-enabled La carpeta laragon se crea 
 Crear un archivo auto.nombre_del_proyecto.test (ejemplo auto.CRUDLaravel.test) que tenga lo siguiente.
 
 ```
-define ROOT "D:\laragon\www\CRUDLaravel\public"
+define ROOT "C:\laragon\www\CRUDLaravel\public"
 define SITE "CRUDLaravel.test"
 
 <VirtualHost *:80> 
@@ -154,13 +154,13 @@ define SITE "CRUDLaravel.test"
     </Directory>
 
     SSLEngine on
-    SSLCertificateFile      D:/laragon/etc/ssl/laragon.crt
-    SSLCertificateKeyFile   D:/laragon/etc/ssl/laragon.key
+    SSLCertificateFile      C:/laragon/etc/ssl/laragon.crt
+    SSLCertificateKeyFile   C:/laragon/etc/ssl/laragon.key
  
 </VirtualHost>
 ```
 
-Sustituir `define ROOT "D:\laragon\www\CRUDLaravel\public"` por la ruta a la carpeta *public* del proyecto.
+Sustituir `define ROOT "C:\laragon\www\CRUDLaravel\public"` por la ruta a la carpeta *public* del proyecto.
 
 Sustituir `define SITE "CRUDLaravel.test"` por la carpeta del nombre del proyecto, este nombre se debe introducir como ruta al navegador
 
@@ -177,4 +177,4 @@ Recargar Laragon (o cerrarlo y abrirlo), abrir el navegador e introducir la ruta
 
 **Fuente** 
 
-[forum.laragon.org/topic/175 &mdash; *Tutorial how to work with Laravel projects on Github* (parece que el sitio pide logearse 👎)](https://forum.laragon.org/topic/175/tutorial-how-to-work-with-laravel-projects-on-github){:target="_blank"}
+[forum.laragon.org/topic/175 &mdash; *Tutorial how to work with Laravel projects on Github* (parece que ahora el sitio pide logearse 👎)](https://forum.laragon.org/topic/175/tutorial-how-to-work-with-laravel-projects-on-github){:target="_blank"}

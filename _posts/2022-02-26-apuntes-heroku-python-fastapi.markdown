@@ -19,7 +19,7 @@ En este post supone que se usa Heroku CLI.
 
 * [Correr 2 apis en diferentes puertos en local](#correr-2-apis-en-diferentes-puertos-en-local)
 
-* [Eliminar las rutas docs y redoc](#eliminar-las-rutas-docs-y-redoc)
+* [Eliminar las rutas docs y redoc en FastAPI](#eliminar-las-rutas-docs-y-redoc-en-fastapi)
 
 <br>
 <hr>
