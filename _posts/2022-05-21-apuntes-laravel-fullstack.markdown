@@ -4,7 +4,22 @@ title:  "Apuntes: Laravel Fullstack"
 date:   2022-05-21 1:26:00 -0500
 ---
 
-Yo no sé nada de Laravel pero lo he aprendido en trabajos de programación que he tenido. Todo lo mostrado en esta entrada de blog es conocimiento empírico.
+He aprendido Laravel en trabajos como programador que he tenido.
+
+## Contenido
+
+* [Trabajar en Laragon con proyectos de Laravel](#trabajar-en-laragon-con-proyectos-de-laravel)
+
+* [Añadir un proyecto a los *sites-enabled* de Laragon y a los *hosts* de Windows](#añadir-un-proyecto-a-los-sites-enabled-de-laragon-y-a-los-hosts-de-windows)
+
+* [Comandos php artisan que uso con frecuencia](#comandos-php-artisan-que-uso-con-frecuencia)
+
+
+
+<br>
+<hr>
+<br>
+
 
 
 ## Trabajar en Laragon con proyectos de Laravel
@@ -120,11 +135,21 @@ cd la_carpeta_del_proyecto_clonado
 ```
 **Si no muestra el sitio se puede intentar añadir el proyecto a los *sites-enabled* de Laragon y a los *hosts* de Windows.**
 
-## Añadir el proyecto a los *sites-enabled* de Laragon y a los *hosts* de Windows
+
+
+<br>
+<hr>
+<br>
+
+
+
+## Añadir un proyecto a los *sites-enabled* de Laragon y a los *hosts* de Windows
 
 **Nota:** Si el proyecto esta dentro de varias carpetas ejemplo: `proyecto/proyectoMaster/codigo/CRUDLaravel` se aconseja dar click derecho sobre laragon->preferencias y desactivar la opción *Crear automáticamente hosts virtuales* para que Laragon no sobreescriba y destruya lo cambios que se muestran a continuación.
 
 Desactivar *Crear automáticamente hosts virtuales* tiene el inconveniente de agregar manualmente todos los proyectos futuros a los *sites-enabled* de Laragon y a los *hosts* de Windows.
+
+## *Sites-enabled* de Laragon
 
 Ir a la carpeta laragon->etc->apache2->sites-enabled La carpeta laragon se crea al instalar Laragon.
 
@@ -164,6 +189,7 @@ Sustituir `define ROOT "C:\laragon\www\CRUDLaravel\public"` por la ruta a la car
 
 Sustituir `define SITE "CRUDLaravel.test"` por la carpeta del nombre del proyecto, este nombre se debe introducir como ruta al navegador
 
+## *Hosts* de Windows
 
 Para agregar el proyecto a los *Hosts* de windows ir a `C:\Windows\System32\drivers\etc` y abrir el archivo `hosts` (Si no existe el archivo crearlo. El archivo no tiene extención) después agregar la siguiente linea y guardar (necesita permisos de administrador).
 
@@ -178,3 +204,70 @@ Recargar Laragon (o cerrarlo y abrirlo), abrir el navegador e introducir la ruta
 **Fuente** 
 
 [forum.laragon.org/topic/175 &mdash; *Tutorial how to work with Laravel projects on Github* (parece que ahora el sitio pide logearse 👎)](https://forum.laragon.org/topic/175/tutorial-how-to-work-with-laravel-projects-on-github){:target="_blank"}
+
+
+
+<br>
+<hr>
+<br>
+
+
+
+## Comandos php artisan que uso con frecuencia
+
+
+```
+php artisan migrate:fresh --seed
+```
+
+Destruye las tablas, migra de nuevo y corre el seeder con el factory si aplica.
+
+<br>
+<br>
+
+```
+php artisan make:migration create_users_table
+```
+Crea una nueva migración.
+
+<br>
+<br>
+
+```
+php artisan make:model Flight --migration
+```
+
+Crea un modelo y su migración. El nombre de la tabla en la migración saldrá en plural (Flight -> Flights).
+
+<br>
+<br>
+
+```
+php artisan make:factory CategoriaFactory --model=Categoria
+```
+
+Crea un factory relacionado a un modelo.
+
+**Fuente:** [youtube.com &mdash; *Laravel 5.8 - Factorías y Faker [Tutorial en Español 2019]*](https://www.youtube.com/watch?v=8-16tFIj88M)
+
+<br>
+<br>
+
+```
+php artisan make:middleware CheckAge
+```
+
+Crea un middleware.
+
+**Fuente:** [laravel.com/docs/7.x/middleware &mdash; *Middleware*](https://laravel.com/docs/7.x/middleware)
+
+<br>
+<br>
+
+```
+php artisan make:migration add_name_to_costs_table --table=costs
+```
+
+Crea una migración que modificará una tabla para cambiar o agregar columnas.
+
+**Fuente:** [stackoverflow.com/questions/16791613/ &mdash; *Laravel Add a new column to existing table in a migration*](https://stackoverflow.com/questions/16791613/laravel-add-a-new-column-to-existing-table-in-a-migration)
