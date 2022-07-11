@@ -21,6 +21,8 @@ En este post supone que se usa Heroku CLI.
 
 * [Eliminar las rutas docs y redoc en FastAPI](#eliminar-las-rutas-docs-y-redoc-en-fastapi)
 
+* [En una ruta POST recibir un request y convertirlo a un diccionario](#en-una-ruta-post-recibir-un-request-y-convertirlo-a-un-diccionario)
+
 <br>
 <hr>
 <br>
@@ -178,3 +180,32 @@ async def read_items():
 ```
 
 **fuente:** [fastapi.tiangolo.com/tutorial &mdash; *Docs URLs*](https://fastapi.tiangolo.com/tutorial/metadata/#docs-urls){:target="_blank"} 
+
+
+
+<br>
+<hr>
+<br>
+
+
+
+## En una ruta POST recibir un request y convertirlo a un diccionario
+
+
+```python
+from fastapi import FastAPI, Body
+
+app = FastAPI()
+
+@app.post("/post_path")
+async def post_path( request: dict = Body(...) ):
+
+    data = request
+```
+
+En `data` se encuentra el request convertido a diccionario.
+
+Si, la parte de código `request: dict = Body(...)` se pone *tal cual*.
+
+
+**Fuente:** [stackoverflow.com/questions/64379089/ &mdash; *FastAPI: how to read body as any valid json?*](https://stackoverflow.com/a/65114346){:target="_blank"} 
