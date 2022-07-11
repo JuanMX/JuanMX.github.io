@@ -198,8 +198,7 @@ from fastapi import FastAPI, Body
 app = FastAPI()
 
 @app.post("/post_path")
-async def post_path( request: dict = Body(...) ):
-
+async def post_path(request: dict = Body(...)):
     data = request
 ```
 
