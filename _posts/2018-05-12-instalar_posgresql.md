@@ -7,7 +7,15 @@ categories: postgresql
 
 Son mis primeros apuntes de la universidad de mi clase de bases de datos usando postgreSQL como sistema manejador de bases de datos.
 
-## Instalar postgreSQL, crear un *rol* y una base de datos 
+Con el tiempo habrá información sobre otros sistemas manejadores.
+
+## Contenido
+
+* [Instalar postgreSQL crear un rol y una base de datos ](#instalar-postgresql-crear-un-rol-y-una-base-de-datos )
+
+* [Logearse MySql en la terminal](#logearse-mysql-en-la-terminal)
+
+## Instalar postgreSQL crear un rol y una base de datos 
 
 Los pasos mostrados a continuación son para sistemas operativos Ubuntu y derivados.
 
@@ -105,7 +113,7 @@ Si se siguieron **todos** los pasos y se quiere salir de postgreSQL se necesita 
 \q
 ```
 
-## MySql
+## Logearse MySql en la terminal
 
 Logearse a mysql como usuario `USUARIO` y usar la base de datos `BASE_DE_DATOS`
 

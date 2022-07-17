@@ -5,6 +5,8 @@ date:   2018-04-29 17:53:38 -0500
 categories: c/c++ opencv truncado shared
 --- 
 
+En la universidad me pideron OpenCV para hacer un par de projectos grandes de procesamiento de imágenes. Además necesité instalarlo en una pc de la escuela y en mi laptop después de formatearla varias veces.
+
 Los pasos mostrados a continuación fueron probados con éxito en los siguientes sistemas operativos:
 * Ubuntu 12.04 con Unity
 * Ubuntu 16.04 con Unity
@@ -15,7 +17,7 @@ Los pasos mostrados a continuación fueron probados con éxito en las siguientes
 * OpenCV 3.0.0
 * OpenCV 3.3.1
 
-Muchos de los pasos mostrados a continuación fueron obtenidos de la [documentación oficial de OpenCV para su instalación](https://docs.opencv.org/master/d7/d9f/tutorial_linux_install.html)
+Muchos de los pasos mostrados a continuación fueron obtenidos de la [documentación oficial de OpenCV para su instalación](https://docs.opencv.org/master/d7/d9f/tutorial_linux_install.html){:target="_blank"}
 
 # Instalar los paquetes requeridos
 
@@ -27,7 +29,7 @@ sudo apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libp
 
 # Obtener el código fuente
 
-Se puede encontrar [aqui](https://opencv.org/releases.html)
+Se puede encontrar [aqui](https://opencv.org/releases.html){:target="_blank"}
 
 # *Compilar* el código fuente
 
@@ -126,7 +128,3 @@ Para solucionarlo se debe abrir el `cmake-gui` y seguir los pasos para instalar,
 -DENABLE_PRECOMPILED_HEADERS=OFF
 ```
 y seguir los pasos de instación normalmente.
-
-**Contexto**
-
-En la escuela me pideron OpenCV para hacer un par de projectos grandes, además necesité instalarlo en un pc de la escuela y mi laptop después de formatearla varias veces.

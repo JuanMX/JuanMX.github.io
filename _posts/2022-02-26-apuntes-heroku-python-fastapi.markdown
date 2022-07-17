@@ -21,7 +21,7 @@ En este post supone que se usa Heroku CLI.
 
 * [Eliminar las rutas docs y redoc en FastAPI](#eliminar-las-rutas-docs-y-redoc-en-fastapi)
 
-* [En una ruta POST recibir un request y convertirlo a un diccionario](#en-una-ruta-post-recibir-un-request-y-convertirlo-a-un-diccionario)
+* [En una ruta POST recibir un json en el request y convertirlo a un diccionario](#en-una-ruta-post-recibir-un-json-en-el-request-y-convertirlo-a-un-diccionario)
 
 <br>
 <hr>
@@ -82,7 +82,7 @@ git remote -v
 
 Se necesita un archivo de configuración llamado `Procfile` que no lleva extención de archivo.
 
-Su conenido se muestra a continuación.
+Su contenido se muestra a continuación.
 
 ```
 ======= Procfile =======
@@ -189,7 +189,7 @@ async def read_items():
 
 
 
-## En una ruta POST recibir un request y convertirlo a un diccionario
+## En una ruta POST recibir un json en el request y convertirlo a un diccionario
 
 
 ```python
@@ -200,6 +200,7 @@ app = FastAPI()
 @app.post("/post_path")
 async def post_path(request: dict = Body(...)):
     data = request
+    return data
 ```
 
 En `data` se encuentra el request convertido a diccionario.
