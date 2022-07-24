@@ -292,7 +292,7 @@ Crea una migración que modificará una tabla para cambiar o agregar columnas.
 
 En un trabajo que tuve me pedian hacer cambios en sistemas hechos en Laravel. A veces eran muchos formularios con muchos campos a llenar.
 
-Después de buscar en la la sección de complementos de Firefox como llenar los formularios más rápido encontré esta extención para el navegador.
+Después de buscar en la sección de complementos de Firefox como llenar los formularios más rápido encontré esta extención para el navegador.
 
 ## Fake Filler para Firefox
 
