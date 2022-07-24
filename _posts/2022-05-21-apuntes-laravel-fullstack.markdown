@@ -14,6 +14,8 @@ He aprendido Laravel en trabajos como programador que he tenido.
 
 * [Comandos php artisan que uso con frecuencia](#comandos-php-artisan-que-uso-con-frecuencia)
 
+* [La extención de navegador Fake Filler para llenar formularios](#la-extención-de-navegador-fake-filler-para-llenar-formularios)
+
 
 
 <br>
@@ -248,7 +250,7 @@ php artisan make:factory CategoriaFactory --model=Categoria
 
 Crea un factory relacionado a un modelo.
 
-**Fuente:** [youtube.com &mdash; *Laravel 5.8 - Factorías y Faker [Tutorial en Español 2019]*](https://www.youtube.com/watch?v=8-16tFIj88M)
+**Fuente:** [youtube.com &mdash; *Laravel 5.8 - Factorías y Faker [Tutorial en Español 2019]*](https://www.youtube.com/watch?v=8-16tFIj88M){:target="_blank"}
 
 <br>
 <br>
@@ -259,7 +261,7 @@ php artisan make:middleware CheckAge
 
 Crea un middleware.
 
-**Fuente:** [laravel.com/docs/7.x/middleware &mdash; *Middleware*](https://laravel.com/docs/7.x/middleware)
+**Fuente:** [laravel.com/docs/7.x/middleware &mdash; *Middleware*](https://laravel.com/docs/7.x/middleware){:target="_blank"}
 
 <br>
 <br>
@@ -270,4 +272,57 @@ php artisan make:migration add_name_to_costs_table --table=costs
 
 Crea una migración que modificará una tabla para cambiar o agregar columnas.
 
-**Fuente:** [stackoverflow.com/questions/16791613/ &mdash; *Laravel Add a new column to existing table in a migration*](https://stackoverflow.com/questions/16791613/laravel-add-a-new-column-to-existing-table-in-a-migration)
+**Fuente:** [stackoverflow.com/questions/16791613/ &mdash; *Laravel Add a new column to existing table in a migration*](https://stackoverflow.com/questions/16791613/laravel-add-a-new-column-to-existing-table-in-a-migration){:target="_blank"}
+
+
+
+<br>
+<hr>
+<br>
+
+
+
+## La extención de navegador Fake Filler para llenar formularios
+*24 / Julio / 2022 | 0:19:00*
+
+<br>
+
+![fakefillerlogo](https://raw.githubusercontent.com/FakeFiller/fake-filler-extension/ff732ecc70776f938d15ba9716bc5b39f64bb98c/public/images/logo.svg)
+
+
+En un trabajo que tuve me pedian hacer cambios en sistemas hechos en Laravel. A veces eran muchos formularios con muchos campos a llenar.
+
+Después de buscar en la la sección de complementos de firefox como llenar los formularios más rápido encontré esta extención para el navegador.
+
+## Fake Filler para firefox
+
+Esta extención se encuentra [aqui](https://addons.mozilla.org/es/firefox/addon/fake-filler/){:target="_blank"}
+
+
+![fakefillerfirefox]({{ "../assets/apuntes-laravel-fullstack/fake_filler_firefox.png" | absolute_url }})
+
+Se debe agregar al navegador como cualquier otra extención.
+
+Y eso es todo.
+
+El único cambio que yo hice fue modificar como llenar un campo de formulario de tipo *Date*.
+
+## Modificar en Fake Filler el formato Date   
+
+
+Ir a la sección complementos de firefox.
+
+![fakefillerfirefox]({{ "../assets/apuntes-laravel-fullstack/1_firefox_Complementos.png" | absolute_url }})
+
+
+En los complementos buscar Fake Filler y dar click en *Preferencias*.
+
+![fakefillerfirefox]({{ "../assets/apuntes-laravel-fullstack/2_fakefiller_preferencias.png" | absolute_url }})
+
+En las preferencias de Fake Filler ir a *Custom Fields*, buscar el campo *Date* y dar click en editar.
+
+![fakefillerfirefox]({{ "../assets/apuntes-laravel-fullstack/3_fakefiller_date.png" | absolute_url }})
+
+En la sección *Template* sustituir su contenido por `DD/MM/YYYY` y guardar los cambios.
+
+![fakefillerfirefox]({{ "../assets/apuntes-laravel-fullstack/4_fakefiller_date_editar.png" | absolute_url }})
