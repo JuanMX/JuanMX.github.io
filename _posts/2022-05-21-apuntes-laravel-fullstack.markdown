@@ -16,6 +16,8 @@ He aprendido Laravel en trabajos como programador que he tenido.
 
 * [La extención de navegador Fake Filler para llenar formularios](#la-extención-de-navegador-fake-filler-para-llenar-formularios)
 
+* [En un div hacer que cambie el cursor por una mano al posicionarlo encima](#en-un-div-hacer-que-cambie-el-cursor-por-una-mano-al-posicionarlo-encima)
+
 
 
 <br>
@@ -326,3 +328,36 @@ En las preferencias de Fake Filler ir a *Custom Fields*, buscar el campo *Date* 
 En la sección *Template* sustituir su contenido por `DD/MM/YYYY` y guardar los cambios.
 
 ![fakefillerfirefox]({{ "../assets/apuntes-laravel-fullstack/4_fakefiller_date_editar.png" | absolute_url }})
+
+
+
+<br>
+<hr>
+<br>
+
+
+
+## En un div hacer que cambie el cursor por una mano al posicionarlo encima
+
+Para hacer que en un blade de Laravel el mouse cambie por una mano al hacer un *hover* sobre un elemento encerrado en un `<div></div>` se debe hacer lo siguiente. 
+
+```html
+@extends('default')
+@section('styles')
+
+    <style>
+        .hover-hand:hover{
+            cursor:pointer;
+        }
+    </style>
+
+@endsection
+@section('content')
+
+    <div class="hover-hand" id="id-hover-hand">
+
+        
+    </div>
+
+@endsection
+```
