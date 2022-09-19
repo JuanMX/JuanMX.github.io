@@ -4,21 +4,37 @@ title:  "Mi configuración de SMPlayer"
 date:   2022-09-16 22:26:00 -0500
 ---
 
-Sé que la mejor opción de reproductor multimedia es [VLC Media Player](https://www.videolan.org/vlc/) pero mi [laptop]({% post_url 2021-07-18-apuntes-dell-g7-7588 %}) tiene problemas al ejecutarlo.
+Sé que la mejor opción de reproductor multimedia es [VLC Media Player](https://www.videolan.org/vlc/){:target="_blank"} pero mi [laptop]({% post_url 2021-07-18-apuntes-dell-g7-7588 %}) tiene problemas al ejecutarlo.
 
 Entonces elegí [SMPlayer](https://www.smplayer.info/), ya lo conocía porque estaba incluido en la tienda de aplicaciones en viejas versiones de Ubuntu.
 
 Fue muy tardado configurarlo para que me guste y por eso es escribí al respecto.
 
+
+
+<br>
+<hr>
+<br>
+
+
+
 ## Remover la barra de progreso de video
 
 ![img]({{ "../assets/smplayer-configuracion/smplayer_barra.png" | absolute_url }})
 
-Para quitar la barra de color blanco se debe ir a 
+Para quitar la barra blanca de progreso se debe ir a 
 
 Ver -> Visualización en pantalla (OSD) -> Solo subtítulos
 
 ![img]({{ "../assets/smplayer-configuracion/smplayer_barra_opciones.png" | absolute_url }})
+
+
+
+<br>
+<hr>
+<br>
+
+
 
 ## Que el video se reproduzca en un ciclo infinito
 
@@ -28,7 +44,7 @@ Ir a Opciones -> Preferencias
 
 En el menú de la izquierda ir a *Avanzadas* después a la pestaña *MPlayer/mpv*.
 
-En el campo de texto que dice *Opciones:* escribir lo siguiente, después dar click en *Aceptar*
+En el campo de texto que dice *Opciones:* escribir lo siguiente, después dar click en *Aceptar*.
 
 ```
 --loop-file=inf
@@ -36,7 +52,15 @@ En el campo de texto que dice *Opciones:* escribir lo siguiente, después dar cl
 
 ![img]({{ "../assets/smplayer-configuracion/smplayer_loop_inf.png" | absolute_url }})
 
-## En pantalla completa que apareza la barra de navegacion al mover el mouse a laparte inferior de la pantalla
+
+
+<br>
+<hr>
+<br>
+
+
+
+## En pantalla completa que aparezca la barra de navegación al mover el mouse a la parte inferior de la pantalla
 
 Ir a Opciones -> Preferencias
 
@@ -50,6 +74,14 @@ Marcar la opción
 
 ![img]({{ "../assets/smplayer-configuracion/smplayer_mostrar_solo_parte_inferior.png" | absolute_url }})
 
+
+
+<br>
+<hr>
+<br>
+
+
+
 ## Mostrar información del video en la parte inferior de la pantalla
 
 Para mostrar información del video en el reproductor como se ve a continuacón se debe hacer lo siguiente.
@@ -58,7 +90,7 @@ Para mostrar información del video en el reproductor como se ve a continuacón 
 
 Ir a Opciones -> Barra de estado
 
-Yo tengo marcado las siguientes opciones.
+Yo tengo las siguientes opciones marcadas.
 
 - [x] *Información del vídeo*
 - [x] *Información del formato*
