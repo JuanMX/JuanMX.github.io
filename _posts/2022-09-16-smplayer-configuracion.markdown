@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Mi configuración de SMPlayer"
-date:   2022-06-16 22:26:00 -0500
+date:   2022-09-16 22:26:00 -0500
 ---
 
 Sé que la mejor opción de reproductor multimedia es [VLC Media Player](https://www.videolan.org/vlc/) pero mi [laptop]({% post_url 2021-07-18-apuntes-dell-g7-7588 %}) tiene problemas al ejecutarlo.
