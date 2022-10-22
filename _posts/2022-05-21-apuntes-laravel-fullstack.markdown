@@ -346,7 +346,7 @@ En la sección *Template* sustituir su contenido por `DD/MM/YYYY` y guardar los 
 </style>
 
 <div class="hover-hand">
-    Para hacer que en un blade de Laravel el mouse cambie por una mano al hacer un *hover* sobre un elemento encerrado en un `<div></div>` se puede hacer lo siguiente. 
+    Para hacer que en un blade de Laravel el mouse cambie por una mano al hacer un *hover* sobre un elemento encerrado en un <code>&lt;div&gt;&lt;/div&gt;</code> se puede hacer lo siguiente. 
 </div>
 
 <script src="https://gist.github.com/JuanMX/6f34a6be36f31ecdbf4aa90c2fc25ea1.js"></script>
