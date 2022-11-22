@@ -351,3 +351,19 @@ En la sección *Template* sustituir su contenido por `DD/MM/YYYY` y guardar los 
 </p>
 </div>
 <script src="https://gist.github.com/JuanMX/6f34a6be36f31ecdbf4aa90c2fc25ea1.js"></script>
+
+
+
+<br>
+<hr>
+<br>
+
+
+
+## Usar el helper str de Laravel en un Blade
+
+Para hacer rápido una tarea que me pedían usé el helper `str upper` de Laravel directamente en un blade.
+
+A continuación se muestra un ejmeplo de como hacerlo.
+
+<script src="https://gist.github.com/JuanMX/cbb3b1aa0e3b1caf9d18ea25e8942f89.js"></script>
