@@ -18,6 +18,7 @@ He aprendido Laravel en trabajos como programador que he tenido.
 
 * [En un div hacer que cambie el cursor por una mano al posicionarlo encima](#en-un-div-hacer-que-cambie-el-cursor-por-una-mano-al-posicionarlo-encima)
 
+* [Usar el helper str de Laravel en un Blade](#usar-el-helper-str-de-laravel-en-un-blade)
 
 
 <br>
@@ -364,6 +365,6 @@ En la sección *Template* sustituir su contenido por `DD/MM/YYYY` y guardar los 
 
 Para hacer rápido una tarea que me pedían usé el helper `str upper` de Laravel directamente en un blade.
 
-A continuación se muestra un ejmeplo de como hacerlo.
+A continuación se muestra un ejemplo de como hacerlo.
 
 <script src="https://gist.github.com/JuanMX/cbb3b1aa0e3b1caf9d18ea25e8942f89.js"></script>
