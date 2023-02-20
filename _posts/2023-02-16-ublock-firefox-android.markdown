@@ -19,7 +19,7 @@ Dar click en la primera opción que dice *Iniciar sesión*.
 
 uBlock para Firefox se encuentra [aqui](https://addons.mozilla.org/es/firefox/addon/ublock-origin/).
 
-![img]({{ "../assets/ublock-firefox/uBlock-firefox.png" | absolute_url }})
+![img]({{ "../assets/ublock-firefox/uBlock-Firefox.png" | absolute_url }})
 
 ## Permitir sincronizar complementos
 
