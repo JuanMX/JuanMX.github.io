@@ -13,7 +13,7 @@ Mi *sabiduría de calle* del Python.
 
 * [pip, wheel y setuptools](#pip-wheel-y-setuptools)
 
-* [requirements.txt](#requirements.txt)
+* [requirements.txt](#requirementstxt)
 
 * [archivos env y envexample](#archivos-env-y-envexample)
 
@@ -51,7 +51,7 @@ python3 -m venv tutorial-env
 
 ## Activar un env
 
-Abrir una terminal y posicionarla en la careta del env creado. Después escribir.
+Abrir una terminal y posicionarla en la carpeta del env creado. Después escribir.
 
 En Windows:
 
@@ -78,7 +78,7 @@ deactivate
 **Sólo se debe eliminar la carpeta.**
 
 
-**Fuente:** [docs.python.org &mdash; *Entornos virtuales y paquetes*](https://docs.python.org/es/3/tutorial/venv.html){:target="_blank"}
+**Fuente:** [docs.python.org/es &mdash; *Entornos virtuales y paquetes*](https://docs.python.org/es/3/tutorial/venv.html){:target="_blank"}
 
 
 
@@ -108,4 +108,72 @@ pip install -U pip setuptools wheel
 
 No parace muy intuitivo usar `pip` para instalar `pip` pero en casi todas las veces lo que hará es actualizarlo a su versión más reciente.
 
-**Fuente:** [spacy.io &mdash; *pip*](https://spacy.io/usage#pip){:target="_blank"} 
+**Fuente:** [spacy.io &mdash; *pip*](https://spacy.io/usage#pip){:target="_blank"}
+
+
+
+<br>
+<hr>
+<br>
+
+
+
+## requirements.txt
+
+El archivo `requirements.txt` contiene una lista de librerías para instalar usando `pip`.
+
+```
+pip install -r requirements.txt
+```
+
+El archivo es parecido al siguiente.
+
+```
+fastapi==0.66.1
+uvicorn==0.14.0
+tensorflow-cpu==2.5.0
+```
+
+
+## Crear requirements.txt con pip freeze
+
+```
+pip freeze > requirements.txt
+```
+
+## Consejos para requirements.txt
+
+<mark>1</mark> 
+
+Se aconseja que el archivo siempre se llame *requirements.txt*.
+
+<mark>2</mark> 
+
+Es recomendado crear el archivo manualmente sin usar `freeze > requirements.txt`.
+
+La manera de hacerlo es usar `pip freeze` y ver la salida, después agregar manualmente las dependencias.
+
+Ejemplo, si en un `env` recién hecho se usa `pip install tensorflow` y después `pip freeze > requirements.txt` mostrará tensorflow junto con muchas otras dependencias.
+
+Lo que se aconseja hacer es, usar `pip freeze`, ubicar tensorflow, crear el archivo requirements.txt y agregar manualmente tensorflow.
+
+<mark>3</mark> 
+
+Es posible agregar cosas poco comunes desde este archivo.
+
+Ejemplo, para **spacy y un modelo entrenado de reconocimiento de entidades multilenguaje** el archivo requirements.txt se ve como:
+
+```
+spacy==3.1.2
+xx-ent-wiki-sm @ https://github.com/explosion/spacy-models/releases/download/xx_ent_wiki_sm-3.1.0/xx_ent_wiki_sm-3.1.0-py3-none-any.whl
+```
+
+<mark>4</mark> 
+
+Para desplegar a producción un proyecto de Python en un servicio en la nube como Heroku, **si se tienen problemas con las dependencias** se sugiere agregar a requirements.txt las versiones de pip, wheel y setuptools usadas en el desarrollo.
+
+**Fuentes** 
+
+Información de requirements.txt: [pip.pypa.io &mdash; *Requirements Files*](https://pip.pypa.io/en/stable/user_guide/#requirements-files){:target="_blank"}
+
+Información de pip freeze: [pip.pypa.io &mdash; *pip freeze*](https://pip.pypa.io/en/stable/cli/pip_freeze/#pip-freeze){:target="_blank"}
