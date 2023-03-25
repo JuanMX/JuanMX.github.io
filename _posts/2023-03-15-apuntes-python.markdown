@@ -15,7 +15,7 @@ Mi *sabiduría de calle* del Python.
 
 * [requirements.txt](#requirementstxt)
 
-* [archivos env y envexample](#archivos-env-y-envexample)
+* [archivos .env y .env.example](#archivos-env-y-envexample)
 
 * [Cambiar la versión de Python en Laragon](#cambiarcla-version-de-python-en-laragon)
 
@@ -177,3 +177,49 @@ Para desplegar a producción un proyecto de Python en un servicio en la nube com
 Información de requirements.txt: [pip.pypa.io &mdash; *Requirements Files*](https://pip.pypa.io/en/stable/user_guide/#requirements-files){:target="_blank"}
 
 Información de pip freeze: [pip.pypa.io &mdash; *pip freeze*](https://pip.pypa.io/en/stable/cli/pip_freeze/#pip-freeze){:target="_blank"}
+
+
+
+<br>
+<hr>
+<br>
+
+
+
+## Archivos .env y .env.example
+
+De manera conceptual, un archivo `.env` contiene variables de gran importancia que se pueden acceder desde cualquier parte de un proyecto de desarrollo.
+
+Un archivo `.env` se genera de un archivo `.env.example` que puede contener indicaciones del contenido de las variables.
+
+En Laravel, por ejemplo, estos archivos se ven así:
+
+![copiarposts]({{ "../assets/apuntes-python/env-envexample.png" | absolute_url }})
+
+## Archivos .env y .env.example para Python
+
+Se necesita [python-dotenv](https://pypi.org/project/python-dotenv/){:target="_blank"}.
+
+Yo lo uso como en el siguiente ejemplo.
+
+Lo siguiente es el contenido de un `.env` de ejemplo:
+
+```
+APP_NAME="Un nombre de ejemplo"
+```
+
+Lo siguiente es código de Python que usa el `.env` anterior:
+
+```python
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+def get_env(env_variable):
+    return os.environ.get(env_variable)
+
+get_env("APP_NAME") # Obtiene "Un nombre de ejemplo" del archivo .env
+```
+
+**Fuente:** [pypi.org &mdash; *python-dotenv*](https://pypi.org/project/python-dotenv/){:target="_blank"} 
