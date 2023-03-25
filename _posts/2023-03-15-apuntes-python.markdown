@@ -190,22 +190,22 @@ Información de pip freeze: [pip.pypa.io &mdash; *pip freeze*](https://pip.pypa.
 
 De manera conceptual, un archivo `.env` contiene variables de gran importancia que se pueden acceder desde cualquier parte de un proyecto de desarrollo.
 
-Un archivo `.env` se genera de un archivo `.env.example` que puede contener indicaciones del contenido de las variables.
+Un archivo `.env` se genera de un archivo `.env.example` que contiene las variables *vacías* o con indicaciones de su contenido.
 
 En Laravel, por ejemplo, estos archivos se ven así:
 
-![copiarposts]({{ "../assets/apuntes-python/env-envexample.png" | absolute_url }})
+![img]({{ "../assets/apuntes-python/env-envexample.PNG" | absolute_url }})
 
-## Archivos .env y .env.example para Python
+No se recomienda subir a un repositorio el archivo `.env` sólo el `.env.example`. Cada vez que se clone el proyecto del repositorio se debe generar un nuevo `.env` a partir de `.env.example`.
+
+## La manera en que yo uso un .env en Python
 
 Se necesita [python-dotenv](https://pypi.org/project/python-dotenv/){:target="_blank"}.
-
-Yo lo uso como en el siguiente ejemplo.
 
 Lo siguiente es el contenido de un `.env` de ejemplo:
 
 ```
-APP_NAME="Un nombre de ejemplo"
+MY_APP_NAME="Un nombre de ejemplo"
 ```
 
 Lo siguiente es código de Python que usa el `.env` anterior:
@@ -219,7 +219,7 @@ load_dotenv()
 def get_env(env_variable):
     return os.environ.get(env_variable)
 
-get_env("APP_NAME") # Obtiene "Un nombre de ejemplo" del archivo .env
+get_env("MY_APP_NAME") # Obtiene "Un nombre de ejemplo" del archivo .env
 ```
 
 **Fuente:** [pypi.org &mdash; *python-dotenv*](https://pypi.org/project/python-dotenv/){:target="_blank"} 
