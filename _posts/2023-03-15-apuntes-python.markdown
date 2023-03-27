@@ -17,7 +17,7 @@ Mi *sabiduría de calle* del Python.
 
 * [archivos .env y .env.example](#archivos-env-y-envexample)
 
-* [Cambiar la versión de Python en Laragon](#cambiarcla-version-de-python-en-laragon)
+* [Python en Laragon](#python-en-laragon)
 
 
 
@@ -222,4 +222,68 @@ def get_env(env_variable):
 get_env("MY_APP_NAME") # Obtiene "Un nombre de ejemplo" del archivo .env
 ```
 
-**Fuente:** [pypi.org &mdash; *python-dotenv*](https://pypi.org/project/python-dotenv/){:target="_blank"} 
+
+
+
+
+<br>
+<hr>
+<br>
+
+
+
+## Python en Laragon
+
+[*Laragon provee un moderno y poderoso entorno de desarrollo que incontables personas aman y usan cada día.*](https://laragon.org/about/){:target="_blank"}
+
+En palabras propias y usando terminos de Python: Es como un [env](#env) de Python para diferentes desarrollos, por ejemplo, diferentes versiones del *framework* de Laravel. Donde cada uno está separado. Lo que permite desarrollar con distinas versiones del *framework* con sus dependencias sin que se *estorben* entre éstas.
+
+Yo tenía entendido que Laragon era únicamente para Laravel pero en [versiones recientes](https://laragon.org/download/index.html){:target="_blank"} han añadido mediante  ***Quick add*** frameworks y lenguajes de programación, entre ellos Python.
+
+A veces se necesita una versión en particular de Python, que difiere de la proveída por Laragon, por ejemplo, [para FastAPI se necesita Python 3.7+](https://fastapi.tiangolo.com/#requirements){:target="_blank"}. Y en mi caso la versión de Python proveída era 3.6.1.
+
+En este caso se necesita cambiar la versión de Python en Laragon para usar FastAPI.
+
+La explicación corta para lograrlo es: Instalar Python en modo personalizado en la carpeta `bin\python\` de Laragon en lugar de `C:\Archivos de Programa\`.
+
+La explicación larga se muestra a continuación.
+
+## Cambiar la versión de Python en Laragon
+
+**Se usan imágenes del sitio https://programmerclick.com/article/12232400613/**
+
+Ir a [python.org/downloads/](https://www.python.org/downloads/){:target="_blank"} y descargar alguna versión, en micaso, la 3.9.10.
+
+Dar doble click para iniciar el instalador, desmarcar los *checkbox* de:
+
+* [ ] *Install launcher for all users* 
+* [ ] *Add PYthon to PATH*.
+
+Después dar click en *Customize installation*.
+
+![img]({{ "https://images2.programmerclick.com/414/81/8137952de1ef61fd36c67610d5f3fb36.png" }})
+
+Desmarcar los *checkbox* de:
+
+* [ ] *tcl/tk and IDLE* 
+* [ ] *py launcher*.
+
+Después dar click en *Next*
+
+![img]({{ "https://images3.programmerclick.com/738/8a/8a2858be5b3290d5e8455addbb676f92.png" }})
+
+En la ruta de instalación se debe poner la ruta `bin\python\` de Laragon. En mi caso es `C:\laragon\bin\python\python-3.9.10`. Para otra versión de Python cambiará, ejemplo `bin\python\python-3.8.1`.
+
+![img]({{ "../assets/apuntes-python/laragon-bin-python.PNG" | absolute_url }})
+
+Finalmente se debe hacer click en *Install* para empezar la instalación. Al finalizar la instalación cerrar la ventana.
+
+Para escoger que versión de Python usar en Laragon yo lo que hago es.
+
+Click derecho -> Python -> Version -> Python 3.9.10.
+
+![img]({{ "../assets/apuntes-python/laragon-python-version.png" | absolute_url }})
+
+
+
+**Fuente:** [programmerclick.com &mdash; *Añadir una nueva versión de Python en Laragon*](https://programmerclick.com/article/12232400613/){:target="_blank"} 
