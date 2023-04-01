@@ -244,7 +244,7 @@ A veces se necesita una versión en particular de Python, que difiere de la prov
 
 En este caso se necesita cambiar la versión de Python en Laragon para usar FastAPI.
 
-La explicación corta para lograrlo es: Instalar Python en modo personalizado en la carpeta `bin\python\` de Laragon en lugar de `C:\Archivos de Programa\`.
+La explicación corta para lograrlo es: Instalar Python en modo personalizado en la carpeta de Laragon `bin\python\` en lugar de `C:\Archivos de Programa\`.
 
 La explicación larga se muestra a continuación.
 
@@ -252,12 +252,12 @@ La explicación larga se muestra a continuación.
 
 **Se usan imágenes del sitio https://programmerclick.com/article/12232400613/**
 
-Ir a [python.org/downloads/](https://www.python.org/downloads/){:target="_blank"} y descargar alguna versión, en micaso, la 3.9.10.
+Ir a [python.org/downloads/](https://www.python.org/downloads/){:target="_blank"} y descargar alguna versión, en mi caso, la 3.9.10.
 
 Dar doble click para iniciar el instalador, desmarcar los *checkbox* de:
 
 * [ ] *Install launcher for all users* 
-* [ ] *Add PYthon to PATH*.
+* [ ] *Add Python to PATH*.
 
 Después dar click en *Customize installation*.
 
