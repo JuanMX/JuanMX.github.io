@@ -78,4 +78,20 @@ Fix<y>?
 
 Si después de esto no inicia el sistema operativo va a ser necesario reiniciar la computadora. El problema debería estar resuelto.
 
+***Si los pasos anteriores solucionan el problema, respalda toda la información que puedas.***
+
+***En mí experiencia el disco duro tiene un daño irreparable.***
+
 **Fuente:** [askubuntu.com/questions/ &mdash; *Ubuntu 15.10 - "BusyBox built-in shell (initramfs)" on every boot*](https://askubuntu.com/questions/741109/ubuntu-15-10-busybox-built-in-shell-initramfs-on-every-boot){:target="_blank"}
+
+## Algunas capturas de pantalla encontradas en mi viejo disco duro
+
+![img]({{ "../assets/initramfs/1.png" | absolute_url }})
+
+![img]({{ "../assets/initramfs/2.png" | absolute_url }})
+
+![img]({{ "../assets/initramfs/3.png" | absolute_url }})
+
+![img]({{ "../assets/initramfs/4.png" | absolute_url }})
+
+![img]({{ "../assets/initramfs/5.png" | absolute_url }})
