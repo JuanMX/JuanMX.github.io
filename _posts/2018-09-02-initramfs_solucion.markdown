@@ -43,7 +43,7 @@ Parece que `/dev/sda6` es la partición en el disco duro donde esta el root (`/`
 
 **En mi caso `fsck /dev/sda6`**
 
-Preguntará más de una vez si se quere reparar el error (`Fix<y>?`) en mi caso pulsé la tecla `[Y]`.
+Preguntará más de una vez si se quiere reparar el error (`Fix<y>?`) en mi caso pulsé la tecla `[Y]`.
 
 ```
 (initramfs) fsck /dev/sda6
