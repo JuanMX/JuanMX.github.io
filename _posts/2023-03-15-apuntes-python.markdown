@@ -19,6 +19,8 @@ Mi *sabiduría de calle* del Python.
 
 * [Python en Laragon](#python-en-laragon)
 
+* [Crear un diccionario de tipo int inicializado en 0](#crear-un-diccionario-de-tipo-int-inicializado-en-0)
+
 
 
 <br>
@@ -287,3 +289,47 @@ Click derecho -> Python -> Version -> Python 3.9.10.
 
 
 **Fuente:** [programmerclick.com &mdash; *Añadir una nueva versión de Python en Laragon*](https://programmerclick.com/article/12232400613/){:target="_blank"} 
+
+
+
+<br>
+<hr>
+<br>
+
+
+
+## Crear un diccionario de tipo int inicializado en 0
+
+Hay veces en que se quiere usar un diccionario de python de tamaño variable para guardarle valores como si fuera un acumulador. Por ejemplo, usar un dict como un histograma. 
+
+Intuitivamente se piensa en hacer algo como lo siguiente que dará errores:
+
+```python
+dict_prueba = dict()
+
+for i in range(10):
+    dict_prueba[i] += i
+print (dict_prueba)
+
+#Esto dará un error, en mi caso de tipo KeyError
+```
+
+Para poder hacer algo como lo anterior sin errores se puede hacer lo siguiente.
+Pero tiene el inconveniente de que sólo se pueden guardar números:
+
+```python
+from collections import defaultdict
+
+dict_prueba_2 = defaultdict(lambda : 0)
+
+for i in range(10):
+    dict_prueba_2[i] += i
+print (dict_prueba_2)
+
+#Ya no dará error. 
+#Pero limita al dict a guardar solamente números
+```
+**Fuente:** [https://stackoverflow.com/questions/2241891 &mdash; *How to initialize a dict with keys from a list and empty value in Python?*](https://stackoverflow.com/a/53814614){:target="_blank"} 
+
+
+No tener a la mano este apunte me costó la prueba técnica para un trabajo.
