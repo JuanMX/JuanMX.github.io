@@ -12,7 +12,10 @@ Aquí hay apuntes de *Java puro*.
 ## Contenido
 
 * [Obtener la altura y anchura de la pantalla](#obtener-la-altura-y-anchura-de-la-pantalla)
+
 * [Usar el tema Nimbus en una GUI de Java](#usar-el-tema-nimbus-en-una-gui-de-java)
+
+* [Crear un archivo de configuración](#crear-un-archivo-de-configuración)
 
 
 
@@ -55,7 +58,7 @@ public class UnaClase {
 
 ![oraclenimbusdemo](https://docs.oracle.com/javase/tutorial/figures/uiswing/lookandfeel/nimbus.png)
 
-La manera en que yo lo uso es: **Únicamente** en el método `main` poner el tema Nimbus. A las ventanas secundarias (hijas) se les pondrá el tema automáticamente.
+La manera en que yo lo uso es: **Únicamente** en el método `main` poner el tema Nimbus. A las ventanas secundarias (hijas), JOptionPane, JFileChooser y componentes (JButton, JTextField, JScrollPane u otros) se les pondrá el tema automáticamente.
 
 ```java
 import javax.swing.UIManager.*;
@@ -89,3 +92,97 @@ public class EstaEsUnaClase {
 De acuerdo con la documentación de Oracle, Nimbus es multiplataforma y fue añadido en la versión 6 actualización 10 de Java (*Java SE 6 Update 10 (6u10) release*).
 
 **Fuente:** [docs.oracle.com/javase/tutorial/ &mdash; *Nimbus Look and Feel*](https://docs.oracle.com/javase/tutorial/uiswing/lookandfeel/nimbus.html){:target="_blank"}
+
+
+
+<br>
+<hr>
+<br>
+
+
+
+## Crear un archivo de configuración
+
+Para un [proyecto personal de Java](https://github.com/JuanMX/javasimplecrud){:target="_blank"} necesitaba guardar la configuración del usuario. Específicamente el *Look and Feel* que el usuario seleccione.
+
+Un archivo de configuración se puede usar para guardar otras cosas por ejemplo, el idioma preferido o el tema (día ☀️, noche 🌗).
+
+Java cuenta con `java.util.Properties;` usado para crear un archivo de configuración que se maneja como `(clave, valor)`.
+
+Un ejemplo de archivo de configuración es el siguiente:
+
+```
+#Fri Jun 30 17:59:36 CST 2023
+lookAndFeel=Nimbus
+```
+
+### Como yo uso java Properties
+
+Como nombre de archivo uso `CONFIG.config`.
+
+Para escribir (`set`) en el archivo de propiedades hago lo siguiente:
+
+```java
+import java.util.Properties;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+import javax.swing.JOptionPane;
+
+public class ConfigManagement {
+
+private static Properties prop = new Properties();
+private static final String CONFIG_FILE = "CONFIG.config";
+
+	public void setConfig(String key, String value) {
+		
+		try{
+			
+			prop.setProperty(key, value);
+			prop.store(new FileOutputStream(CONFIG_FILE), null);
+		    
+		}catch(IOException e){
+			JOptionPane.showMessageDialog( null, "Something went wrong", "Can not save the changes", JOptionPane.ERROR_MESSAGE );
+			e.printStackTrace();
+		}
+	}
+}
+```
+
+Para leer (`get`) del archivo de propiedades hago lo siguiente:
+
+```java
+import java.util.Properties;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+import javax.swing.JOptionPane;
+
+public class ConfigManagement {
+
+	private static Properties prop = new Properties();
+	private static final  String CONFIG_FILE = "CONFIG.config";
+	
+	public String getConfig(String key) {
+		
+		String value = "";
+		
+		try {
+			prop.load(new FileInputStream(CONFIG_FILE));
+			value = prop.getProperty(key);
+			
+		}catch(IOException e) {
+			JOptionPane.showMessageDialog( null, "Something went wrong", "Can not read the config file", JOptionPane.ERROR_MESSAGE );
+			e.printStackTrace();
+		}
+
+		return value;
+	}
+}
+
+```
+
+[Con confianza pueden ver la clase de Java en la que uso mi propio archivo de configuración.](https://github.com/JuanMX/javasimplecrud/blob/master/javasimplecrud/src/com/juanmx/javasimplecrud/ConfigManagement.java){:target="_blank"} 
+
