@@ -17,6 +17,8 @@ Aquí hay apuntes de *Java puro*.
 
 * [Crear un archivo de configuración](#crear-un-archivo-de-configuración)
 
+* [Cambiar el icono de una ventana](#cambiar-el-icono-de-una-ventana)
+
 
 
 <br>
@@ -116,7 +118,7 @@ Un ejemplo de archivo de configuración es el siguiente:
 lookAndFeel=Nimbus
 ```
 
-### Como yo uso java Properties
+### Como yo uso Java Properties
 
 Como nombre de archivo uso `CONFIG.config`.
 
@@ -186,3 +188,52 @@ public class ConfigManagement {
 
 [Con confianza pueden ver la clase de Java en la que uso mi propio archivo de configuración.](https://github.com/JuanMX/javasimplecrud/blob/master/javasimplecrud/src/com/juanmx/javasimplecrud/ConfigManagement.java){:target="_blank"} 
 
+
+
+<br>
+<hr>
+<br>
+
+
+
+## Cambiar el icono de una ventana
+
+![img]({{ "../assets/apuntes-java/cambiar_icono.png" | absolute_url }})
+
+La clase que crea un JFrame con un icono de ventana distinto es la siguiente:
+
+```java
+import javax.swing.JFrame;
+import java.awt.Image;
+import java.awt.Toolkit;
+
+public class ClaseQueCreaUnJFrame extends JFrame{
+	
+	public ClaseQueCreaUnJFrame(){
+		
+		Toolkit myToolkit = Toolkit.getDefaultToolkit();
+		Image windowIcon = myToolkit.getImage("./ruta/al/icono.png"); // tal vez acepte otros formatos de imagen, a mi me funciono con .png
+		setIconImage(windowIcon);
+	}
+}
+```
+
+La clase con el método `main` que usa la clase anterior es la siguiente:
+
+```java
+public class Ejemplo{
+	
+	public static void main(String[] args) {
+			
+		ClaseQueCrearaUnJFrame unaVentana = new ClaseQueCrearaUnJFrame();
+
+		unaVentana.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );   
+		unaVentana.setSize( 800, 600 );
+		unaVentana.setVisible( true );
+		unaVentana.setLocationRelativeTo( null );
+		//aqui tambien se podria usar unaVentana.setIconImage
+	}
+}
+```
+
+**Fuente:** [youtube.com/@pildorasinformaticas &mdash; *Curso Java. Aplicaciones gráficas. Swing III. Colocando el Frame II. Vídeo 57*](https://www.youtube.com/watch?v=zADgVrhtBDs){:target="_blank"}
