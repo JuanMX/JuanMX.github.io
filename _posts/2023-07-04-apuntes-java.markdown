@@ -122,7 +122,7 @@ lookAndFeel=Nimbus
 
 Como nombre de archivo uso `CONFIG.config`.
 
-Para escribir (`set`) en el archivo de propiedades hago lo siguiente:
+Para **escribir** (`set`) en el archivo de propiedades hago lo siguiente:
 
 ```java
 import java.util.Properties;
@@ -152,7 +152,7 @@ private static final String CONFIG_FILE = "CONFIG.config";
 }
 ```
 
-Para leer (`get`) del archivo de propiedades hago lo siguiente:
+Para **leer** (`get`) del archivo de propiedades hago lo siguiente:
 
 ```java
 import java.util.Properties;
