@@ -21,7 +21,7 @@ Una es para 🛠️🗿
 
 La otra es para 🎮🗿
 
-Los procesos duplicados me pasan por no cerrar la sesión actual antes de cambiarme a otra sesión.
+Los procesos duplicados me aparecen por no cerrar la sesión actual antes de cambiarme a otra sesión.
 
 ![dossesiones]({{ "../assets/windows10/procesos-duplicados-usuarios.png" | absolute_url }})
 
