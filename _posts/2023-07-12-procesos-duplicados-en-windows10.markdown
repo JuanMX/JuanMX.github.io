@@ -9,11 +9,11 @@ categories: windows10
 
 Pensaba que era un virus pero no es mi caso.
 
-Al buscar información me encontré con [esta entrada del foro de Microsoft.](https://answers.microsoft.com/es-es/windows/forum/all/servicios-y-procesos-repetidos-windows-10/1e7b4e97-b302-4f64-9dfc-789ce353980e){:target="_blank"} No quedé conforme con la respuesta pero el post da a entender que no es algo grave.
+Al buscar información me encontré con [esta entrada del foro de Microsoft.](https://answers.microsoft.com/es-es/windows/forum/all/servicios-y-procesos-repetidos-windows-10/1e7b4e97-b302-4f64-9dfc-789ce353980e){:target="_blank"} No quedé conforme con la respuesta, pero el post del foro da a entender que no es grave.
 
-Después de picar por todos lados en mi computadora me dí cuenta que tenía dos sesiones abiertas.
+Después de buscar en el *Administrador de tareas* encontré a dos usuarios que corresponden a dos sesiones que tengo en Windows 10.
 
-## En mi caso esto sucede por tener dos sesiones en la computadora
+## En mi caso los procesos duplicados suceden por tener dos sesiones en la computadora
 
 Yo tengo dos sesiones en mi computadora:
 
@@ -25,8 +25,8 @@ Los procesos duplicados me aparecen por no cerrar la sesión actual antes de cam
 
 ![dossesiones]({{ "../assets/windows10/procesos-duplicados-usuarios.png" | absolute_url }})
 
-## Como yo cierro una sesión
+## Mi manera de cerrar una sesión
 
-Click derecho en el inicio de windows -> Apagar o cerrar sesión -> Cerrar sesión
+Click derecho en el Inicio de Windows -> Apagar o cerrar sesión -> Cerrar sesión
 
 ![cerrarsesion]({{ "../assets/windows10/cerrar-sesion.gif" | absolute_url }})
