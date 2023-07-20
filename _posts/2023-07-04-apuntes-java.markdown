@@ -134,8 +134,8 @@ import javax.swing.JOptionPane;
 
 public class ConfigManagement {
 
-private static Properties prop = new Properties();
-private static final String CONFIG_FILE = "CONFIG.config";
+	private static Properties prop = new Properties();
+	private static final String CONFIG_FILE = "CONFIG.config";
 
 	public void setConfig(String key, String value) {
 		
@@ -225,13 +225,13 @@ public class Ejemplo{
 	
 	public static void main(String[] args) {
 			
-		ClaseQueCrearaUnJFrame unaVentana = new ClaseQueCrearaUnJFrame();
+		ClaseQueCrearaUnJFrame unaVentanaConJFrame = new ClaseQueCrearaUnJFrame();
 
-		unaVentana.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );   
-		unaVentana.setSize( 800, 600 );
-		unaVentana.setVisible( true );
-		unaVentana.setLocationRelativeTo( null );
-		//aqui tambien se podria usar unaVentana.setIconImage
+		unaVentanaConJFrame.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );   
+		unaVentanaConJFrame.setSize( 800, 600 );
+		unaVentanaConJFrame.setVisible( true );
+		unaVentanaConJFrame.setLocationRelativeTo( null );
+		//aqui tambien se podria usar unaVentanaConJFrame.setIconImage
 	}
 }
 ```
