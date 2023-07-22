@@ -5,9 +5,11 @@ date:   2023-07-19 17:00:00 -0500
 categories: latex beamer
 ---
 
-Estaba haciendo la limpieza a un viejo disco duro que tenía por ahí y me encontré con todo lo que hice en la universidad referente a LaTeX, es decir, mi tesis, diapositivas y un póster científico.
+Estaba revisando un viejo disco duro que tenía por ahí y me encontré con documentos de todo lo que hice en la universidad referente a LaTeX, es decir, mi tesis, diapositivas y un póster científico.
 
-Probablemente esta entrada de blog contiene conocimiento obsoleto.
+Al revisar los documentos noté que aprendí algunos trucos sobre LaTeX y eso me motivó a hacer esta entrada de blog.
+
+Probablemente este post contiene conocimiento obsoleto.
 
 ## Instalar texlive-full en Kubuntu 22.04
 
