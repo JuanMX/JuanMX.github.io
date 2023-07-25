@@ -33,3 +33,19 @@ Se utilizarán 6 392 MB de espacio de disco adicional después de esta operaci
 Se debe presionar la "S" en el teclado para iniciar la instalación.
 
 **Fuente:** [linuxconfig.org &mdash; *How to install LaTex on Ubuntu 18.04 Bionic Beaver Linux*](https://linuxconfig.org/how-to-install-latex-on-ubuntu-18-04-bionic-beaver-linux){:target="_blank"}
+
+
+
+<br>
+<hr>
+<br>
+
+
+
+## Obtener el pdf a partir de un archivo tex
+
+Para obtner el `.pdf` del `.tex` abrir una terminal donde está el `.tex` y escribir:
+
+```
+pdflatex nombre_del_archivo.tex
+```
