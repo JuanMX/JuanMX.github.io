@@ -19,6 +19,8 @@ Aquí hay apuntes de *Java puro*.
 
 * [Cambiar el icono de una ventana](#cambiar-el-icono-de-una-ventana)
 
+* [Crear un jar desde la terminal](#crear-un-jar-desde-la-terminal)
+
 
 
 <br>
@@ -237,3 +239,47 @@ public class Ejemplo{
 ```
 
 **Fuente:** [youtube.com/@pildorasinformaticas &mdash; *Curso Java. Aplicaciones gráficas. Swing III. Colocando el Frame II. Vídeo 57*](https://www.youtube.com/watch?v=zADgVrhtBDs){:target="_blank"}
+
+
+
+<br>
+<hr>
+<br>
+
+
+
+
+## Crear un jar desde la terminal
+
+Crear los `.class` con:
+
+```
+javac archivo.java
+```
+
+Crear un archivo `MANIFEST` o `MANIFEST.MF` con el siguiente contenido:
+
+```
+Manifest-Version: 1.0 
+Main-Class: clasePrincipal
+```
+
+donde:
+
+`clasePrincipal` es la clase que tiene el método `main`.
+
+Poner los archivos `.class` y el archivo `MANIFEST` en un solo directorio. Después con la terminal escribir:
+
+```
+jar cvfm clasePrincipal.jar MANIFEST *.class
+```
+
+donde:
+
+`clasePrincipal.jar` es el nombre con extención del jar.
+
+`MANIFEST` es archivo creado anteriormente.
+
+`*.class` se refiere a que se van a usar todos los `.class` que se encuentren en el directorio actual. Adicionalmente se puede escribir `*.java` para que se agreguen todos los archivos `.java` al jar.
+
+[**Ya había escrito sobre este tema.**]({% post_url 2018-04-28-jar-sencillo-manualmente %}){:target="_blank"}
