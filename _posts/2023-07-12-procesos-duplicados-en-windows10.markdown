@@ -30,3 +30,11 @@ Los procesos duplicados me aparecen por no cerrar la sesión actual antes de cam
 Click derecho en el Inicio de Windows -> Apagar o cerrar sesión -> Cerrar sesión
 
 ![cerrarsesion]({{ "../assets/windows10/cerrar-sesion.gif" | absolute_url }})
+
+## Otra manera de cerrar una sesión
+
+Abrir el administrador de tareas con `ctrl + alt + del`.
+
+En la pestaña Usuarios: Click derecho -> Cerrar sesión.
+
+![cerrarsesion]({{ "../assets/windows10/cerrar-sesion-2.png" | absolute_url }})
