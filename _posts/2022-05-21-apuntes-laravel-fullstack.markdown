@@ -127,7 +127,7 @@ archivo: package.json
 
 En la ventana de laragon o su icono en la barra de tareas dar click derecho apache->ssl->habilitado.
 
-Abrir un explorador como firefox e introducir la ruta `nombre_del_proyecto.test` 
+Abrir un explorador como Firefox e introducir la ruta `nombre_del_proyecto.test` 
 
 donde: 
 
@@ -288,14 +288,12 @@ Crea una migración que modificará una tabla para cambiar o agregar columnas.
 ## La extención de navegador Fake Filler para llenar formularios
 *24 / Julio / 2022 | 0:19:00*
 
-<br>
-
 ![fakefillerlogo](https://raw.githubusercontent.com/FakeFiller/fake-filler-extension/ff732ecc70776f938d15ba9716bc5b39f64bb98c/public/images/logo.svg)
 
 
-En un trabajo que tuve me pedian hacer cambios en sistemas hechos en Laravel. A veces eran muchos formularios con muchos campos a llenar.
+En un trabajo que tuve me pedian hacer cambios a sistemas hechos en Laravel. En ocasiones eran muchos formularios con muchos campos a llenar.
 
-Después de buscar en la sección de complementos de Firefox como llenar los formularios más rápido encontré esta extención para el navegador.
+Después de buscar en la sección de complementos de Firefox como llenar más rápido los formularios me encontré esta extención para el navegador.
 
 ## Fake Filler para Firefox
 
@@ -313,7 +311,7 @@ El único cambio que yo hice fue modificar como llenar un campo de formulario de
 ## Modificar en Fake Filler el formato Date   
 
 
-Ir a la sección complementos de firefox.
+Ir a la sección complementos de Firefox.
 
 ![fakefillerfirefox]({{ "../assets/apuntes-laravel-fullstack/1_firefox_Complementos.png" | absolute_url }})
 
@@ -332,25 +330,25 @@ En la sección *Template* sustituir su contenido por `DD/MM/YYYY` y guardar los 
 
 
 
+<style>
+    .hover-hand:hover{
+        cursor:pointer;
+    }
+</style>
+<div class="hover-hand">
 <br>
 <hr>
 <br>
 
 
 
-## En un div hacer que cambie el cursor por una mano al posicionarlo encima
+<h2 id="en-un-div-hacer-que-cambie-el-cursor-por-una-mano-al-posicionarlo-encima"> En un div hacer que cambie el cursor por una mano al posicionarlo encima </h2>
 
-<style>
-    .hover-hand:hover{
-        cursor:pointer;
-    }
-</style>
 
-<div class="hover-hand">
 <p>
     Para hacer que en un blade de Laravel el mouse cambie por una mano al hacer un <i>hover</i> sobre un elemento encerrado en un <code>&lt;div&gt;&lt;/div&gt;</code> se puede hacer lo siguiente. 
 </p>
-</div>
+
 <script src="https://gist.github.com/JuanMX/6f34a6be36f31ecdbf4aa90c2fc25ea1.js"></script>
 
 
@@ -358,6 +356,7 @@ En la sección *Template* sustituir su contenido por `DD/MM/YYYY` y guardar los 
 <br>
 <hr>
 <br>
+</div>
 
 
 
