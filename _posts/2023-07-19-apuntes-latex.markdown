@@ -50,9 +50,9 @@ Para obtener el `.pdf` del `.tex` abrir una terminal donde está el `.tex` y esc
 pdflatex nombre_del_archivo.tex
 ```
 
-## Los controles de navegación no coinciden con el numero de páginas
+## Los controles de navegación no coinciden con el número de páginas
 
-En una presentación en beamer hay veces que no coinciden los controles de navegación con el contendo del documento. Los controles de navegación son donde se le dan click para moverse rápidamente a un tema, subtema o diapositiva.
+En una presentación en ***beamer*** hay veces que no coinciden los controles de navegación con el contenido del documento. Los controles de navegación son donde se le dan click para moverse rápidamente a un tema, subtema o diapositiva.
 
 ![img]({{ "../assets/apuntes-latex/controles-navegacion.png" | absolute_url }})
 
