@@ -9,7 +9,7 @@ Estaba revisando un viejo disco duro que tenía por ahí y me encontré con docu
 
 Al revisar los documentos noté que aprendí algunos trucos sobre LaTeX y eso me motivó a hacer esta entrada de blog.
 
-Probablemente este post contiene conocimiento obsoleto.
+Probablemente este post contiene conocimiento obsoleto pero no me importa.
 
 ## Instalar texlive-full en Kubuntu 22.04
 
@@ -44,7 +44,27 @@ Se debe presionar la "S" en el teclado para iniciar la instalación.
 
 ## Obtener el pdf a partir de un archivo tex
 
-Para obtner el `.pdf` del `.tex` abrir una terminal donde está el `.tex` y escribir:
+Para obtener el `.pdf` del `.tex` abrir una terminal donde está el `.tex` y escribir:
+
+```
+pdflatex nombre_del_archivo.tex
+```
+
+## Los controles de navegación no coinciden con el numero de páginas
+
+En una presentación en beamer hay veces que no coinciden los controles de navegación con el contendo del documento. Los controles de navegación son donde se le dan click para moverse rápidamente a un tema, subtema o diapositiva.
+
+![img]({{ "../assets/apuntes-latex/controles-navegacion.png" | absolute_url }})
+
+La manera que yo uso para sincronizar el número de diapositivas con los controles de navegación es: **Compilar dos veces**.
+
+Primero
+
+```
+pdflatex nombre_del_archivo.tex
+```
+
+Y después
 
 ```
 pdflatex nombre_del_archivo.tex
