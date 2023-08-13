@@ -11,6 +11,15 @@ Al revisar los documentos noté que aprendí algunos trucos sobre LaTeX y eso me
 
 Probablemente este post contiene conocimiento obsoleto pero no me importa.
 
+
+
+<br>
+<hr>
+<br>
+
+
+
+
 ## Instalar texlive-full en Kubuntu 22.04
 
 Recomiento ampliamente instalar LaTeX full para evitar problemas a futuro de que falten paquetes. El problema es que dicha instalación necesita tiempo y espacio en el disco.
@@ -79,3 +88,30 @@ Y después
 ```
 pdflatex nombre_del_archivo.tex
 ```
+
+
+
+<br>
+<hr>
+<br>
+
+
+
+## Mi recomendación de plantilla para una presentación en beamer
+
+<object data="{{ '../assets/apuntes-latex/presentacion.pdf' | absolute_url }}" width="100%" height="400" type="application/pdf"></object>
+
+Esta presentación me gusta porque:
+
+1. Es de color gris. Al usar una pantalla o proyector no lastima la vista. Si se usan imágenes blancas se distinguen bien por el fondo gris.
+
+2. Esta presentación de beamer tiene un aspecto 16:9 `\documentclass[aspectratio=169, xcolor=table]{beamer}`. Aprovecha espacio en la pantalla.
+
+3. Los controles de navegación no ocupan tanto espacio y muestran información relevante: El nombre de los temas y la cantidad de diapositivas por tema.
+
+4. En la esquina inferior derecha de cada diapositiva tiene el número de diapositiva. Que es útil para los espectadores si hay preguntas y respuestas después de la presentación ejemplo: "Tengo duda en la diapositiva 3" ó "En la diapositiva 1 hay una falta de ortografía"
+
+[**El código fuente de la presentación se puede encontrar en mi repositorio de GitHub**](https://github.com/JuanMX/plantillas-latex/tree/master/presentacion){:target="_blank"}
+
+Plantilla obtenida de: http://www.LaTeXTemplates.com
+
