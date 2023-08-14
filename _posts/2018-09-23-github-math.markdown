@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Apuntes: Git y Github"
+title:  "Apuntes: Git y GitHub"
 date:   2018-09-23 18:12:00 -0500
 --- 
 
@@ -47,10 +47,10 @@ De acuerdo con este [hilo de GitHub] no es posible agregarlas *tal cual* pero en
 
 ## Agregar expresiones matemáticas en GitHub Pages usando MathJax
 
-Necesitaba agregar expresiones matemáticas en GitHub Pages. Noté que en los cursos de la Univerisdad de Standford en GitHub Pages si ponen expresiones matemáticas. Buscando en su repositorio me encontré con el [primer indicio de *MathJax*](https://github.com/cs231n/cs231n.github.io/blob/master/_layouts/default.html){:target="_blank"}.
+Necesitaba agregar expresiones matemáticas en GitHub Pages. Noté que en los [cursos de la Univerisdad de Standford](https://cs231n.github.io/convolutional-networks/){:target="_blank"} en GitHub Pages si ponen expresiones matemáticas. Buscando en su repositorio me encontré con el [primer indicio de *MathJax*](https://github.com/cs231n/cs231n.github.io/blob/master/_layouts/default.html){:target="_blank"}.
 
 
-1. Agregar lo siguinte en el archivo *.markdown* de tipo *post* en el que se escribirá con lenguaje matemático.
+1. Agregar lo siguiente en el archivo *.markdown* (o HTML) que usará lenguaje matemático.
 ```html
 <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <script type="text/x-mathjax-config">
@@ -62,7 +62,7 @@ Necesitaba agregar expresiones matemáticas en GitHub Pages. Noté que en los cu
 </script>
 ```
 
-2. Para escribir expresiones (o fórmulas) matemáticas centradas se usa `$$ x $$` y para escribir en la misma linea que el texto se usa `\\( x \\)`.
+2. Para escribir expresiones matemáticas centradas (en párrafo) se usa `$$ x $$` y para escribir en la misma linea que el texto (*inline*) se usa `\\( x \\)`.
 
 Los pasos anteriores son para usar MathJax con la opción responsiva. Esto es, ajustar las expresiónes matemáticas al tamaño de la pantalla.
 
