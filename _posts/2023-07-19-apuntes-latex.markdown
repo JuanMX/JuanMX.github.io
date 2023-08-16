@@ -115,3 +115,46 @@ Esta plantilla de presentación me gusta porque:
 
 Plantilla obtenida de: http://www.LaTeXTemplates.com
 
+
+
+<br>
+<hr>
+<br>
+
+
+
+## Al usar pdflatex no aparece la bibiografía [?]
+
+Abrir una terminal y escribir:
+
+```
+pdflatex archivo.tex
+```
+Esto debe generar archivos, entre ellos uno `.aux`
+
+Después:
+
+```
+bibtex archivo.aux
+```
+
+Mostrará algo como:
+
+```
+This is BibTeX, Version 0.99d (TeX Live 2022/dev/Debian)
+The top-level auxiliary file: archivo.aux
+The style file: plain.bst
+Database file #1: referencias.bib
+```
+
+Compilar para que aparezca la sección de referencias:
+
+```
+pdflatex archivo.tex
+```
+
+Finalmente compilar de nuevo para que aparezcan las citas de tipo [1], [2]:
+
+```
+pdflatex archivo.tex
+```
