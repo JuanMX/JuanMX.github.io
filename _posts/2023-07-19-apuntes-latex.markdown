@@ -123,16 +123,16 @@ Plantilla obtenida de: http://www.LaTeXTemplates.com
 
 
 
-## Al usar pdflatex no aparece la bibiografía [?]
+## Al usar pdflatex no aparece la bibiografía
 
 Abrir una terminal y escribir:
 
 ```
 pdflatex archivo.tex
 ```
-Esto debe generar archivos, entre ellos uno `.aux`
+Esto debe generar archivos, entre ellos uno con extensión `.aux`
 
-Después:
+Después escribir:
 
 ```
 bibtex archivo.aux
@@ -147,13 +147,15 @@ The style file: plain.bst
 Database file #1: referencias.bib
 ```
 
-Compilar para que aparezca la sección de referencias:
+Compilar para que aparezca la **sección** de referencias:
 
 ```
 pdflatex archivo.tex
 ```
 
-Finalmente compilar de nuevo para que aparezcan las citas de tipo [1], [2]:
+Finalmente compilar otra vez para cambiar 
+
+[?] => [1]:
 
 ```
 pdflatex archivo.tex
