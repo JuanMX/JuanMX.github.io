@@ -160,3 +160,33 @@ Finalmente compilar otra vez para cambiar
 ```
 pdflatex archivo.tex
 ```
+
+
+
+<br>
+<hr>
+<br>
+
+
+
+## Mi recomendación de plantilla para un poster cientifico en LaTeX
+
+<object data="{{ '../assets/apuntes-latex/conference_poster_6.pdf' | absolute_url }}" width="100%" height="500" type="application/pdf"></object>
+
+Esta plantilla de póster científico me gusta porque:
+
+1. Es de color blanco. Es el color común de una hoja de papel. Al imprimir el póster, al menos el color de fondo se verá bien.
+
+2. El póster es de tamaño 84 x 118.8 centímetros (cm) que es un tamaño común de póster científico.
+
+3. Es de dos columnas, los párrafos llegarán a la mitad del ancho de la hoja. Cuando el póster se imprima en una hoja será comodo de leer.
+
+4. La plantilla está con el paquete de idioma español y se cambio el nombre "*Cuadro*" por "*Tabla*".
+
+El póster cuenta con un *placeholder* de 3 logos para el cual tengo la siguiente recomendación:
+
+> Si hay que poner más de un logo al póster, lo más rápido es hacer una única imagen que contenga todos los logos. Después poner la única imagen al póster.
+
+[**La plantilla .tex del póster se puede encontrar en mi repositorio de GitHub**](https://github.com/JuanMX/plantillas-latex/tree/master/poster){:target="_blank"}
+
+Plantilla obtenida de: http://www.LaTeXTemplates.com
