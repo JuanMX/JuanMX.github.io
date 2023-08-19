@@ -169,7 +169,7 @@ pdflatex archivo.tex
 
 
 
-## Mi recomendación de plantilla para un poóter científico en LaTeX
+## Mi recomendación de plantilla para un póster científico en LaTeX
 
 <object data="{{ '../assets/apuntes-latex/conference_poster_6.pdf' | absolute_url }}" width="100%" height="500" type="application/pdf"></object>
 
@@ -179,7 +179,7 @@ Esta plantilla de póster científico me gusta porque:
 
 2. El póster es de tamaño 84 x 118.8 centímetros (cm) que es un tamaño común de póster científico.
 
-3. Es de dos columnas, los párrafos llegarán a la mitad del ancho de la hoja. En otras palabras, compacta el ancho del texto haciéndolo comodo de leer. Será más notorio al imprimir el póster.
+3. Es de dos columnas, los párrafos llegarán a la mitad del ancho de la hoja. Compacta el ancho de los párrafos facilitando su lectura.
 
 4. La plantilla está con el paquete de idioma español y se cambio el nombre "*Cuadro*" por "*Tabla*".
 
