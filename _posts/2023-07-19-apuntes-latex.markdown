@@ -11,6 +11,20 @@ Al revisar los documentos noté que aprendí algunos trucos sobre LaTeX y eso me
 
 Probablemente este post contiene conocimiento obsoleto pero no me importa.
 
+## Contenido
+
+* [Instalar texlive-full en Kubuntu 22.04](#instalar-texlive-full-en-kubuntu-2204)
+
+* [Obtener el pdf a partir de un archivo tex](#obtener-el-pdf-a-partir-de-un-archivo-tex)
+
+* [Los controles de navegación de una presentación no coinciden con su número de páginas](#los-controles-de-navegación-de-una-presentación-no-coinciden-con-su-número-de-páginas)
+
+* [Mi recomendación de plantilla para una presentación en beamer](#mi-recomendación-de-plantilla-para-una-presentación-en-beamer)
+
+* [Al usar pdflatex no aparece la bibiografía](#al-usar-pdflatex-no-aparece-la-bibiografía)
+
+* [Mi recomendación de plantilla para un póster científico en LaTeX](#mi-recomendación-de-plantilla-para-un-póster-científico-en-latex)
+
 
 
 <br>
@@ -22,7 +36,7 @@ Probablemente este post contiene conocimiento obsoleto pero no me importa.
 
 ## Instalar texlive-full en Kubuntu 22.04
 
-Recomiento ampliamente instalar LaTeX full para evitar problemas a futuro de que falten paquetes. El problema es que dicha instalación necesita tiempo y espacio en el disco.
+Recomiento ampliamente instalar LaTeX full para evitar problemas a futuro de que falten paquetes. El problema es que dicha instalación necesita mucho tiempo y espacio en el disco.
 
 Para instalar LaTeX full abrir una terminal y escribir lo siguiente:
 
@@ -105,7 +119,7 @@ Esta plantilla de presentación me gusta porque:
 
 1. Es de color gris. Al usar una pantalla o proyector no lastima la vista. Si se usan imágenes blancas se distinguen bien por el fondo gris.
 
-2. Esta presentación de beamer tiene un aspecto 16:9 `\documentclass[aspectratio=169, xcolor=table]{beamer}`. Aprovecha espacio en la pantalla.
+2. Esta presentación de beamer tiene una relación de aspecto 16:9 `\documentclass[aspectratio=169, xcolor=table]{beamer}`. Aprovecha espacio en la pantalla.
 
 3. Los controles de navegación no ocupan tanto espacio y muestran información relevante: El nombre de los temas y la cantidad de diapositivas por tema.
 
