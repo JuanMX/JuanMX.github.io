@@ -20,6 +20,9 @@ He aprendido Laravel en trabajos como programador que he tenido.
 
 * [Usar el helper str de Laravel en un Blade](#usar-el-helper-str-de-laravel-en-un-blade)
 
+* [Laravel Debugbar se adjunta a lo que responde el Controlador](#laravel-debugbar-se-adjunta-a-lo-que-responde-el-controlador)
+
+
 
 <br>
 <hr>
@@ -367,3 +370,88 @@ Para hacer rápido una tarea que me pedían usé el helper `str upper` de Larave
 A continuación se muestra un ejemplo de como hacerlo.
 
 <script src="https://gist.github.com/JuanMX/cbb3b1aa0e3b1caf9d18ea25e8942f89.js"></script>
+
+
+
+<br>
+<hr>
+<br>
+
+
+
+## Laravel Debugbar se adjunta a lo que responde el Controlador
+
+[Debugbar for Laravel]{:target="_blank"} es una herramienta muy útil y usada para el desarrollo. Lo que hace es poner información relevante de vistas, peticiones, consultas a base de datos, entre otros, como en la siguiente imagen:
+
+![debugbar](https://user-images.githubusercontent.com/973269/79428890-196cc680-7fc7-11ea-8229-189f5eac9009.png)
+
+## Descripción de un problema que tuve con Laravel Debugbar
+
+En un trabajo que tuve estaba usando el API de WhatsApp en un proyecto de Laravel.
+
+Para la parte del webhook que usé para recibir mensajes de respuesta tuve un problema al abrir la conexión.
+
+Los pasos para abrir la conexión eran:
+
+1. Dar de alta un token para el webhook en WhatsApp.
+2. Guardar el token en local, yo usé el `.env`.
+3. Hacer una ruta para verificar que el token en local y de WhatsApp coincidan. Si coinciden retornar un valor `hub_challenge` para que WhatsApp abra la conexión y empiecen a llegar mensajes al proyecto en Laravel.
+
+## El problema en sí
+
+No se abría la conexión porque el HTML del Laravel Debugbar se adjuntaba a la respuesta del controlador. Provocando que se mande valor `hub_challenge` con más información no necesaria.
+
+Revisando en el panel de control de WhatsApp API noté que en el webhook decía algo como:
+
+```
+Se espera un valor de hub challenge de: 1234567
+
+Pero se recibió: 1234567<html><body> ESTE HTML ES DEL LARAVEL DEBUGBAR </body></html>
+```
+
+A veces lo cambiaba por:
+
+```
+Se espera un valor de hub challenge de: 1234567
+
+Pero se recibió: 1234567"/ux7...."
+```
+
+Donde `"/ux7...."` hace referencia al caracter `<` pero codificado como UTF-8 o algún otro.
+
+## Solución 
+
+Según [Debugbar for Laravel]{:target="_blank"} es posible desactivarlo en tiempo de ejecución. Yo lo usé en mi controlador donde se abre la conexión.
+
+```
+\Debugbar::disable();
+```
+
+## Código de ejemplo
+
+Es un código de ejemplo muy tosco. No recomiendo usarlo tal cual está pero ejemplifica la solución a mi problena de inicio. 
+
+```php
+/*=======  WhatsAppController.php =======*/
+    
+public function verifyWebhook(Request $request)
+{
+    /*==================================================
+    //Primero que todo, en esta sección
+    //De acuerdo con la documentación de WhatsApp 
+    //Se deben hacer las verificaciones correspondientes
+    ==================================================*/
+
+    \Debugbar::disable();//Se desactiva Laravel Debugbar antes de responder
+    
+    if($request["hub_verify_token"] == env('WHATSAPP_WEBHOOK_TOKEN')){
+        
+        return response($request["hub_challenge"]);//Se hace el response a WhatsApp
+    }
+}
+```
+
+**Fuente:** [github.com/barryvdh/laravel-debugbar &mdash; *Enabling/Disabling on run time*](https://github.com/barryvdh/laravel-debugbar#enablingdisabling-on-run-time){:target="_blank"}
+
+
+[Debugbar for Laravel]: https://github.com/barryvdh/laravel-debugbar
