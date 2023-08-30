@@ -25,6 +25,8 @@ Probablemente este post contiene conocimiento obsoleto pero no me importa.
 
 * [Mi recomendación de plantilla para un póster científico en LaTeX](#mi-recomendación-de-plantilla-para-un-póster-científico-en-latex)
 
+* [Loren Ipsum](#loren-ipsum)
+
 
 
 <br>
@@ -204,3 +206,35 @@ El póster cuenta con un *placeholder* de 3 logos para el cual tengo la siguient
 [**La plantilla .tex del póster se puede encontrar en mi repositorio de GitHub**](https://github.com/JuanMX/plantillas-latex/tree/master/poster){:target="_blank"}
 
 Plantilla obtenida de: http://www.LaTeXTemplates.com
+
+
+
+<br>
+<hr>
+<br>
+
+
+
+## Loren Ipsum
+
+Para usar textos de tipo lorem ipsum a modo de placeholder lo que hago es:
+
+```
+\usepackage{lipsum}
+```
+
+Para usar renglones se usa:
+
+```
+\lipsum[1][1]
+```
+o
+```
+\lipsum[1][1-3]
+```
+
+Y para párrafos completos:
+
+```
+\lipsum[1]
+```
