@@ -174,7 +174,7 @@ Para subir archivos a GitLab, GitHub o algún otro repositorio se puede cambiar 
 
 Lo anterior es útil para monitorear archivos que se almacenan en un medio físico, como lo es un disco duro externo.
 
-## De carpeta local a repositorio
+## De carpeta local a repositorio que almacene el proyecto
 
 Con la terminal ir hasta la carpeta, después escribir:
 
