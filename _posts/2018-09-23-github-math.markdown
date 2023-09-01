@@ -14,6 +14,8 @@ date:   2018-09-23 18:12:00 -0500
 
 * [Server certificate verification failed](#server-certificate-verification-failed)
 
+* [Remoto local](#remoto-local)
+
 
 
 <br>
@@ -151,6 +153,54 @@ Este cambio se revierte al apagar o reiniciar la computadora.
 **Fuente:**
 
 [shakaran.net/blog/2017/06 &mdash; *Solucionar error: server certificate verification failed. CAfile: /etc/ssl/certs/ca-certificates.crt CRLfile: none*](https://shakaran.net/blog/2017/06/solucionar-error-server-certificate-verification-failed-cafile/){:target="_blank"}
+
+
+
+<br>
+<hr>
+<br>
+
+
+
+## Remoto local
+
+En lugar de escribir:
+
+```
+git push origin master
+```
+
+Para subir archivos a GitLab, GitHub o algún otro repositorio se puede cambiar el `origin` para que *apunte* a una carpeta en local.
+
+Lo anterior es útil para monitorear archivos que se almacenan en un medio físico, como lo es un disco duro externo.
+
+## De carpeta local a repositorio
+
+Con la terminal ir hasta la carpeta, después escribir:
+
+```
+git init --bare
+```
+
+En caso de que muestre la ruta del remoto tipo `C:/users/juanmx...` copiar la ruta.
+
+## Agregar el remoto local a un proyecto ya inicializado con *git init*
+
+Con la terminal ir a la carpeta y escribir:
+
+```
+git remote add originl C:/users/juanmx...
+```
+
+donde:
+
+`originl` es el nombre del remoto, se puede sustituir por cualquier otro nombre.
+
+## Para clonar el proyecto remoto local
+
+```
+git clone /c/users/juanmx/proyecto
+```
 
 
 [hilo de GitHub]: https://github.com/github/markup/issues/897
