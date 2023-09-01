@@ -52,9 +52,9 @@ De acuerdo con este [hilo de GitHub] no es posible agregarlas *tal cual* pero en
 Necesitaba agregar expresiones matemáticas en GitHub Pages. Noté que en los [cursos de la Univerisdad de Standford](https://cs231n.github.io/convolutional-networks/){:target="_blank"} en GitHub Pages si ponen expresiones matemáticas. Buscando en su repositorio me encontré con el [primer indicio de *MathJax*](https://github.com/cs231n/cs231n.github.io/blob/master/_layouts/default.html){:target="_blank"}.
 
 
-1. Agregar lo siguiente en el archivo *.markdown* (o HTML) que usará lenguaje matemático.
+1. Agregar lo siguiente en el archivo *.markdown* (o HTML) que usará lenguaje matemático. Se sugiere ponerlo hasta el final del archivo.
 ```html
-<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <script type="text/x-mathjax-config">
     // Make responsive
     MathJax.Hub.Config({
@@ -205,7 +205,7 @@ git clone /c/users/juanmx/proyecto
 
 [hilo de GitHub]: https://github.com/github/markup/issues/897
 
-<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <script type="text/x-mathjax-config">
     // Make responsive
     MathJax.Hub.Config({
