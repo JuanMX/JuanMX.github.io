@@ -214,13 +214,13 @@ git clone /c/users/juanmx/proyecto
 
 ## git stash
 
-Es muy común que al estar programando se tenga que dejar lo que se esta haciendo para hacer un cambio urgente.
+Es muy común que al estar programando se tenga que dejar lo que se esta haciendo para hacer cambios urgentes.
 
 La mayoría de las veces no se podrá hacer un `git checkout alguna-rama` por que hay cambios no *commiteados*.
 
 No necesariamente se tiene que cambiar de rama, los cambios urgentes puede ser la rama actual. Pero el código en el que se trabaja le "*estorba*" a los cambios urgentes.
 
-Git tiene la instrucción `stash` para guardar lo que se está trabajando actualmente, hacer los cambios urgentes y regresar a lo que se estaba trabajando conservando esos cambios urgentes.
+Git cuenta la instrucción `stash` para guardar lo que se está trabajando actualmente, hacer los cambios urgentes y regresar a lo que se estaba trabajando conservando esos cambios urgentes.
 
 ## Pasos rápidos para usar git stash
 
