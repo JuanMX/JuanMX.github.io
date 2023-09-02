@@ -16,6 +16,8 @@ date:   2018-09-23 18:12:00 -0500
 
 * [Remoto local](#remoto-local)
 
+* [git stash](#git-stash)
+
 
 
 <br>
@@ -201,6 +203,41 @@ donde:
 ```
 git clone /c/users/juanmx/proyecto
 ```
+
+
+
+<br>
+<hr>
+<br>
+
+
+
+## git stash
+
+Es muy común que al estar programando se tenga que dejar lo que se esta haciendo para hacer un cambio urgente.
+
+La mayoría de las veces no se podrá hacer un `git checkout alguna-rama` por que hay cambios no *commiteados*.
+
+No necesariamente se tiene que cambiar de rama, los cambios urgentes puede ser la rama actual. Pero el código en el que se trabaja le "*estorba*" a los cambios urgentes.
+
+Git tiene la instrucción `stash` para guardar lo que se está trabajando actualmente, hacer los cambios urgentes y regresar a lo que se estaba trabajando conservando esos cambios urgentes.
+
+## Pasos rápidos para usar git stash
+
+Guardar en el stash
+
+```
+git stash
+```
+
+"*Se hace algún cambio, con commit y push*".
+
+Para obtener lo guardado en el stash mezclado (*merged*) a los cambios hechos.
+
+```
+git stash pop
+```
+
 
 
 [hilo de GitHub]: https://github.com/github/markup/issues/897
