@@ -218,7 +218,7 @@ Es muy común que al estar programando se tenga que dejar lo que se esta haciend
 
 La mayoría de las veces no se podrá hacer un `git checkout alguna-rama` por que hay cambios no *commiteados*.
 
-No necesariamente se tiene que cambiar de rama, los cambios urgentes puede ser la rama actual. Pero el código en el que se trabaja le "*estorba*" a los cambios urgentes.
+No necesariamente se tiene que cambiar de rama, los cambios urgentes pueden hacerse sobre la rama actual. Pero el código en el que se trabaja le "*estorba*" a los cambios urgentes.
 
 Git cuenta la instrucción `stash` para guardar lo que se está trabajando actualmente, hacer los cambios urgentes y regresar a lo que se estaba trabajando conservando esos cambios urgentes.
 
@@ -232,7 +232,7 @@ git stash
 
 "*Se hace algún cambio, con commit y push*".
 
-Para obtener lo guardado en el stash mezclado (*merged*) a los cambios hechos.
+Para obtener lo guardado en el stash y juntarlo a los cambios hechos.
 
 ```
 git stash pop
