@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Usar la Ñ de un teclado estadounidense en Windows 10 y Kubuntu 22.04"
+title:  "Usar la Ñ en un teclado estadounidense en Windows 10 y Kubuntu 22.04"
 date:   2023-09-01 17:00:00 -0500
 categories: windows10 kubuntu teclado
 ---
 
-Necesitaba un teclado nuevo y se me ocurrió comprar un teclado mecánico en Amazon, sería mi primer teclado mecánico.
+Necesitaba un teclado nuevo y se me ocurrió comprar un teclado mecánico en Amazon. Sería mi primer teclado mecánico.
 
 Cuando llegó lo noté raro. Al verlo detenidamente noté que **no** era un teclado latinoamericano, era un teclado inglés.
 
@@ -55,7 +55,7 @@ En las opciones de idioma dar click en *Agregar un teclado*, después selecciona
 
 ![img]({{ "../assets/ñ-teclado-windows-kubuntu/ñ-windows10-4.png" | absolute_url }})
 
-Sugiero que únicamente se tenga agregado el teclado *Estados Unidos - Internacional*. Si hay otro teclado agregado se debe quitar.
+Sugiero que por cada idioma se tenga un solo teclado. Si hay otro teclado agregado se debe quitar.
 
 Eso es todo. Un atajo rápido para cambiar de idioma que también cambiará el teclado es: <br>
 [Windows] + [Barra de espacio].
