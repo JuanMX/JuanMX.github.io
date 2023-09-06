@@ -89,6 +89,6 @@ Para cambiar entre las distribuciones del teclado se debe hacer click en el apar
 
 ![kubuntuteclado3]({{ "../assets/ñ-teclado-windows-kubuntu/ñ-kubuntu2204-3.gif" | absolute_url }})
 
-La vista previa de la distribución del teclado ofrecida por Kununtu es la siguiente:
+La vista previa de la distribución del teclado ofrecida por Kubuntu es la siguiente:
 
 ![kubuntuteclado4]({{ "../assets/ñ-teclado-windows-kubuntu/ñ-kubuntu2204-4.png" | absolute_url }})
