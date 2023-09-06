@@ -35,7 +35,7 @@ Vocales acentuadas:
 
 ## Teclado de Estados Unidos Internacional en Windows 10
 
-En el **menu inicio** escribir *Configuracion* y dar click en el primer resultado.
+Abrir el **menu inicio**, escribir *Configuracion* y dar click en el primer resultado.
 
 En el menú de Configuración ir a la opción *Hora e idioma*.
 
@@ -63,4 +63,32 @@ Eso es todo. Un atajo rápido para cambiar de idioma que también cambiará el t
 **Fuente:** [youtube.com/@TorotochoReviews &mdash; *Acentos, tecla ñ y mas en teclados chinos con QWERTY Ingles*](https://www.youtube.com/watch?v=F7q7ZG9cKlA){:target="_blank"}
 
 
-## 🚧 Teclado de Estados Unidos Internacional en Kubuntu 22.04 🚧
+## Distribución de teclado *English (intl., with AltGr dead keys)* en Kubuntu 22.04
+
+No pude encontrar la distribución de teclado *Estados Unidos Internacional* pero la distribución de teclado *English (intl., with AltGr dead keys)* me funciona bien.
+
+Abrir el **menu inicio** o **lanzador de aplicaciones**, escribir *preferencias del sistema* y dar click en el primer resultado.
+
+Ir a la sección *Hardware* y dar click en *Dispositivos de entrada*.
+
+![kubuntuteclado1]({{ "../assets/ñ-teclado-windows-kubuntu/ñ-kubuntu2204-1.png" | absolute_url }})
+
+En los dispositivos de entrada seleccionar el teclado, dar click en la pestaña *Distribuciones*, activar la opción:
+
+* [X] Configurar distribuciones.
+
+Dar click en *+ Añadir*. El teclado que se debe añadir es:
+
+***English (intl., with AltGr dead keys)***.
+
+![kubuntuteclado2]({{ "../assets/ñ-teclado-windows-kubuntu/ñ-kubuntu2204-2.png" | absolute_url }})
+
+En mi caso se puso automáticamente una sección de *Distribución del teclado* en el panel de Kubuntu en la *Bandeja del sistema*.
+
+Para cambiar entre las distribuciones del teclado se debe hacer click en el apartado de *Distribución del teclado* de la *Bandeja de la sistema*.
+
+![kubuntuteclado3]({{ "../assets/ñ-teclado-windows-kubuntu/ñ-kubuntu2204-3.gif" | absolute_url }})
+
+La vista previa de distribución del teclado ofrecida por Kununtu es la siguiente:
+
+![kubuntuteclado4]({{ "../assets/ñ-teclado-windows-kubuntu/ñ-kubuntu2204-4.png" | absolute_url }})
