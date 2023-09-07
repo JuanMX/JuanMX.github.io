@@ -35,7 +35,7 @@ Vocales acentuadas:
 
 ## Teclado de Estados Unidos Internacional en Windows 10
 
-Abrir el **menu inicio**, escribir *Configuracion* y dar click en el primer resultado.
+Abrir el **menú inicio**, escribir *Configuracion* y dar click en el primer resultado.
 
 En el menú de Configuración ir a la opción *Hora e idioma*.
 
@@ -67,17 +67,17 @@ Eso es todo. Un atajo rápido para cambiar de idioma que también cambiará el t
 
 No pude encontrar la distribución de teclado *Estados Unidos Internacional* pero la distribución de teclado *English (intl., with AltGr dead keys)* me funciona bien.
 
-Abrir el **menu inicio** o **lanzador de aplicaciones**, escribir *preferencias del sistema* y dar click en el primer resultado.
+Abrir el **lanzador de aplicaciones** (menú inicio), escribir *preferencias del sistema* y dar click en el primer resultado.
 
 Ir a la sección *Hardware* y dar click en *Dispositivos de entrada*.
 
 ![kubuntuteclado1]({{ "../assets/ñ-teclado-windows-kubuntu/ñ-kubuntu2204-1.png" | absolute_url }})
 
-En los dispositivos de entrada seleccionar el teclado, dar click en la pestaña *Distribuciones*, activar la opción:
+En los dispositivos de entrada seleccionar el teclado, dar click en la pestaña *Distribuciones*, después activar la opción:
 
 * [X] Configurar distribuciones.
 
-Dar click en *+ Añadir*. El teclado que se debe añadir es:
+Dar click en "*+ Añadir*". El teclado que se debe añadir es:
 
 ***English (intl., with AltGr dead keys)***.
 
