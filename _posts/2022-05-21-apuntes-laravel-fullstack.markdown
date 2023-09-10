@@ -22,6 +22,8 @@ He aprendido Laravel en trabajos como programador que he tenido.
 
 * [Laravel Debugbar se adjunta a lo que responde el Controlador](#laravel-debugbar-se-adjunta-a-lo-que-responde-el-controlador)
 
+* [Algunos helpers de Laravel que me han sacado de apuros](#algunos-helpers-de-laravel-que-me-han-sacado-de-apuros)
+
 
 
 <br>
@@ -72,7 +74,7 @@ archivo: .env
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=basedatos1  <----- agregar aqui en nombre de la base de datos
+DB_DATABASE=basedatos1  <----- agregar aqui el nombre de la base de datos
 DB_USERNAME=root        <----- valor por defecto de Laragon
 DB_PASSWORD=            <----- valor por defecto de Laragon
 ```
@@ -452,6 +454,107 @@ public function verifyWebhook(Request $request)
 ```
 
 **Fuente:** [github.com/barryvdh/laravel-debugbar &mdash; *Enabling/Disabling on run time*](https://github.com/barryvdh/laravel-debugbar#enablingdisabling-on-run-time){:target="_blank"}
+
+
+
+<br>
+<hr>
+<br>
+
+
+
+## Algunos helpers de Laravel que me han sacado de apuros
+
+Laravel incluye una variedad de funciones de PHP de clase *helper* global. Muchas de estas funciones son usadas por el propio Laravel. Pero pueden ser utilizados por los desarrolladores en sus proyectos si se desea.
+
+Usar helpers facilita el desarrollo y la escritura de código limpio.
+
+## Helper data_get()
+
+En un trabajo que tuve usaba una API de terceros. En algunos *endpoints* de la API me llegaban arrays anidados con la información que necesitaba pero también mucha *basura anidada*.
+
+El helper `data_get` fue útil para saltarme la *anidación basura* y obtener lo que si me sirve.
+
+Ejemplo, si me llega un array como:
+
+```php
+$data = ['products' => 
+            ['desk' => 
+                ['price' => 100
+                ]
+            ]
+        ];
+
+```
+
+Para obtener el valor númerico 100 se debe hacer:
+
+```php
+$data = ['products' => 
+            ['desk' => 
+                ['price' => 100
+                ]
+            ]
+        ];
+ 
+$price = data_get($data, 'products.desk.price');
+ 
+// 100
+```
+
+Habrá ocasiones en que llegue un array más complejo y es necesario *saltarse niveles* hasta la key que se necesita.
+
+```php
+$entry = array (
+  'entry' => 
+  array (
+    0 => 
+    array (
+      'noutil1' => '0000',
+      'noutil2' => '2222',
+      'noutil3' => '1111',
+      'noutil4' => 
+      array (
+        0 => 
+        array (
+          'noutil5' => 
+          array (
+            'noutil6' => '33333',
+            'noutil7' => 
+            array (
+              'noutil8' => '4444',
+              
+            ),
+            'noutil9' => 
+            array (
+              0 => 
+              array (
+                'noutil10' => 
+                array (
+                  'noutil11' => '5555',
+                ),
+              ),
+            ),
+            'datamuyimportante' => 
+            array (
+              0 => 
+              array (
+                'infoutil' => 'Información muy importante',
+                'infouti2' => 'Información que también es muy importante'
+              )
+            )
+          )
+        )
+      )
+    )
+  )
+)
+//salta niveles y al llegar a datamuyimportante se queda con array 0 
+//no confundir con el 0 el tercer parametro de data_get, que es el valor retornado si la key especificada no puede ser encontrada
+$section_datamuyimportante = data_get($entry, '*.*.*.*.datamuyimportante.0', 0);
+```
+
+**Fuente:** [laravel.com/docs &mdash; *data_get()*](https://laravel.com/docs/10.x/helpers#method-data-get){:target="_blank"}
 
 
 [Debugbar for Laravel]: https://github.com/barryvdh/laravel-debugbar
