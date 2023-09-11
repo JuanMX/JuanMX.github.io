@@ -23,7 +23,14 @@ He aprendido Laravel en trabajos como programador que he tenido.
 * [Laravel Debugbar se adjunta a lo que responde el Controlador](#laravel-debugbar-se-adjunta-a-lo-que-responde-el-controlador)
 
 * [Algunos helpers de Laravel que me han sacado de apuros](#algunos-helpers-de-laravel-que-me-han-sacado-de-apuros)
-
+  
+  - [Helper data_get()](#helper-data_get)
+  
+  - [prepend y pluck](#prepend-y-pluck)
+  
+  - [Helper Arr::collapse() para obtener un solo array de un array de arrays](#helper-arrcollapse-para-obtener-un-solo-array-de-un-array-de-arrays)
+  
+  - [Helper data_fill para rellenar un array](#helper-data_fill-para-rellenar-un-array) 
 
 
 <br>
@@ -555,6 +562,69 @@ $section_datamuyimportante = data_get($entry, '*.*.*.*.datamuyimportante.0', 0);
 ```
 
 **Fuente:** [laravel.com/docs &mdash; *data_get()*](https://laravel.com/docs/10.x/helpers#method-data-get){:target="_blank"}
+
+## prepend y pluck
+
+No son helpers, son métodos de *Collections* pero los pongo igualmente en esta sección.
+
+Yo uso prepend y pluck para obtener contenido de la base de datos y "*convertirlo*" a un formato fácil de implementar en una lista desplegable `<select></select>`.
+
+```php
+/*======= UserController.php =======*/
+
+use App\Models\User;
+
+public function index(Request  $request)
+  {
+    $users = User::pluck('name','id')->prepend('Seleccione usuario','');
+
+    return view('users.index', compact('users'));
+  }
+```
+**Fuentes:** 
+
+* [laravel.com/docs &mdash; *prepend()*](https://laravel.com/docs/10.x/collections#method-prepend){:target="_blank"}
+* [laravel.com/docs &mdash; *pluck()*](https://laravel.com/docs/10.x/collections#method-pluck){:target="_blank"}
+
+## Helper Arr::collapse() para obtener un solo array de un array de arrays
+
+Me ha pasado que en un Controlador hay que hacer un `for` o un `foreach` para obtener algún resultado.
+
+Puede haber el problema que en cada iteracion se obtiene un resultado complejo (array) y se vacía en otro array.
+
+De esto se obtiene un array de arrays y se debe *colapsar* para continuar con el flujo de trabajo.
+
+```php
+use Illuminate\Support\Arr;
+ 
+$array = Arr::collapse([[1, 2, 3], [4, 5, 6], [7, 8, 9]]);
+ 
+// [1, 2, 3, 4, 5, 6, 7, 8, 9]
+```
+**Fuente:** [laravel.com/docs &mdash; *Arr::collapse()*](https://laravel.com/docs/10.x/helpers#method-array-collapse){:target="_blank"}
+
+## Helper data_fill para rellenar un array
+
+data_fill pone un valor en un array anidado.
+
+He usado `data_fill()` para muchas cosas. 
+
+La sitación que más recuerdo es usarlo en una API para poner un *redireccionamiento*. Pero el ejemplo que se muestra es de la documentación de Laravel.
+
+```php
+$data = ['products' => ['desk' => ['price' => 100]]];
+ 
+data_fill($data, 'products.desk.price', 200);
+ 
+// ['products' => ['desk' => ['price' => 100]]]
+ 
+data_fill($data, 'products.desk.discount', 10);
+ 
+// ['products' => ['desk' => ['price' => 100, 'discount' => 10]]]
+```
+
+**Fuente:** [laravel.com/docs &mdash; *data_fill()*](https://laravel.com/docs/10.x/helpers#method-data-fill){:target="_blank"}
+
 
 
 [Debugbar for Laravel]: https://github.com/barryvdh/laravel-debugbar
