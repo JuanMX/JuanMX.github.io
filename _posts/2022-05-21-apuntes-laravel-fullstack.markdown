@@ -590,7 +590,7 @@ public function index(Request  $request)
 
 Me ha pasado que en un Controlador hay que hacer un `for` o un `foreach` para obtener algún resultado.
 
-Puede haber el problema que en cada iteracion se obtiene un resultado complejo (array) y se vacía en otro array.
+Puede haber el problema que en cada iteracion se obtiene un resultado complejo en forma de array y se vacía en otro array.
 
 De esto se obtiene un array de arrays y se debe *colapsar* para continuar con el flujo de trabajo.
 
