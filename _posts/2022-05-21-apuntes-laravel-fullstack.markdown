@@ -100,6 +100,22 @@ Realizar las migraciones
 php artisan migrate
 ```
 
+Una vez me pasó que al hacer las migraciones me apareciera el error `Unknown character set: 'utf8mb4'`. Para solucionarlo se debe abrir el archivo `config/database.php` y 
+
+**CAMBIAR LAS SIGUIENTES LINEAS**
+
+```
+'charset' => 'utf8mb4',
+'collation' => 'utf8mb4_unicode_ci',
+```
+
+**POR LAS SIGUIENTES**
+
+```
+'charset' => 'utf8',
+'collation' => 'utf8_unicode_ci',
+```
+
 Llenar la base de datos con registros de prueba usando el *seeder*. Si no pasa nada es porque el seeder esta vacío
 
 ```
@@ -218,11 +234,11 @@ Sustituir `CRUDLaravel.test` por lo que hay en `define SITE` del paso anterior (
 
 Recargar Laragon (o cerrarlo y abrirlo), abrir el navegador e introducir la ruta *tal cual* se puso (ej. CRUDLaravel.test), respetando mayusculas, minúsculas y/o guiones. Puede tardar en reconocer y mostrar el sitio.
 
-**Fuente** 
+**Fuentes** 
 
-[forum.laragon.org/topic/175 &mdash; *Tutorial how to work with Laravel projects on Github* (parece que ahora el sitio pide logearse 👎)](https://forum.laragon.org/topic/175/tutorial-how-to-work-with-laravel-projects-on-github){:target="_blank"}
+* Trabajar en Laragon con proyectos de Laravel: [forum.laragon.org/topic/175 &mdash; *Tutorial how to work with Laravel projects on Github* (parece que ahora el sitio pide logearse 👎)](https://forum.laragon.org/topic/175/tutorial-how-to-work-with-laravel-projects-on-github){:target="_blank"}
 
-
+* Unknown character set: 'utf8mb4': [stackoverflow.com/questions/41835923 &mdash; *Syntax error or access violation: 1115 Unknown character set: utf8mb4*](https://stackoverflow.com/questions/41835923/syntax-error-or-access-violation-1115-unknown-character-set-utf8mb4){:target="_blank"}
 
 <br>
 <hr>
@@ -590,7 +606,7 @@ public function index(Request  $request)
 
 Me ha pasado que en un Controlador hay que hacer un `for` o un `foreach` para obtener algún resultado.
 
-Puede haber el problema que en cada iteracion se obtiene un resultado complejo en forma de array y se vacía en otro array.
+Puede haber el problema que en cada iteración se obtiene un resultado complejo en forma de array y se vacía en otro array.
 
 De esto se obtiene un array de arrays y se debe *colapsar* para continuar con el flujo de trabajo.
 
