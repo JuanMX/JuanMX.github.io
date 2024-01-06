@@ -47,7 +47,7 @@ Sabiendo nada de laravel y laragon y después de mucho buscar encontre esta form
 
 ## Descargar e instalar Laragon
 
-Ir a [laragon](https://laragon.org/){:target="_blank"} y en la [sección de descargas](https://laragon.org/download/){:target="_blank"} escoger la versión *full*. Es caso de tener descargado y configurado Laragon o Laragon portable descartar este paso.
+Ir a [laragon](https://laragon.org/){:target="_blank"} y en la [sección de descargas](https://laragon.org/download/){:target="_blank"} escoger la versión *full*. En caso de tener descargado y configurado Laragon o Laragon portable descartar este paso.
 
 ## Clonar un repositorio de un proyecto de Laravel
 
