@@ -125,6 +125,7 @@ Ejemplo de agregar *MathJax* en GitHub Pages: [cs231n.github.io/_layouts/default
 
 `git push NOMBRE DEL REMOTO (origin) NOMBRE DE LA RAMA (master o alguna rama)` Sube el código al remoto (GitHub u otro, puede pedir usuario y contraseña de la cuenta de GitHub cuando se hace)
 
+`git checkout -b NOMBRE-DE-UNA-RAMA-NUEVA` : Crea una rama nueva llamada `NOMBRE-DE-UNA-RAMA-NUEVA` y se cambia a ella.
 
 
 <br>
