@@ -7,7 +7,7 @@ categories: windows10 mouse
 
 La solución óptima es comprar un mouse nuevo, pero mi sitación de desempleo no me lo permite. Después de pensar en como aliviar el problema del doble click se me ocurrió cambiar la velocidad del mouse al hacer click.
 
-Los pasos mostrados a cotinuación son para ***Windows 10***.
+Los pasos mostrados a cotinuación son para ***Windows 10*** y me ha funcionado con los mouse: Logitech G305, Vorago Mouse 201 (MO-201) y Logitech G203.
 
 ## Abrir las opciones adicionales del mouse
 
