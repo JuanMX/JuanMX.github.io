@@ -35,7 +35,7 @@ De acuerdo con este [hilo de GitHub] no es posible agregarlas *tal cual* pero en
 3. Dar click derecho en la imagen resultante y luego en la opción *copiar dirección de la imagen*.
 4. El *link* copiado insertarlo en el archivo markdown como imagen.
 
-*Ejemplo de una expresión matemática*: ![img](https://latex.codecogs.com/png.latex?\dpi{110}%20\frac{\sum_{i=1}^{n}%20x_i%20}{n})
+*Ejemplo de una expresión matemática*: &nbsp; ![img](https://latex.codecogs.com/png.latex?\dpi{110}%20\frac{\sum_{i=1}^{n}%20x_i%20}{n})
 
 
 
