@@ -32,6 +32,7 @@ He aprendido Laravel en trabajos como programador que he tenido.
   
   - [Helper data_fill para rellenar un array](#helper-data_fill-para-rellenar-un-array) 
 
+* [Crear tu propio Helper en Laravel](#crear-tu-propio-helper-en-laravel)
 
 <br>
 <hr>
@@ -641,6 +642,90 @@ data_fill($data, 'products.desk.discount', 10);
 
 **Fuente:** [laravel.com/docs &mdash; *data_fill()*](https://laravel.com/docs/10.x/helpers#method-data-fill){:target="_blank"}
 
+
+
+<br>
+<hr>
+<br>
+
+
+
+## Crear tu propio Helper en Laravel
+
+Esta manera de hacer el helper propio es la recomendada por el [colectivo de php en stackoverflow](https://stackoverflow.com/collectives/php). No estoy seguro de lo que significa, pero suena importante.
+
+## Pasos 1: Crear el archivo Helper.php
+
+Si no existe, crear la carpeta `Helpers` en `app\Helpers\`. Después crear el archivo `Helper.php` en `app\Helpers\`.
+
+En `Helper.php` escribir lo siguiente:
+
+```php
+======= Helper.php =======
+
+<?php // Code within app\Helpers\Helper.php
+
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
+Use Exception;
+
+namespace App\Helpers;
+
+class Helper
+{
+    public static function unaFuncionUtil(string $string)
+    {
+        return strtoupper($string);
+    }
+}
+```
+
+## Paso 2: Agregar el Helper.php a los aliases
+
+En `config/app.php`, en la sección de *aliases* agregar el Helper. En mi caso la sección de aliases se ve asi:
+
+```php
+'aliases' => Facade::defaultAliases()->merge([
+    // 'Example' => App\Facades\Example::class,
+    'Helper' => App\Helpers\Helper::class,
+])->toArray(),
+```
+
+## Paso 3: Usar la terminal
+
+Con la terminal en la raíz del proyecto escribir:
+
+```
+composer dump-autoload
+```
+
+## Usar el helper
+
+En los archivos blade se usa como:
+
+```
+{ { Helper::unaFuncionUtil('hola!') } }
+
+o
+
+{!! Helper::unaFuncionUtil('hola!') !!}
+```
+
+En los archivos php se usa como:
+
+```
+Helper::unaFuncionUtil('hola!')
+```
+
+## Ejemplo de código
+
+En mi proyecto [mascotas](https://github.com/JuanMX/mascotas).
+
+Este es el [Helper](https://github.com/JuanMX/mascotas/blob/master/app/Helpers/Helper.php).
+
+Este es el [aliases en app.php](https://github.com/JuanMX/mascotas/blob/master/config/app.php#L184)
+
+**Fuente:** [stackoverflow.com/questions/28290332 &mdash; *How to create custom helper functions in Laravel*](https://stackoverflow.com/a/32772686){:target="_blank"}
 
 
 [Debugbar for Laravel]: https://github.com/barryvdh/laravel-debugbar
