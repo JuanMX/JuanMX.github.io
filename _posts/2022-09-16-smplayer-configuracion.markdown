@@ -103,3 +103,27 @@ Yo tengo las siguientes opciones marcadas.
 - [x] *Mostrar el tiempo total*
 
 ![img]({{ "../assets/smplayer-configuracion/smplayer_informacion_video.png" | absolute_url }})
+
+
+
+<br>
+<hr>
+<br>
+
+
+
+## Cambiar lo segundos que adelantan las flechas del teclado
+
+Los segundos que se adelantan en un video o audio usando las flechas del teclado son de 10 segundos.
+
+A mí me gusta que sean 5 segundos, como en su tiempo tenía por defecto YouTube. En SMPlayer eso se puede cambiar haciendo lo siguiente:
+
+**Ir a Opciones -> Preferencias**
+
+![smplayer-opciones->preferencias]({{ "../assets/smplayer-configuracion/smplayer_opciones_preferencias.png" | absolute_url }})
+
+En la columna de la izquierda seleccionar **Interfaz**.
+
+En la pestaña **Búsqueda** cambiar los segundos del **Salto corto** a 5, despúes aceptar los cambios.
+
+![img]({{ "../assets/smplayer-configuracion/salto-corto.png" | absolute_url }})

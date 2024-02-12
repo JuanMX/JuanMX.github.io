@@ -654,7 +654,7 @@ data_fill($data, 'products.desk.discount', 10);
 
 Esta manera de hacer el helper propio es la recomendada por el [colectivo de php en stackoverflow](https://stackoverflow.com/collectives/php). No estoy seguro de lo que significa, pero suena importante.
 
-## Pasos 1: Crear el archivo Helper.php
+## Paso 1: Crear el archivo Helper.php
 
 Si no existe, crear la carpeta `Helpers` en `app\Helpers\`. Después crear el archivo `Helper.php` en `app\Helpers\`.
 
