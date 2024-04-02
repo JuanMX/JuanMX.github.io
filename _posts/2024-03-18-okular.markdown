@@ -1,14 +1,14 @@
 ---
 layout: post
 title:  "Recomiendo Okular como visor PDF"
-date:   2024-03-18 20:00:00 -0500
+date:   2024-03-18 19:00:00 -0500
 categories: okular kde pdf
 ---
 
 <div style="text-align: center;">
 
 <a href="https://okular.kde.org" target="_blank">
-    <img src='{{ "../assets/okular/Okular.png" | absolute_url }}' alt="Okular" width="523" height="180" />
+    <img src='{{ "../assets/okular/Okular.png" | absolute_url }}' alt="Okular" width="500" height="160" />
 </a>
 
 </div>
@@ -25,7 +25,7 @@ Buscando por internet un visor pdf para poner notas me encontré con [Okular](ht
 
 Las notas que se agregan a los pfd se pueden guardar y visualizar en Okular, Adobe Acrobat e incluso navegadores de internet.
 
-<img src='{{ "../assets/okular/ejemplos-notas.png" | absolute_url }}' alt="ejemplos" class="box-shadow" />
+<img src='{{ "../assets/okular/ejemplos-notas.png" | absolute_url }}' alt="Ejemplos de notas de Okular" class="box-shadow" />
 
 ## Lo que **no** me gusta de Okular es lo complicado que es **firmar** un PDF
 
@@ -43,7 +43,7 @@ Esta opción se encuentra como *Rellenar y firmar* en el listado de *Todas las h
 
 Para firmar pedirá agregar una firma, a mi me gusta usar la opción de dibujar la firma.
 
-<img src='{{ "../assets/okular/adobe-firma.png" | absolute_url }}' alt="Dibujar una firma e Adobe Acrobat Reader" class="box-shadow" />
+<img src='{{ "../assets/okular/adobe-firma.png" | absolute_url }}' alt="Dibujar una firma en Adobe Acrobat Reader" class="box-shadow" />
 
 **¿Por qué no simplemente poner la imagen de una firma y ya?**
 
