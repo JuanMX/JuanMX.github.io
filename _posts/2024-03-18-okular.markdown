@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Recomiendo Okular como visor PDF"
-date:   2024-03-18 19:00:00 -0500
+date:   2024-03-18 18:00:00 -0500
 categories: okular kde pdf
 ---
 
@@ -23,7 +23,7 @@ En esos tiempos usaba como visor pdf: Adobe Acrobat Reader, Firefox y el visor q
 
 Buscando por internet un visor pdf para poner notas me encontré con [Okular](https://okular.kde.org){:target="_blank"} que es un visor de documentos pdf creado por [KDE](https://kde.org){:target="_blank"} y puede poner notas de tipo: resaltado, subrayado, tachado y nota emergente, entre otros. Lo anterior solucionaba mi problema de poder marcar la información de mi interés en un pdf.
 
-Las notas que se agregan a los pfd se pueden guardar y visualizar en Okular, Adobe Acrobat e incluso navegadores de internet.
+Las notas que se agregan a los pdf se pueden guardar y visualizar en Okular, Adobe Acrobat e incluso navegadores de internet.
 
 <img src='{{ "../assets/okular/ejemplos-notas.png" | absolute_url }}' alt="Ejemplos de notas de Okular" class="box-shadow" />
 
@@ -31,7 +31,7 @@ Las notas que se agregan a los pfd se pueden guardar y visualizar en Okular, Ado
 
 En una ocasión me encontraba haciendo trámites de hombre adulto. En uno de esos trámites tenía que firmar un pdf que contenía un formulario y después enviarlo por email.
 
-Busqué como firmar un pdf usando Okular pero la [documentación](https://docs.kde.org/stable5/en/okular/okular/signatures.html#adding_digital_signatures){:target="_blank"} de Okular para firmar un pdf no me pareció clara.
+Busqué como firmar un pdf usando Okular pero la [documentación](https://docs.kde.org/stable5/en/okular/okular/signatures.html#adding_digital_signatures){:target="_blank"} que se ofrece para lograrlo no me pareció clara.
 
 Después de investigar la manera de firmar un pdf encontré que Adobe Acrobat Reader puede poner una firma simplemente dibujándola.
 
@@ -47,6 +47,6 @@ Para firmar pedirá agregar una firma, a mi me gusta usar la opción de dibujar 
 
 **¿Por qué no simplemente poner la imagen de una firma y ya?**
 
-Porque la **acción de firmar** un pdf **bloquea** el documento y no permite su edicón. Lo anterior es útil para evitar que, por ejemplo, se llene el formulario de un pdf, se firme, envíe por email y alguien posteriormente cambie las respuestas del formulario.
+Porque la **acción de firmar** un pdf **bloquea** el documento y no permite su edición. Lo anterior es útil para **evitar** que, por ejemplo, se llene el formulario de un pdf, se firme, envíe por email y alguien posteriormente **cambie** las respuestas del formulario.
 
-***A pesar de lo anterior recomiendo Okular como visor pdf. Está disponible para Windows y Linux.***
+***A pesar de lo anterior recomiendo Okular como visor pdf. [Está disponible para Windows y Linux](https://okular.kde.org/es/download/){:target="_blank"}.***
