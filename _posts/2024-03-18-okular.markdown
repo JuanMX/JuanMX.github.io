@@ -17,7 +17,7 @@ categories: okular kde pdf
 
 Durante mis estudios universitarios leí muchos libros y artículos científicos en pdf. Ponerles notas a los documentos como notas emergentes o resaltados me ayudaban bastante a tener marcada la información de mi interés.
 
-En esos tiempos usaba como visor pdf: Adobe Acrobat Reader, Firefox y el visor que trajera por defecto el sistema Linux que tuviera instalado. En ese momento solamente Adobe tenía la opción colocar notas pero era un servicio de pago.
+En esos tiempos usaba como visor pdf: Adobe Acrobat Reader, Firefox y el visor que trajera por defecto el sistema Linux que tuviera instalado. En ese momento solamente Adobe tenía la opción de colocar notas pero era un servicio de pago.
 
 ## Lo que me gusta de Okular es que puedo poner notas en los PDF
 
