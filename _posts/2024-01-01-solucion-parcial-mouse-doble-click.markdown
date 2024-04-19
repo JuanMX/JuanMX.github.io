@@ -23,7 +23,7 @@ En el menú de opciones buscar *Opciones adicionales del mouse* y darle click.
 
 Después de seleccionar las *Opciones adicionales del mouse* mostrará la ventana de *Propiedades de Mouse*. 
 
-Para intentar arreglar lo del doble click me sirvió cambiar la Velocidad de doble clic a **Lenta**. No olvidar *Aceptar* los cambios.
+Para intentar arreglar lo del doble click me sirvió cambiar la *Velocidad de doble clic* a **Lenta**. No olvidar *Aceptar* los cambios.
 
 ![Cambiar las propiedades del mouse]({{ "../assets/windows10/doble-click-mouse-velocidad-click.png" | absolute_url }})
 

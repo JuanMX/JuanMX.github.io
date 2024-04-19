@@ -9,19 +9,19 @@ Necesitaba un teclado nuevo y se me ocurrió comprar un teclado mecánico en Ama
 
 Cuando llegó lo noté raro. Al verlo detenidamente noté que **no** era un teclado latinoamericano, era un teclado inglés.
 
-Para evitar conflictos con Amazon decidí conservar el teclado intentado aprender a usar los caracteres especiales del idioma español (Ñ, Á, É, Í, Ó, Ú, Ü, entre otros).
+Para evitar conflictos con Amazon decidí conservar el teclado intentando aprender a usar los caracteres especiales del idioma español (por ejemplo las letras: Ñ, Á, É, Í, Ó, Ú, Ü, entre otros).
 
 Con el tiempo descubrí que a un teclado inglés se le puede agregar la distribución de teclado *Estados Unidos Internacional* que resuelve mi problema de uso de caracteres especiales.
 
 ## Teclado de Estados Unidos Internacional
 
-Un teclado de Estados Unidos se ve asi:
+Un teclado de Estados Unidos se ve así:
 
-![eu](https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/KB_United_States-NoAltGr.svg/2560px-KB_United_States-NoAltGr.svg.png)
+![Teclado Estados Unidos](https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/KB_United_States-NoAltGr.svg/2560px-KB_United_States-NoAltGr.svg.png)
 
-Un teclado de Estados Unidos **Internacional** se ve asi:
+Un teclado de Estados Unidos **Internacional** se ve así:
 
-![euint](https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/KB_US-International.svg/2560px-KB_US-International.svg.png)
+![Teclado Estados Unidos Internacional](https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/KB_US-International.svg/2560px-KB_US-International.svg.png)
 
 En este teclado se debe seguir una secuencia de teclas para obtener los caracteres especiales.
 
@@ -39,21 +39,21 @@ Abrir el **menú inicio**, escribir *Configuracion* y dar click en el primer res
 
 En el menú de Configuración ir a la opción *Hora e idioma*.
 
-![img]({{ "../assets/ñ-teclado-windows-kubuntu/ñ-windows10-1.png" | absolute_url }})
+<img src='{{ "../assets/ñ-teclado-windows-kubuntu/ñ-windows10-1.png" | absolute_url }}' alt="Configuración en Windows 10" class="box-shadow" />
 
 Ir a la sección *Idioma* y en la parte *Idiomas preferidos* dar click en *Agregar un idioma*.
 
 El idioma que se tiene que agregar es el de *Inglés Estados Unidos*.
 
-![img]({{ "../assets/ñ-teclado-windows-kubuntu/ñ-windows10-2.png" | absolute_url }})
+<img src='{{ "../assets/ñ-teclado-windows-kubuntu/ñ-windows10-2.png" | absolute_url }}' alt="Configuración de idioma para agregar el idioma Inglés Estados Unidos" class="box-shadow" />
 
-Con el idioma *Inglés (Estados Unidos)* agregado darle click para abrir el menú, depués dar click en *Opciones*.
+Con el idioma *Inglés (Estados Unidos)* agregado darle click para abrir el menú, después dar click en *Opciones*.
 
-![img]({{ "../assets/ñ-teclado-windows-kubuntu/ñ-windows10-3.png" | absolute_url }})
+<img src='{{ "../assets/ñ-teclado-windows-kubuntu/ñ-windows10-3.png" | absolute_url }}' alt="Abrir las opciones del idioma Inglés Estados Unidos" class="box-shadow" />
 
 En las opciones de idioma dar click en *Agregar un teclado*, después seleccionar *Estados Unidos - Internacional*.
 
-![img]({{ "../assets/ñ-teclado-windows-kubuntu/ñ-windows10-4.png" | absolute_url }})
+<img src='{{ "../assets/ñ-teclado-windows-kubuntu/ñ-windows10-4.png" | absolute_url }}' alt="Al idioma Inglés Estados Unidos agregarle el teclado Estados Unidos - Internacional" class="box-shadow" />
 
 Sugiero que por cada idioma se tenga un solo teclado. Si hay otro teclado agregado se debe quitar.
 
@@ -71,7 +71,7 @@ Abrir el **lanzador de aplicaciones** (menú inicio), escribir *preferencias del
 
 Ir a la sección *Hardware* y dar click en *Dispositivos de entrada*.
 
-![kubuntuteclado1]({{ "../assets/ñ-teclado-windows-kubuntu/ñ-kubuntu2204-1.png" | absolute_url }})
+![Preferencias del sistema en Kubuntu]({{ "../assets/ñ-teclado-windows-kubuntu/ñ-kubuntu2204-1.png" | absolute_url }})
 
 En los dispositivos de entrada seleccionar el teclado, dar click en la pestaña *Distribuciones*, después activar la opción:
 
@@ -81,14 +81,14 @@ Dar click en "*+ Añadir*". El teclado que se debe añadir es:
 
 ***English (intl., with AltGr dead keys)***.
 
-![kubuntuteclado2]({{ "../assets/ñ-teclado-windows-kubuntu/ñ-kubuntu2204-2.png" | absolute_url }})
+![Configuración del teclado]({{ "../assets/ñ-teclado-windows-kubuntu/ñ-kubuntu2204-2.png" | absolute_url }})
 
 En mi caso se puso automáticamente una sección de *Distribución del teclado* en el panel de Kubuntu en la *Bandeja del sistema*.
 
-Para cambiar entre las distribuciones del teclado se debe hacer click en el apartado de *Distribución del teclado* de la *Bandeja de la sistema*.
+Para cambiar entre las distribuciones del teclado se debe hacer click en el apartado de *Distribución del teclado* de la *Bandeja del sistema*.
 
-![kubuntuteclado3]({{ "../assets/ñ-teclado-windows-kubuntu/ñ-kubuntu2204-3.gif" | absolute_url }})
+![Distribución del teclado en la bandeja del sistema]({{ "../assets/ñ-teclado-windows-kubuntu/ñ-kubuntu2204-3.gif" | absolute_url }})
 
 La vista previa de la distribución del teclado ofrecida por Kubuntu es la siguiente:
 
-![kubuntuteclado4]({{ "../assets/ñ-teclado-windows-kubuntu/ñ-kubuntu2204-4.png" | absolute_url }})
+![Vista previa del teclado inglés]({{ "../assets/ñ-teclado-windows-kubuntu/ñ-kubuntu2204-4.png" | absolute_url }})
