@@ -24,6 +24,7 @@ Gracias a conocimientos de desarrollo fullstack adquiridos de un trabajo que tuv
 
 * [Insertar una imagen usando helpers de Jekyll](#insertar-una-imagen-usando-helpers-de-jekyll)
 
+* [Actualizar gem y bundler](#actualizar-gem-y-bundler)
 
 <br>
 <hr>
@@ -349,3 +350,25 @@ Para insertar en una entrada del blog (post) una imagen ubicada en un directorio
 <script src="https://gist.github.com/JuanMX/59d2483c824dbf270c55f9504285bf73.js"></script>
 
 He insertado imágenes png, jpg, jpeg y gif sin problema.
+
+<br>
+<hr>
+<br>
+
+## Actualizar gem y bundler
+
+Andaba de curioso probando [temas de Jekyll](https://github.com/topics/jekyll-theme) pero al usar `bundle` en la terminal me daba un mensaje como:
+
+```
+Network error fetching
+https://rubygems.org . . .
+```
+
+Lo que a mi me funcionó para solucionar el error fue actualizar `gem` y `bundler`:
+
+```
+gem update --system
+gem update bundler
+```
+
+**Fuente:** [stackoverflow.com/questions/40644883 &mdash; *network error while fetching*](https://stackoverflow.com/questions/40644883/network-error-while-fetching){:target="_blank"}
