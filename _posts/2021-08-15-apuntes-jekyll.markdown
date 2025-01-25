@@ -357,11 +357,11 @@ He insertado imágenes png, jpg, jpeg y gif sin problema.
 
 ## Actualizar gem y bundler
 
-Andaba de curioso probando [temas de Jekyll](https://github.com/topics/jekyll-theme) pero al usar `bundle` en la terminal me daba un mensaje como:
+Andaba de curioso probando [temas de Jekyll](https://github.com/topics/jekyll-theme){:target="_blank"} pero al usar `bundle` en la terminal me daba un mensaje como:
 
 ```
 Network error fetching
-https://rubygems.org . . .
+https://rubygems.org. . .
 ```
 
 Lo que a mi me funcionó para solucionar el error fue actualizar `gem` y `bundler`:

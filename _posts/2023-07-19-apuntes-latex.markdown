@@ -27,6 +27,8 @@ Probablemente este post contiene conocimiento obsoleto pero no me importa.
 
 * [Loren Ipsum](#loren-ipsum)
 
+* [Fusionar varios pdf en uno solo](#fusionar-varios-pdf-en-uno-solo)
+
 
 
 <br>
@@ -238,3 +240,43 @@ Y para párrafos completos:
 ```
 \lipsum[1]
 ```
+
+
+
+<br>
+<hr>
+<br>
+
+
+
+## Fusionar varios PDF en uno solo
+
+En una ocasión me encontraba haciendo un trámite de hombre adulto. Ese trámite era por internet y contaba con muchos pasos, por cada paso se generaba un archivo PDF como probatorio de que fue completado con éxito. 
+
+Como paso final debía mandar **un solo archivo PDF** que contenga todos los PDF de los pasos anteriores junto con otros archivos.
+
+Por un momento mi mundo colapsó. No tenía idea de como *pegar* varios PDF para formar uno solo. Después de pensarlo con calma recordé que en el pasado (en mis épocas de estudiante) a mi tesis (hecha en LaTeX y que ya estaba completa) le debía agregar un oficio escaneado y en PDF. Para añadir ese PDF a otro que era mi tesis lo hice con LaTeX usando el paquete `\usepackage{pdfpages}`
+
+La manera crear **un** PDF a partir de la unión de **dos** archivos PDF es con el siguiente fragmento de código:
+
+``` tex
+%%%%%%% archivo: fusion.tex %%%%%%%
+\documentclass{book}
+\usepackage{pdfpages} %paquete que permite agregar pdfs
+
+\begin{document}
+
+    \includepdf[pages=-,fitpaper=true]{documento1.pdf}
+    \includepdf[pages=-,fitpaper=true]{documento2.pdf}
+    %\includepdf[pages=-,fitpaper=true]{documento3.pdf}
+
+    %%%%%%%%%%%
+    % pages=-       significa que se van a agregar todas las paginas del archivo pdf
+    % fitpaper=true significa que el documento se va a incluir con sus medidas de hoja originales
+    % se pueden agregar mas pdfs al archivo agregando mas lineas de tipo \includepdf[pages=-,fitpaper=true]{archivo.pdf}
+    %%%%%%%%%%%
+
+\end{document}
+```
+
+[**Un ejemplo un poco más completo se encuentra en mi repositorio de GitHub**](https://github.com/JuanMX/plantillas-latex/tree/master/fusion){:target="_blank"}
