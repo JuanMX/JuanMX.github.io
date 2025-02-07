@@ -34,6 +34,10 @@ He aprendido Laravel en trabajos como programador que he tenido.
 
 * [Crear tu propio Helper en Laravel](#crear-tu-propio-helper-en-laravel)
 
+* [Agregar una nueva versión de PHP a Laragon](#agregar-una-nueva-versión-de-php-a-laragon)
+
+
+
 <br>
 <hr>
 <br>
@@ -726,6 +730,60 @@ Este es el [Helper](https://github.com/JuanMX/mascotas/blob/master/app/Helpers/H
 Este es el [aliases en app.php](https://github.com/JuanMX/mascotas/blob/master/config/app.php#L184)
 
 **Fuente:** [stackoverflow.com/questions/28290332 &mdash; *How to create custom helper functions in Laravel*](https://stackoverflow.com/a/32772686){:target="_blank"}
+
+
+
+<br>
+<hr>
+<br>
+
+
+
+## Agregar una nueva versión de PHP a Laragon
+
+Hay veces en la que será necesario cambiar la versión de PHP, por ejemplo, para usar Laravel 10 se necesita PHP 8 pero se tiene en la PC una versión inferior.
+
+En estos casos se debe cambiar la versión de PHP a una más nueva y es lo que se verá en este apartado con el ejemplo de agregar PHP 8 a Laragon.
+
+## Obtener PHP 8 y agregarlo a Laragon
+
+Se debe ir a [php.net/downloads](https://www.php.net/downloads) y dar click en los descargables para windows (Windows downloads) de la versión de PHP que se quiera, que en este caso el la versión PHP 8.3.1.
+
+![php windows downloads]({{ "../assets/apuntes-laravel-fullstack/php_downloads.png" | absolute_url }})
+
+Después escoger una versión, por ejemplo, la versión PHP 8.3.1 ***Non Thread Safe (nts)***. Hay que descargar el `.zip` y descomprimirlo en la carpeta `laragon/bin/php` que es donde se instaló Laragon.
+
+<img src='{{ "../assets/apuntes-laravel-fullstack/php_downloads_nts.png" | absolute_url }}' alt="PHP 8 en la carpeta php de Laragon" class="box-shadow" />
+
+## Cambiar la versión de PHP de Laragon
+
+Abrir Laragon.
+
+<img src='{{ "../assets/apuntes-laravel-fullstack/abrir_laragon.png" | absolute_url }}' alt="Abrir Laragon" class="box-shadow" />
+
+Con Laragon abierto dar click **derecho** en cualquier parte de la ventana de Laragon y después seleccionar:
+
+`PHP -> Version -> php-8.3.1`
+
+<img src='{{ "../assets/apuntes-laravel-fullstack/laragon_cambiar_version_php.png" | absolute_url }}' alt="Cambiar la version de php de Laragon" class="box-shadow" />
+
+Puede ser requerido (o no) actualizar `composer` después de cambiar la versión de PHP.
+
+## Actualizar composer
+
+Abrir la terminal de Laragon.
+
+Después actualizar composer con `composer self-update`
+
+**Puede haber errores al actualizar de tipo:** 
+
+```
+Composer update failed: composer.phar could not be written.
+```
+
+Como se muestra en el siguiente [hilo de GitHub](https://github.com/composer/composer/issues/10444). 
+
+La solución recomendada es: ***Cambiar a otra versión de PHP*** hasta encontrar alguna que no muestre errores. Si se desea usar Laravel 10 o superior se sugiere que la versión de PHP a la que se cambie sea `>= 8.1`.
 
 
 [Debugbar for Laravel]: https://github.com/barryvdh/laravel-debugbar
