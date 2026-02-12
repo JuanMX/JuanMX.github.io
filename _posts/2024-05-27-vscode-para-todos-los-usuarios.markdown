@@ -44,3 +44,31 @@ En los descargables para Windows 10 seleccionar "*System Instaler*", en mi caso 
 <img src='{{ "../assets/vscode-para-todos-los-usuarios/system-instaler.png" | absolute_url }}' alt="Descargar el System Instaler"  class="box-shadow" />
 
 El "*System Instaler*" permitirá instalar Visual Studio Code para todos los usuarios en el equipo. Sugiero instalarlo en la carpeta `C:\Program Files`.
+
+
+
+<br>
+<hr>
+<br>
+
+
+
+## Actualización Febrero 2026
+
+Siendo consumidor de mi propio contenido noté que están un poco desactualizadas las instrucciones anteriores.
+
+## Ir a la sección de ***descargas*** de Visual Studio Code desde su página de inicio
+
+**Paso 1.** Ir a [https://code.visualstudio.com]( https://code.visualstudio.com){:target="_blank"}.
+
+**Paso 2.** Ubicar un botón que dice *Download for Windows* y **debajo** de él se verán tres opciones: *Web*, *Insiders edition* y *Other platforms*.
+
+**Paso 3.** Dar click en *Other platforms*.
+
+**Paso 4.** Después de dar click en **Other platforms** redirigirá a [https://code.visualstudio.com/Download]( https://code.visualstudio.com/Download){:target="_blank"} seleccionar para descargar el *System Installer* para Windows10.
+
+Las siguientes imágenes muestran mejor que hacer.
+
+<img src='{{ "../assets/vscode-para-todos-los-usuarios/other-downloads-febrero-2026.png" | absolute_url }}' alt="Seleccionar la opción Other platforms"  class="" />
+
+<img src='{{ "../assets/vscode-para-todos-los-usuarios/system-instaler-febrero-2026.png" | absolute_url }}' alt="Descargar el System Instaler"  class="" />
