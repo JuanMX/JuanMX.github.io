@@ -19,7 +19,7 @@ Revisando en mi PC noté que los programas que se compartían por defecto entre 
 
 Finalmente se me ocurrió ejecutar el instalador con permisos de administrador para instalar vscode en la carpeta `C:\Program Files`. Me apareció el siguiente mensaje que me ayudó a solucionar mi problema.
 
-<img src='{{ "../assets/vscode-para-todos-los-usuarios/user-installer-as-administrator.png" | absolute_url }}' alt="Mensaje del User Instaler ejecutado como administrador" class="box-shadow" />
+<img src='{{ "../assets/vscode-para-todos-los-usuarios/user-installer-as-administrator.png" | absolute_url }}' alt="Mensaje del User Installer ejecutado como administrador" class="box-shadow" />
 
 Para el caso de que no se pueda ver la imagen, el mensaje dice:
 
@@ -27,7 +27,7 @@ Para el caso de que no se pueda ver la imagen, el mensaje dice:
 
 Una traducción propia, adaptada y no profesional de lo anterior es:
 
-> Este Instalador Para Usuarios no está destinado a ser ejecutado como Administrador. Si deseas instalar VS Code para todos los usuarios en este equipo mejor descarga el "*System Instaler*" de https://code.visualstudio.com. ¿Estás seguro de que quieres continuar?
+> Este "*User Installer*" no está destinado a ser ejecutado como Administrador. Si deseas instalar VS Code para todos los usuarios en este equipo mejor descarga el "*System Installer*" de https://code.visualstudio.com. ¿Estás seguro de que quieres continuar?
 
 ## Solución
 
@@ -39,11 +39,19 @@ Ir a [https://code.visualstudio.com]( https://code.visualstudio.com){:target="_b
 
 <img src='{{ "../assets/vscode-para-todos-los-usuarios/other-downloads.png" | absolute_url }}' alt="Seleccionar la opción de Other Downloads"  class="" />
 
-En los descargables para Windows 10 seleccionar "*System Instaler*", en mi caso me bajé el de *x64*.
+En los descargables para Windows 10 seleccionar "*System Installer*", en mi caso me bajé el de *x64*.
 
-<img src='{{ "../assets/vscode-para-todos-los-usuarios/system-instaler.png" | absolute_url }}' alt="Descargar el System Instaler"  class="box-shadow" />
+<img src='{{ "../assets/vscode-para-todos-los-usuarios/system-instaler.png" | absolute_url }}' alt="Descargar el System Installer"  class="box-shadow" />
 
-El "*System Instaler*" permitirá instalar Visual Studio Code para todos los usuarios en el equipo. Sugiero instalarlo en la carpeta `C:\Program Files`.
+<br>
+
+<div style="background: #cff4fc;padding: 20px;">
+    <p>
+        El "System Installer" permitirá instalar Visual Studio Code para todos los usuarios en el equipo. Sugiero instalarlo en la carpeta <code>C:\Program Files</code>.
+    </p>
+</div>
+
+
 
 
 
@@ -71,4 +79,4 @@ Las siguientes imágenes muestran mejor que hacer.
 
 <img src='{{ "../assets/vscode-para-todos-los-usuarios/other-downloads-febrero-2026.png" | absolute_url }}' alt="Seleccionar la opción Other platforms"  class="" />
 
-<img src='{{ "../assets/vscode-para-todos-los-usuarios/system-instaler-febrero-2026.png" | absolute_url }}' alt="Descargar el System Instaler"  class="" />
+<img src='{{ "../assets/vscode-para-todos-los-usuarios/system-instaler-febrero-2026.png" | absolute_url }}' alt="Descargar el System Installer"  class="" />
