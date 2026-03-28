@@ -15,13 +15,13 @@ Con el tiempo descubrí que a un teclado inglés se le puede agregar la distribu
 
 ## Teclado de Estados Unidos Internacional
 
-Un teclado de Estados Unidos se ve así:
+[Un teclado de Estados Unidos](https://es.wikipedia.org/wiki/Distribuci%C3%B3n_del_teclado#Teclado_de_Estados_Unidos){:target="_blank"} se ve así:
 
-![Teclado Estados Unidos](https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/KB_United_States-NoAltGr.svg/2560px-KB_United_States-NoAltGr.svg.png)
+<img src='{{ "../assets/ñ-teclado-windows-kubuntu/KB_United_States-NoAltGr.svg.png" | absolute_url }}' alt="Imagen del Teclado Estados Unidos" class="box-shadow" />
 
-Un teclado de Estados Unidos **Internacional** se ve así:
+[Un teclado de Estados Unidos **Internacional**](https://es.wikipedia.org/wiki/Distribuci%C3%B3n_del_teclado#Teclado_internacional_de_Estados_Unidos){:target="_blank"} se ve así:
 
-![Teclado Estados Unidos Internacional](https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/KB_US-International.svg/2560px-KB_US-International.svg.png)
+<img src='{{ "../assets/ñ-teclado-windows-kubuntu/KB_US-International.svg.png" | absolute_url }}' alt="Imagen del Teclado Estados Unidos" class="box-shadow" />
 
 En este teclado se debe seguir una secuencia de teclas para obtener los caracteres especiales.
 
